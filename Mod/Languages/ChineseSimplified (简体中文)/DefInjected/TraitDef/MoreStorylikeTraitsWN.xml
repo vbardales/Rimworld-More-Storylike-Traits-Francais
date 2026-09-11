@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HYPW01Ignoramus.degreeDatas.unlettered.label>&lt;color=#969696&gt;不学无术&lt;/color&gt;</HYPW01Ignoramus.degreeDatas.unlettered.label>
+  <HYPW01Ignoramus.degreeDatas.unlettered.description>{PAWN_nameDef}不喜欢任何需要耗费脑子的工作，要说{PAWN_nameDef}的唯一优点，大概就是力气比常人更大。</HYPW01Ignoramus.degreeDatas.unlettered.description>
+
+  <HYPW02ExtremelyObese.degreeDatas.extremely_obese.label>&lt;color=#969696&gt;异常肥胖&lt;/color&gt;</HYPW02ExtremelyObese.degreeDatas.extremely_obese.label>
+  <HYPW02ExtremelyObese.degreeDatas.extremely_obese.description>并不规律的生活起居和毫不注意的饮食，让{PAWN_nameDef}的体型变得异常肥胖。[PAWN_possessive]食量更大，挥舞的拳头更有力，也能承受比其他人更多的伤害。</HYPW02ExtremelyObese.degreeDatas.extremely_obese.description>
+
+  <HYPN01FinelyCrafted.degreeDatas.good_work_takes_time.label>精雕细琢</HYPN01FinelyCrafted.degreeDatas.good_work_takes_time.label>
+  <HYPN01FinelyCrafted.degreeDatas.good_work_takes_time.description>{PAWN_nameDef}信奉好活不怕晚的理念，{PAWN_pronoun}做起事来有些慢，但{PAWN_pronoun}在心情好时更有可能获得创造灵感。</HYPN01FinelyCrafted.degreeDatas.good_work_takes_time.description>
+
+  <HYPN02TheArrowInTheKnee.degreeDatas.arrow_in_the_knee.label>膝盖中箭</HYPN02TheArrowInTheKnee.degreeDatas.arrow_in_the_knee.label>
+  <HYPN02TheArrowInTheKnee.degreeDatas.arrow_in_the_knee.description>{PAWN_nameDef}过去曾是一名冒险者，直到{PAWN_pronoun}的膝盖中了一箭。所幸平日苦练的箭法拯救了{PAWN_pronoun}，让{PAWN_pronoun}避免了被队伍抛下的厄运。{PAWN_nameDef}有惊无险地回到了工会，结束了冒险者的生涯。</HYPN02TheArrowInTheKnee.degreeDatas.arrow_in_the_knee.description>
+
+  <HYPN03OnTheSameHandAndFoot.degreeDatas.same_hand_same_foot.label>同手同脚</HYPN03OnTheSameHandAndFoot.degreeDatas.same_hand_same_foot.label>
+  <HYPN03OnTheSameHandAndFoot.degreeDatas.same_hand_same_foot.description>{PAWN_nameDef}的身体不太协调，走起路来总是同手同脚。这种方式奇怪地增加了[PAWN_possessive]移动速度，却也让 {PAWN_objective}不太精于战斗。</HYPN03OnTheSameHandAndFoot.degreeDatas.same_hand_same_foot.description>
+
+</LanguageData>

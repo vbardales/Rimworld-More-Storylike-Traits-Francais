@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HYPRThought01CombatExpert.stages.knows_how_to_fight.label>戰鬥專家</HYPRThought01CombatExpert.stages.knows_how_to_fight.label>
+
+  <HYPRThought02Horror.stages.something_is_wrong_with_that_one.label>不可名狀之怖</HYPRThought02Horror.stages.something_is_wrong_with_that_one.label>
+
+  <HYPRThought03SkillExpert.stages.good_at_something.label>技能專家</HYPRThought03SkillExpert.stages.good_at_something.label>
+
+  <HYPRThought04SkillMaster.stages.master_of_a_whole_field.label>領域大師</HYPRThought04SkillMaster.stages.master_of_a_whole_field.label>
+
+  <HYPRThought05DreamPeople.stages.I_have_met_them_before_somewhere.label>夢境中人</HYPRThought05DreamPeople.stages.I_have_met_them_before_somewhere.label>
+
+  <HYPSSRThought06PetrochemicalSkin.stages.that_skin.label>石化皮膚</HYPSSRThought06PetrochemicalSkin.stages.that_skin.label>
+
+  <HYPURThought07CrystallizedSkin.stages.catches_the_light.label>晶化皮膚</HYPURThought07CrystallizedSkin.stages.catches_the_light.label>
+
+  <HYPSSRThought08WorkMachine.stages.never_stops_working.label>無情的工作機器</HYPSSRThought08WorkMachine.stages.never_stops_working.label>
+
+  <HYPSSRThought09DreamPeople.stages.impossible_to_dislike.label>傻人傻福</HYPSSRThought09DreamPeople.stages.impossible_to_dislike.label>
+
+  <HYPSSRThought10CombatExpert.stages.I_would_not_want_to_face_them.label>戰鬥大師</HYPSSRThought10CombatExpert.stages.I_would_not_want_to_face_them.label>
+
+  <HYPURThought11ASympatheticPast.stages.gave_up_more_than_I_would_have.label>令人同情的過往</HYPURThought11ASympatheticPast.stages.gave_up_more_than_I_would_have.label>
+
+  <!-- The original shipped no Chinese for this one; taken from the comment that named it in the 1.3 def file. -->
+  <HYPURThought12LovelyWayOfSpeaking.stages.talks_strangely_and_I_like_it.label>奇怪但又可愛的說話方式</HYPURThought12LovelyWayOfSpeaking.stages.talks_strangely_and_I_like_it.label>
+
+</LanguageData>

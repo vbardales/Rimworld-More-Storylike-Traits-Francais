@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+    Twelve social thoughts: what the rest of the colony makes of someone carrying one of these
+    traits. All of them run through one worker, MoreStorylikeTraits.ThoughtWorker_MSTSpecial, and
+    the conditions live in an MSTModExtension on each def rather than in code - which is why the
+    mod ships a 90-line assembly instead of twelve workers.
+
+    `triggerTraits` is read off the OTHER pawn, the one being looked at. `validWithDisfigured` is
+    true throughout: the author wanted these opinions to survive a ruined face, and one of them
+    is about a ruined face.
+  -->
+
+  <ThoughtDef>
+    <defName>HYPRThought01CombatExpert</defName><!-- 战斗专家 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>knows how to fight</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPR04MasterSection</li>
+          <li>HYPSR01NeverCheat</li>
+          <li>HYPR05EraHasChanged</li>
+          <li>HYPSR02DescendantsOfTaiChi</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPRThought02Horror</defName><!-- 不可名状之怖 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>something is wrong with that one</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPSR11UnspeakableHorror</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPRThought03SkillExpert</defName><!-- 技能专家 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>good at something</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPSR12ObviouslyAndClearly</li>
+          <li>HYPSR10TopOfTheFourScalpels</li>
+          <li>HYPSR09CarIntoBeads</li>
+          <li>HYPSR08AVirtuousAndArtisticArtist</li>
+          <li>HYPSR07LifelongMember</li>
+          <li>HYPSR06GoldKeLa</li>
+          <li>HYPSR05TheSecretOfNewOriental</li>
+          <li>HYPSR04TheHeadmasterOfBlueFly</li>
+          <li>HYPSR03JustMoreWonders</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPRThought04SkillMaster</defName><!-- 领域大师 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>master of a whole field</label>
+        <baseOpinionOffset>15</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPSSR08InfrastructureSpree</li>
+          <li>HYPSSR05TheUltimateBricklayer</li>
+          <li>HYPSSR09Excavator</li>
+          <li>HYPSSR10YuZuSoftFan</li>
+          <li>HYPSSR11TheSecretSeedsOfEAAS</li>
+          <li>HYPSSR12DolphinVoiceTalent</li>
+          <li>HYPSSR13FirearmsExpert</li>
+          <li>HYPSSR14ArtZoneDivision</li>
+          <li>HYPSSR15MasterOfNegotiations</li>
+          <li>HYPUR02CombinedLeekHarvester</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPRThought05DreamPeople</defName><!-- 梦境中人 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>I have met them before, somewhere</label>
+        <baseOpinionOffset>80</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPSSR01ThePersonInDream</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPSSRThought06PetrochemicalSkin</defName><!-- 石化皮肤 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>that skin</label>
+        <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPSSR03PetrochemicalSkin</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPURThought07CrystallizedSkin</defName><!-- 晶化皮肤 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>catches the light</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPUR01CrystallizedSkin</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPSSRThought08WorkMachine</defName><!-- 无情的工作机器 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>never stops working</label>
+        <baseOpinionOffset>25</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPSSR02RuthlessWorkMachine</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPSSRThought09DreamPeople</defName><!-- 傻人傻福 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>impossible to dislike</label>
+        <baseOpinionOffset>25</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPSSR04StupidAsStupidDoes</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPSSRThought10CombatExpert</defName><!-- 战斗大师 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>I would not want to face them</label>
+        <baseOpinionOffset>20</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPSSR06BloodthirstyViking</li>
+          <li>HYPSSR07FieldSniper</li>
+          <li>HYPUR05FondOfFoldingStools</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPURThought11ASympatheticPast</defName><!-- 令人同情的过往 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>gave up more than I would have</label>
+        <baseOpinionOffset>25</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPUR03TheDealWithLucifer</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HYPURThought12LovelyWayOfSpeaking</defName><!-- 奇怪但又可爱的说话方式 -->
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>MoreStorylikeTraits.ThoughtWorker_MSTSpecial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>talks strangely, and I like it</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="MoreStorylikeTraits.MSTModExtension">
+        <sameFactionOnly>true</sameFactionOnly>
+        <validWithDisfigured>true</validWithDisfigured>
+        <triggerTraits>
+          <li>HYPUR04SuperArtificialIntelligence</li>
+        </triggerTraits>
+      </li>
+    </modExtensions>
+  </ThoughtDef>
+
+</Defs>

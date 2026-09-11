@@ -1,0 +1,31 @@
+# Build intermediates.
+# Directory.Build.props sends them outside the mod folder: they must never end up back inside,
+# since the whole folder is uploaded to the Workshop as-is.
+.build/
+Source/obj/
+Source/bin/
+
+# Agent worktrees. The repository root already ignores these, but that .gitignore does not
+# survive `git subtree split` - the published repository would start with no rule at all.
+#
+# And git is only half of it: SteamUGC.SetItemContent takes the junction's target directory as
+# it stands on disk, with no filtering and no knowledge of .gitignore. A worktree dropped in a
+# mod folder ships to every subscriber however thoroughly git ignores it. MintchocoConfectionery
+# reached 210 MB that way, 206 MB of it a .claude worktree.
+#
+# The rule below is the second line of defence. The first is that only Mod/ is published and
+# the RimWorld junction points at Mod/, never at this directory.
+.claude/
+
+# Development environments
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.csproj.user
+
+# System
+Thumbs.db
+desktop.ini
+.DS_Store

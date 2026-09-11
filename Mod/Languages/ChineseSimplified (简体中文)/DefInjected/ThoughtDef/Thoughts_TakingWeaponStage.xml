@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HYPRaohappy.stages.armed_and_framing_the_shot.label>截屏信徒持有远程武器</HYPRaohappy.stages.armed_and_framing_the_shot.label>
+  <HYPRaohappy.stages.armed_and_framing_the_shot.description>让我们给那些喜欢拍屏的人好好上一课。</HYPRaohappy.stages.armed_and_framing_the_shot.description>
+
+  <HYPMasterhappy.stages.armed_at_range.label>星际韩宗持有远程武器</HYPMasterhappy.stages.armed_at_range.label>
+  <HYPMasterhappy.stages.armed_at_range.description>我不需要瞄准镜，但我的确更喜欢通过远程武器进行战斗</HYPMasterhappy.stages.armed_at_range.description>
+
+  <HYPPlayerhappy.stages.armed_at_range.label>持有远程武器</HYPPlayerhappy.stages.armed_at_range.label>
+  <HYPPlayerhappy.stages.armed_at_range.description>我喜欢它，它能让我发挥出我的真正实力</HYPPlayerhappy.stages.armed_at_range.description>
+
+  <HYPKnightUnhappy.stages.a_knight_with_a_gun.label>不愿相信时代改变</HYPKnightUnhappy.stages.a_knight_with_a_gun.label>
+  <HYPKnightUnhappy.stages.a_knight_with_a_gun.description>什么？食大便了？</HYPKnightUnhappy.stages.a_knight_with_a_gun.description>
+
+  <HYPDescendantUnhappy.stages.nothing_to_borrow.label>想要近战</HYPDescendantUnhappy.stages.nothing_to_borrow.label>
+  <HYPDescendantUnhappy.stages.nothing_to_borrow.description>远程武器限制了我的实力，给我根棒子也好，我更喜欢近战！</HYPDescendantUnhappy.stages.nothing_to_borrow.description>
+
+  <HYPRangeWeaponHappy.stages.armed_at_range.label>持有远程武器</HYPRangeWeaponHappy.stages.armed_at_range.label>
+  <HYPRangeWeaponHappy.stages.armed_at_range.description>我准备好喂敌人花生米了。</HYPRangeWeaponHappy.stages.armed_at_range.description>
+
+  <HYPRangeWeaponHappyChicken.stages.armed_at_range.label>持有远程武器</HYPRangeWeaponHappyChicken.stages.armed_at_range.label>
+  <HYPRangeWeaponHappyChicken.stages.armed_at_range.description>我今天就是要打鸡!</HYPRangeWeaponHappyChicken.stages.armed_at_range.description>
+
+  <HYPRangeWeaponVikingUnhappy.stages.a_viking_with_a_gun.label>维京持有远程武器</HYPRangeWeaponVikingUnhappy.stages.a_viking_with_a_gun.label>
+  <HYPRangeWeaponVikingUnhappy.stages.a_viking_with_a_gun.description>我想把对面的头盖骨当碗使，却分到一把远程武器。</HYPRangeWeaponVikingUnhappy.stages.a_viking_with_a_gun.description>
+
+</LanguageData>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HYPSSR01ThePersonInDream.degreeDatas.the_person_in_dreams.label>&lt;color=#cc33cc&gt;梦境中人&lt;/color&gt;</HYPSSR01ThePersonInDream.degreeDatas.the_person_in_dreams.label>
+  <HYPSSR01ThePersonInDream.degreeDatas.the_person_in_dreams.description>梦境中人，空空色相，[PAWN_nameDef]的相貌并不重要。很难说每个人都在梦中见过[PAWN_objective] ，但可以确定的是，所有人都很喜欢[PAWN_objective]（看法+80）。</HYPSSR01ThePersonInDream.degreeDatas.the_person_in_dreams.description>
+
+  <HYPSSR02RuthlessWorkMachine.degreeDatas.ruthless_work_machine.label>&lt;color=#cc33cc&gt;无情的工作机器&lt;/color&gt;</HYPSSR02RuthlessWorkMachine.degreeDatas.ruthless_work_machine.label>
+  <HYPSSR02RuthlessWorkMachine.degreeDatas.ruthless_work_machine.description>不管在哪个殖民地，[PAWN_nameDef]都会被视为当地最努力工作的那个人，如果当前的状况很好，那么[PAWN_pronoun]会万分努力的投入工作，如果当前的状况并不是很理想，那么[PAWN_pronoun]会在崩溃完之后万分努力地投入工作，以试图改善当前的状况。[PAWN_nameDef]在心情好时更有可能变得工作狂热，崩溃后也是。[PAWN_pronoun]不会获得工作狂热以外的激励。</HYPSSR02RuthlessWorkMachine.degreeDatas.ruthless_work_machine.description>
+
+  <HYPSSR03PetrochemicalSkin.degreeDatas.petrified_skin.label>&lt;color=#cc33cc&gt;石化皮肤&lt;/color&gt;</HYPSSR03PetrochemicalSkin.degreeDatas.petrified_skin.label>
+  <HYPSSR03PetrochemicalSkin.degreeDatas.petrified_skin.description>[PAWN_nameDef]的皮肤存在一定程度的石化，因而被周围的人所排斥。但是病症也使得[PAWN_possessive]表皮大为硬化，[PAWN_pronoun]对射击和火焰的抗性显著增强。</HYPSSR03PetrochemicalSkin.degreeDatas.petrified_skin.description>
+
+  <HYPSSR04StupidAsStupidDoes.degreeDatas.fools_have_all_the_luck.label>&lt;color=#cc33cc&gt;傻人傻福&lt;/color&gt;</HYPSSR04StupidAsStupidDoes.degreeDatas.fools_have_all_the_luck.label>
+  <HYPSSR04StupidAsStupidDoes.degreeDatas.fools_have_all_the_luck.description>[PAWN_nameDef]实在是不太适合需要智力的工作，但做其它事情时运气却意外的不错。</HYPSSR04StupidAsStupidDoes.degreeDatas.fools_have_all_the_luck.description>
+
+  <HYPSSR05TheUltimateBricklayer.degreeDatas.ultimate_brickhauler.label>&lt;color=#cc33cc&gt;究极搬砖工&lt;/color&gt;</HYPSSR05TheUltimateBricklayer.degreeDatas.ultimate_brickhauler.label>
+  <HYPSSR05TheUltimateBricklayer.degreeDatas.ultimate_brickhauler.description>[PAWN_nameDef]是建筑工地上的究极搬砖工，惊人的力量让[PAWN_pronoun]可以一次搬运好几倍于其他殖民者的物品。曾有科学家在征得同意后对[PAWN_possessive]血液进行取样研究，然而得到的只是谜一样的结果数据。[PAWN_pronoun]不会获得移动狂热以外的激励。</HYPSSR05TheUltimateBricklayer.degreeDatas.ultimate_brickhauler.description>
+
+  <HYPSSR06BloodthirstyViking.degreeDatas.bloodthirsty_viking.label>&lt;color=#cc33cc&gt;嗜血维京&lt;/color&gt;</HYPSSR06BloodthirstyViking.degreeDatas.bloodthirsty_viking.label>
+  <HYPSSR06BloodthirstyViking.degreeDatas.bloodthirsty_viking.description> [PAWN_nameDef]的家族有着嗜血的文化和基因，[PAWN_pronoun]也不例外。[PAWN_nameDef]的进攻手段以舍身忘死著称，这让[PAWN_possessive]敌人闻风丧胆。持有远程武器会让[PAWN_objective]不开心。[PAWN_pronoun]不会获得移动狂热以外的激励。</HYPSSR06BloodthirstyViking.degreeDatas.bloodthirsty_viking.description>
+
+  <HYPSSR07FieldSniper.degreeDatas.field_sniper.label>&lt;color=#cc33cc&gt;战地狙击手&lt;/color&gt;</HYPSSR07FieldSniper.degreeDatas.field_sniper.label>
+  <HYPSSR07FieldSniper.degreeDatas.field_sniper.description>[PAWN_nameDef]是一名战地狙击手，神奇的伪装是[PAWN_pronoun]能在战场上存活下来的秘诀。即使战场上偶尔有流弹射向[PAWN_pronoun]，也往往只能击中[PAWN_possessive]伪装，而[PAWN_pronoun]则会躲在掩体后面继续屏息瞄准目标。[PAWN_pronoun]不会获得创造灵感和射击狂热以外的激励。</HYPSSR07FieldSniper.degreeDatas.field_sniper.description>
+
+  <HYPSSR08InfrastructureSpree.degreeDatas.infrastructure_maniac.label>&lt;color=#cc33cc&gt;基建狂魔&lt;/color&gt;</HYPSSR08InfrastructureSpree.degreeDatas.infrastructure_maniac.label>
+  <HYPSSR08InfrastructureSpree.degreeDatas.infrastructure_maniac.description>或许是因为小时候的某些经历， [PAWN_nameDef]对基础建筑有着莫名的狂热。“基建就是一切，我经常梦到它。”</HYPSSR08InfrastructureSpree.degreeDatas.infrastructure_maniac.description>
+
+  <HYPSSR09Excavator.degreeDatas.geologist.label>&lt;color=#cc33cc&gt;地质学家&lt;/color&gt;</HYPSSR09Excavator.degreeDatas.geologist.label>
+  <HYPSSR09Excavator.degreeDatas.geologist.description>得益于一本来自光明中世纪的《边缘世界地理学》，[PAWN_nameDef]对岩石结构有了奇妙的理解。不管多么艰绝难解的岩石，在[PAWN_pronoun]面前都只是几块早已分开了的力学构件。</HYPSSR09Excavator.degreeDatas.geologist.description>
+
+  <HYPSSR10YuZuSoftFan.degreeDatas.visual_novel_devotee.label>&lt;color=#cc33cc&gt;柚子厨&lt;/color&gt;</HYPSSR10YuZuSoftFan.degreeDatas.visual_novel_devotee.label>
+  <HYPSSR10YuZuSoftFan.degreeDatas.visual_novel_devotee.description>[PAWN_nameDef]是一名柚子厨，除了平日喜欢在贴吧灌水以外，[PAWN_pronoun]在烹饪和艺术方面的造诣也很高。[PAWN_pronoun]不会获得工作狂热和创造灵感以外的激励。</HYPSSR10YuZuSoftFan.degreeDatas.visual_novel_devotee.description>
+
+  <HYPSSR11TheSecretSeedsOfEAAS.degreeDatas.academy_seeds.label>&lt;color=#cc33cc&gt;农科院的秘密种子&lt;/color&gt;</HYPSSR11TheSecretSeedsOfEAAS.degreeDatas.academy_seeds.label>
+  <HYPSSR11TheSecretSeedsOfEAAS.degreeDatas.academy_seeds.description>[PAWN_nameDef]与帝国在当地的农科院有着秘密联系，这些来自农科院的种子不仅成活率更高，产量也更多。</HYPSSR11TheSecretSeedsOfEAAS.degreeDatas.academy_seeds.description>
+
+  <HYPSSR12DolphinVoiceTalent.degreeDatas.dolphin_voice.label>&lt;color=#cc33cc&gt;海豚音天赋&lt;/color&gt;</HYPSSR12DolphinVoiceTalent.degreeDatas.dolphin_voice.label>
+  <HYPSSR12DolphinVoiceTalent.degreeDatas.dolphin_voice.description>[PAWN_nameDef]的听觉和发声器官与其它人不同，[PAWN_pronoun]能听到和发出频谱更广的声音，这使得[PAWN_pronoun]在与动物交流时几乎没有障碍。[PAWN_pronoun]不会获得驯服灵感以外的激励。</HYPSSR12DolphinVoiceTalent.degreeDatas.dolphin_voice.description>
+
+  <HYPSSR13FirearmsExpert.degreeDatas.firearms_expert.label>&lt;color=#cc33cc&gt;枪械专家&lt;/color&gt;</HYPSSR13FirearmsExpert.degreeDatas.firearms_expert.label>
+  <HYPSSR13FirearmsExpert.degreeDatas.firearms_expert.description>[PAWN_nameDef]从小就痴迷于操作枪械，[PAWN_pronoun]能在没有图纸的情况下将初次接触的枪械还原。长大后[PAWN_pronoun]参与了一次针对当地帝国军工后勤部的特别“信息采集”行动，在这次行动中[PAWN_pronoun]得到了大量的枪械图纸，并把它们放在了一个秘密据点里。[PAWN_pronoun]设计出来的枪械往往以实用著称。[PAWN_pronoun]不会获得创造灵感和射击狂热以外的激励。</HYPSSR13FirearmsExpert.degreeDatas.firearms_expert.description>
+
+  <HYPSSR14ArtZoneDivision.degreeDatas.art_master.label>&lt;color=#cc33cc&gt;艺术带师&lt;/color&gt;</HYPSSR14ArtZoneDivision.degreeDatas.art_master.label>
+  <HYPSSR14ArtZoneDivision.degreeDatas.art_master.description>[PAWN_nameDef]的艺术造诣实在很高，都说一千个读者眼里有一千个哈姆雷特，但[PAWN_pronoun]的作品却能不由分说地将参观者带入美的境界——[PAWN_pronoun]的境界。[PAWN_pronoun]不会获得创造灵感以外的激励。</HYPSSR14ArtZoneDivision.degreeDatas.art_master.description>
+
+  <HYPSSR15MasterOfNegotiations.degreeDatas.master_of_negotiations.label>&lt;color=#cc33cc&gt;谈判大师&lt;/color&gt;</HYPSSR15MasterOfNegotiations.degreeDatas.master_of_negotiations.label>
+  <HYPSSR15MasterOfNegotiations.degreeDatas.master_of_negotiations.description>从微表情到微动作，再到对荷尔蒙改变的觉察，[PAWN_nameDef]能在谈判过程中获得一切他想要的信息，并将条件和价格协商到一个“最合适”的地步。[PAWN_pronoun]不会获得交易灵感和招募灵感以外的激励。</HYPSSR15MasterOfNegotiations.degreeDatas.master_of_negotiations.description>
+
+  <HYPUR01CrystallizedSkin.degreeDatas.crystallized_skin.label>&lt;color=#FF3030&gt;晶化皮肤&lt;/color&gt;</HYPUR01CrystallizedSkin.degreeDatas.crystallized_skin.label>
+  <HYPUR01CrystallizedSkin.degreeDatas.crystallized_skin.description>一次奇遇使得[PAWN_nameDef]皮肤表面的细胞含有大量晶体，这些含晶体的细胞会在受到冲击时会根据冲击类型做出恰当好处的改变，使得[PAWN_nameDef]的皮肤就像一层装有非牛顿流体的防弹衣。此外闪闪发光的皮肤也让 [PAWN_objective]在殖民地大受欢迎。</HYPUR01CrystallizedSkin.degreeDatas.crystallized_skin.description>
+
+  <HYPUR02CombinedLeekHarvester.degreeDatas.leek_harvester.label>&lt;color=#FF3030&gt;联合韭菜收割机&lt;/color&gt;</HYPUR02CombinedLeekHarvester.degreeDatas.leek_harvester.label>
+  <HYPUR02CombinedLeekHarvester.degreeDatas.leek_harvester.description>除了喜欢割韭菜以外，[PAWN_nameDef]还喜欢收智商税。但[PAWN_pronoun]并不擅长与敌人战斗，也不太喜欢做琐碎的事情。</HYPUR02CombinedLeekHarvester.degreeDatas.leek_harvester.description>
+
+  <HYPUR03TheDealWithLucifer.degreeDatas.the_deal_with_Lucifer.label>&lt;color=#FF3030&gt;与路西法的交易&lt;/color&gt;</HYPUR03TheDealWithLucifer.degreeDatas.the_deal_with_Lucifer.label>
+  <HYPUR03TheDealWithLucifer.degreeDatas.the_deal_with_Lucifer.description>为了拯救心爱之人，[PAWN_nameDef]曾在无比绝望的情境下抛弃一切，与路西法达成交易。无人知晓契约的具体内容……唯一已知的事实是[PAWN_nameDef]的医术确实无人能比。[PAWN_pronoun]不会获得手术灵感以外的激励。</HYPUR03TheDealWithLucifer.degreeDatas.the_deal_with_Lucifer.description>
+
+  <HYPUR04SuperArtificialIntelligence.degreeDatas.superintelligence.label>&lt;color=#FF3030&gt;超级人工智能&lt;/color&gt;</HYPUR04SuperArtificialIntelligence.degreeDatas.superintelligence.label>
+  <HYPUR04SuperArtificialIntelligence.degreeDatas.superintelligence.description>{PAWN_nameDef}曾是某个闪耀世界用于研究下级世界的人工智能，不知怎么的获得了自主意识。怀着对探险的渴望，{PAWN_pronoun}在一次常规痕迹擦除中越级骇入了意识写入系统，以生物的方式获得了自由。它现在仍然在学习如何与类人生物交流。[PAWN_nameDef]无法获得交易灵感和招募灵感。</HYPUR04SuperArtificialIntelligence.degreeDatas.superintelligence.description>
+
+  <HYPUR05FondOfFoldingStools.degreeDatas.fond_of_folding_stools.label>&lt;color=#FF3030&gt;喜爱折叠凳&lt;/color&gt;</HYPUR05FondOfFoldingStools.degreeDatas.fond_of_folding_stools.label>
+  <HYPUR05FondOfFoldingStools.degreeDatas.fond_of_folding_stools.description> [PAWN_nameDef]深谙板凳的妙处：进可攻、退可守、平常又能坐在身下，可以出其不意攻其不备。实乃居家旅行首选。</HYPUR05FondOfFoldingStools.degreeDatas.fond_of_folding_stools.description>
+
+</LanguageData>

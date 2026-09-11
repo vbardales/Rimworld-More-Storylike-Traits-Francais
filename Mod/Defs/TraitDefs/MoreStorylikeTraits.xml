@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+    The rarity tiers of the original, and the colour each one paints its label with.
+
+    The colour is NOT in the labels below. It is applied per language, in
+    Languages/*/DefInjected/TraitDef, exactly as the original did it - and that is deliberate.
+    RimWorld builds a DefInjected key from the normalised English label, dropping everything
+    outside [A-Za-z0-9_]. Putting the markup in the label here would turn the key for
+    "screen photographer" into `color33ff00screen_photographercolor`, which every future
+    translator would then have to type. The cost of keeping it out is that a language this mod
+    does not ship - French, German, Russian - falls back to the plain English label and loses the
+    tier colouring. That was already true of the original.
+
+      R    green  #33ff00        commonality 0.63        a knack, about half a vanilla trait
+      SR   blue   #66ccff        commonality 0.21        a career, with a bill attached
+      SSR  purple #cc33cc        commonality 0.10        master of one thing and nothing else
+      UR   red    #FF3030        commonality 0.02-0.04   the ones that bend the game
+      W    grey   #969696        commonality 0.21        a real handicap with one consolation
+      N    plain  (no colour)    commonality 0.21-0.31   even trades
+
+    Every number below is the original author's, unchanged. What that costs at the trait table is
+    written up in README.md.
+  -->
+
+  <!-- ============================ R - green ============================ -->
+
+  <TraitDef>
+    <defName>HYPR01TakeScreenBrother</defName><!-- 拍屏老哥 -->
+    <commonality>0.63</commonality>
+    <commonalityFemale>0.1</commonalityFemale>
+    <degreeDatas>
+      <li>
+        <label>screen photographer</label>
+        <description>Rather than capture the screen like everyone else, {PAWN_nameDef} photographs the monitor with a handheld camera and posts that. It is a fast way to get a thread going. It is not a good way to be read, and the forum has been telling {PAWN_objective} so for years.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <GeneralLaborSpeed>0.15</GeneralLaborSpeed>
+          <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPR02TeacherRaosSecretDict</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Crafting</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR02TeacherRaosSecretDict</defName><!-- 饶老师的秘典 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Shooting</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>pixel perfect</label>
+        <description>{PAWN_nameDef} learned the craft from a legend of the old boards, a poster whose captures were always framed, always cropped, always sharp. {PAWN_pronoun} is slow to post. Every picture is worth the wait, and {PAWN_pronoun} lines up a rifle with exactly the same patience.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <AimingDelayFactor>+0.15</AimingDelayFactor>
+          <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPR01TakeScreenBrother</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR03NaturesPorter</defName><!-- 大自然的搬运工 -->
+    <commonality>0.63</commonality>
+    <degreeDatas>
+      <li>
+        <label>nature's porter</label>
+        <description>{PAWN_nameDef} does not write posts, exactly. {PAWN_possessive} threads are other people's news, carried in from somewhere else and set down years late. "I don't produce water," {PAWN_pronoun} once told an interviewer, quoting a bottling company at him. "I am only nature's porter." {PAWN_pronoun} carries other things the same way, over long distances, in the heat.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <MoveSpeed>0.2</MoveSpeed>
+          <CarryingCapacity>25</CarryingCapacity>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Cleaning</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR04MasterSection</defName><!-- 宗师分段 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Shooting</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>grandmaster league</label>
+        <description>{PAWN_nameDef} reached the top bracket of a strategy game older than the colony ship, and could beat most opponents with the monitor switched off. Twenty years of selecting an entire army with one key left {PAWN_objective} with something more than reflexes. "The divine F2 links us all," {PAWN_pronoun} said, accepting a trophy nobody else in the room understood.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+          <PsychicSensitivity>0.25</PsychicSensitivity>
+        </statOffsets>
+        <skillGains>
+          <Shooting>2</Shooting>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Brawler</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSR01NeverCheat</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR05EraHasChanged</defName><!-- 时代变了？ -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Melee</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>era has changed?</label>
+        <description>Gunpowder reached {PAWN_nameDef}'s world a long time before {PAWN_pronoun} was born. {PAWN_possessive} family did not take the hint. {PAWN_pronoun} was raised to the blade, to the guard and the parry and the long walk towards someone, and hands a rifle back with the expression of a man being offered somebody else's coat.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <MeleeHitChance>5</MeleeHitChance>
+          <MeleeDodgeChance>5</MeleeDodgeChance>
+        </statOffsets>
+        <skillGains>
+          <Shooting>-2</Shooting>
+          <Melee>4</Melee>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Shoot</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPR04MasterSection</li>
+      <li>HYPSR01NeverCheat</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR06Constructor</defName><!-- 建造师 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Construction</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>certified builder</label>
+        <description>{PAWN_nameDef} spent years on the scaffolding of an industrial world, where nothing was designed to be beautiful and everything had to stand up. {PAWN_pronoun} came away with a hundred small tricks that no drawing shows.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <SmoothingSpeed>0.25</SmoothingSpeed>
+          <ConstructionSpeed>0.25</ConstructionSpeed>
+        </statOffsets>
+        <skillGains>
+          <Construction>2</Construction>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR07KingOfTheKing</defName><!-- 王中王 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Mining</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>firecracker childhood</label>
+        <description>{PAWN_nameDef} has been taking explosives apart since {PAWN_pronoun} was old enough to hide them, with a particular loyalty to an urbworld brand called King of Kings that promised rather more than it delivered. {PAWN_pronoun} still has all {PAWN_possessive} fingers, which {PAWN_pronoun} offers as proof of expertise.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <MiningSpeed>0.25</MiningSpeed>
+        </statOffsets>
+        <skillGains>
+          <Mining>2</Mining>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Mining</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR08DelicaciesBloggerDevotee</defName><!-- 美食博主信徒 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Cooking</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>food blogger's disciple</label>
+        <description>{PAWN_nameDef} followed one cook, on one channel, for a very long time, and can still hear that voice while chopping. The recipes stuck. So did the habit of narrating.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <CookSpeed>0.25</CookSpeed>
+        </statOffsets>
+        <skillGains>
+          <Cooking>2</Cooking>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR04TheHeadmasterOfBlueFly</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Cooking</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR09GrowVegetablesUnderTheBed</defName><!-- 床底种菜 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Plants</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>vegetables under the bed</label>
+        <description>{PAWN_nameDef} can make anything grow anywhere, and by all accounts does. Nobody has looked under {PAWN_possessive} bed to check. Nobody particularly wants to.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <PlantWorkSpeed>0.25</PlantWorkSpeed>
+        </statOffsets>
+        <skillGains>
+          <Plants>2</Plants>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR10ChickenFarmer</defName><!-- 擅长养鸡 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Animals</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>chicken whisperer</label>
+        <description>{PAWN_nameDef} ran a poultry yard, and the yard ran on {PAWN_possessive} voice. One cluck, pitched exactly right, and the whole flock came at a run. It works on other animals too. It works, a little unnervingly, on people.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <TrainAnimalChance>0.25</TrainAnimalChance>
+        </statOffsets>
+        <skillGains>
+          <Animals>2</Animals>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR11UnspeakableHorror</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Animals</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPRMC11Player</defName><!-- MC玩家 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Artistic</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>cube-world architect</label>
+        <description>{PAWN_nameDef} spent {PAWN_possessive} childhood inside a building game out of some urbworld, stacking blocks into every structure {PAWN_pronoun} could imagine. Most of them could not have stood up. {PAWN_pronoun} has never entirely let go of the idea that they should have.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <GeneralLaborSpeed>0.25</GeneralLaborSpeed>
+        </statOffsets>
+        <skillGains>
+          <Artistic>2</Artistic>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Artistic</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR12LetoHobby</defName><!-- 乐低爱好 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Crafting</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>brick stacker</label>
+        <description>{PAWN_nameDef}'s first set of building bricks was a knock-off, one letter away from the real name and half a millimetre off the real size, so nothing ever quite locked. {PAWN_pronoun} stacked them higher anyway. Years later {PAWN_pronoun} could finally afford the real ones, and found {PAWN_pronoun} had already learned the harder version.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <GeneralLaborSpeed>0.25</GeneralLaborSpeed>
+        </statOffsets>
+        <skillGains>
+          <Crafting>2</Crafting>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Crafting</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR13HolyHanderOfTheCervicalSpine</defName><!-- 颈椎圣手 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Medicine</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>cervical spine specialist</label>
+        <description>{PAWN_nameDef} sees things at an angle nobody else does, and photographs them that way too, so that reading {PAWN_possessive} posts means tilting your head until it aches. The forum named {PAWN_objective} after the injury. {PAWN_pronoun} has since learned a great deal about necks.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <MedicalTendSpeed>0.25</MedicalTendSpeed>
+        </statOffsets>
+        <skillGains>
+          <Medicine>2</Medicine>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR14StudyOne</defName><!-- 学习一个 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Social</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>a word with the press</label>
+        <description>{PAWN_nameDef} studied one elder statesman the way other people study scripture, and what {PAWN_pronoun} took from it was not policy but manner: the pause, the raised finger, the laugh that closes a question. "That reporter, now. He was so very much better than you people. He and I, we..." Nobody remembers the answer. Everybody remembers the delivery.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <GlobalLearningFactor>0.15</GlobalLearningFactor>
+          <NegotiationAbility>0.15</NegotiationAbility>
+          <TradePriceImprovement>0.15</TradePriceImprovement>
+          <SocialImpact>0.15</SocialImpact>
+        </statOffsets>
+        <skillGains>
+          <Social>2</Social>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR08AVirtuousAndArtisticArtist</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPR15OfCourseUseful</defName><!-- 当然有用 -->
+    <commonality>0.63</commonality>
+    <forcedPassions>
+      <li>Intellectual</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>of course it's useful</label>
+        <description>"Knowing calculus will not help you buy vegetables. Knowing calculus means I never have to buy vegetables myself." {PAWN_nameDef} has said this often enough that {PAWN_possessive} colleagues say it for {PAWN_objective}, and studies every single day regardless.</description>
+        <marketValueFactorOffset>0.05</marketValueFactorOffset>
+        <statOffsets>
+          <ResearchSpeed>0.25</ResearchSpeed>
+        </statOffsets>
+        <skillGains>
+          <Intellectual>2</Intellectual>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR09CarIntoBeads</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <!-- ============================ SR - blue ============================ -->
+
+  <TraitDef>
+    <defName>HYPSR01NeverCheat</defName><!-- 没有开挂 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Shooting</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>never cheated</label>
+        <description>{PAWN_nameDef} was a battle-royale streamer once, famous for a rifle hand nobody could match. Then came the clip: seventeen shots from a semi-automatic in two seconds, and a crosshair that snapped to a head it could not have seen. The channel died in a week. {PAWN_possessive} last words on air were "I have never cheated," repeated until the stream cut out, and {PAWN_pronoun} has been saying it to strangers ever since.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <AimingDelayFactor>-0.17</AimingDelayFactor>
+          <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+          <NegotiationAbility>-0.80</NegotiationAbility>
+          <SocialImpact>-0.5</SocialImpact>
+        </statOffsets>
+        <skillGains>
+          <Shooting>5</Shooting>
+          <Social>-2</Social>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Brawler</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPR04MasterSection</li>
+      <li>HYPR05EraHasChanged</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR02DescendantsOfTaiChi</defName><!-- 太极传人 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Melee</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>tai chi inheritor</label>
+        <description>Standing still, {PAWN_nameDef} looks like anyone else, and slightly lazier than most. In a fight {PAWN_pronoun} does almost nothing: {PAWN_pronoun} borrows the force coming at {PAWN_objective} and returns it, four ounces turning a thousand pounds. Everything else {PAWN_pronoun} does is at the same unhurried speed, and {PAWN_pronoun} takes a wound the same way.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <MeleeHitChance>15</MeleeHitChance>
+          <MeleeDodgeChance>15</MeleeDodgeChance>
+          <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+          <PainShockThreshold>0.2</PainShockThreshold>
+        </statOffsets>
+        <skillGains>
+          <Melee>4</Melee>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Shoot</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPR04MasterSection</li>
+      <li>HYPSR01NeverCheat</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR03JustMoreWonders</defName><!-- 奇观误国 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Construction</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>just one more turn</label>
+        <description>{PAWN_nameDef} has lost more empires to wonders than to war, and would do it again. "One more turn," {PAWN_pronoun} says, at four in the morning, to nobody. The building never stops and neither does {PAWN_pronoun}, which is why {PAWN_pronoun} always looks like that. Nothing inspires {PAWN_objective} but the next great structure.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <SmoothingSpeed>0.5</SmoothingSpeed>
+          <ConstructionSpeed>0.5</ConstructionSpeed>
+          <ConstructSuccessChance>0.25</ConstructSuccessChance>
+          <RestRateMultiplier>-0.20</RestRateMultiplier>
+        </statOffsets>
+        <skillGains>
+          <Construction>4</Construction>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Frenzy_Work</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR04TheHeadmasterOfBlueFly</defName><!-- 蓝翔校长 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Mining</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>excavator school principal</label>
+        <description>Whatever world {PAWN_nameDef} lands on, somebody is digging a hole in it, and within a week they have offered {PAWN_objective} the job. It is an unglamorous talent and it has never once failed. A working lifetime of site canteens has, however, left {PAWN_objective} with no idea at all what a kitchen is for.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <MiningSpeed>0.5</MiningSpeed>
+          <MiningYield>0.25</MiningYield>
+          <ToxicSensitivity>-0.1</ToxicSensitivity>
+          <FoodPoisonChance>0.25</FoodPoisonChance>
+          <CookSpeed>-0.25</CookSpeed>
+        </statOffsets>
+        <skillGains>
+          <Mining>4</Mining>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR05TheSecretOfNewOriental</li>
+      <li>HYPR08DelicaciesBloggerDevotee</li>
+      <li>HYPSR10TopOfTheFourScalpels</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Mining</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR05TheSecretOfNewOriental</defName><!-- 新东方的秘笈 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Cooking</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>the spirit cookbook</label>
+        <description>As a young cook {PAWN_nameDef} came into possession of a recipe book from a world that may not exist, full of dishes nobody on this one has tasted. The recipes work. So do the sections between them, describing what lives in that world and what it wants, and {PAWN_nameDef} has not slept properly since.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <CookSpeed>0.50</CookSpeed>
+          <FoodPoisonChance>-0.25</FoodPoisonChance>
+          <MentalBreakThreshold>0.06</MentalBreakThreshold>
+        </statOffsets>
+        <skillGains>
+          <Cooking>4</Cooking>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR04TheHeadmasterOfBlueFly</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Cooking</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR06GoldKeLa</defName><!-- 上帝压狗 / 金坷垃 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Plants</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>miracle fertiliser</label>
+        <description>{PAWN_nameDef} swears by a soil additive from an urbworld called San Diego, which the advertisement insists lets a plant draw nitrogen, phosphorus and potassium from the far side of the planet. The crops do come up bigger. They also, occasionally, taste of metal — and for reasons nobody has explained, every seam {PAWN_pronoun} works comes out poorer than it went in.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <PlantWorkSpeed>0.50</PlantWorkSpeed>
+          <PlantHarvestYield>0.25</PlantHarvestYield>
+          <MiningSpeed>-0.25</MiningSpeed>
+          <MiningYield>-0.25</MiningYield>
+        </statOffsets>
+        <skillGains>
+          <Plants>4</Plants>
+          <Mining>-2</Mining>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR04TheHeadmasterOfBlueFly</li>
+      <li>HYPR07KingOfTheKing</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR07LifelongMember</defName><!-- 动保会员 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Animals</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>lifelong member</label>
+        <description>The animal welfare league made {PAWN_nameDef} a member for life, and after that many years of it every animal {PAWN_pronoun} meets seems to know already. {PAWN_pronoun} still sends the league a share of everything {PAWN_pronoun} earns, cheerfully, and would sooner give the caravan's silver away than haggle over the price of a goat.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <TrainAnimalChance>0.5</TrainAnimalChance>
+          <TameAnimalChance>0.25</TameAnimalChance>
+          <AnimalGatherYield>0.15</AnimalGatherYield>
+          <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+          <TradePriceImprovement>-0.5</TradePriceImprovement>
+        </statOffsets>
+        <skillGains>
+          <Animals>4</Animals>
+          <Social>-2</Social>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR11UnspeakableHorror</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR08AVirtuousAndArtisticArtist</defName><!-- 德艺双馨的艺术家 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Artistic</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>artist of impeccable virtue</label>
+        <description>{PAWN_nameDef} was, on one urbworld, genuinely beloved: {PAWN_pronoun} played the monkey king in a retelling of an old pilgrimage epic and every household knew {PAWN_possessive} face. {PAWN_pronoun} has mentioned this in every conversation since, along with {PAWN_possessive} own high moral standards. {PAWN_possessive} signature move, a slow tactical lean away from the camera, turns out to work in a brawl.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <GeneralLaborSpeed>0.40</GeneralLaborSpeed>
+          <MeleeDodgeChance>5</MeleeDodgeChance>
+          <NegotiationAbility>-0.25</NegotiationAbility>
+          <TradePriceImprovement>0.05</TradePriceImprovement>
+        </statOffsets>
+        <skillGains>
+          <Melee>1</Melee>
+          <Artistic>3</Artistic>
+          <Social>-2</Social>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPR14StudyOne</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Artistic</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR09CarIntoBeads</defName><!-- 车成珠子 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Crafting</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>turn it into beads</label>
+        <description>{PAWN_nameDef} edited an antiques magazine on some urbworld, and in {PAWN_possessive} columns there was no object so worthless that it could not be put on a lathe, turned into beads, and sold as a treasure. It made {PAWN_objective} a very good hand with a lathe. It also left {PAWN_objective} unable to tell a proof from a sales pitch.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <GeneralLaborSpeed>0.40</GeneralLaborSpeed>
+          <ResearchSpeed>-0.25</ResearchSpeed>
+        </statOffsets>
+        <skillGains>
+          <Crafting>4</Crafting>
+          <Intellectual>-2</Intellectual>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPR15OfCourseUseful</li>
+      <li>HYPSR12ObviouslyAndClearly</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Crafting</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR10TopOfTheFourScalpels</defName><!-- 四把刀之首 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Medicine</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>first of the four scalpels</label>
+        <description>On {PAWN_possessive} own world {PAWN_nameDef} was first among the four great surgeons, and the rumour was that nobody died under {PAWN_possessive} hand. {PAWN_pronoun} works fast, thinks faster, and moves through a ward at a pace that alarms people. What {PAWN_pronoun} does not do any more is take {PAWN_possessive} time in theatre, or trust a patient's family, or forget what one of them did to {PAWN_objective} with a knife.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <MoveSpeed>0.2</MoveSpeed>
+          <MedicalTendSpeed>0.5</MedicalTendSpeed>
+          <MedicalTendQuality>0.25</MedicalTendQuality>
+          <DrugSynthesisSpeed>0.25</DrugSynthesisSpeed>
+          <MedicalOperationSpeed>-0.15</MedicalOperationSpeed>
+          <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
+          <PainShockThreshold>-0.2</PainShockThreshold>
+        </statOffsets>
+        <skillGains>
+          <Medicine>4</Medicine>
+          <Social>-1</Social>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR04TheHeadmasterOfBlueFly</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR11UnspeakableHorror</defName><!-- 不可名状之怖 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Social</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>unspeakable horror</label>
+        <description>{PAWN_nameDef} was only ever a rank-and-file believer, but {PAWN_possessive} god noticed {PAWN_objective} anyway. A mirror shows nothing wrong. Everyone else who looks at {PAWN_objective} feels their heart stumble and their thoughts go briefly loose, and by the time they recover the terms have been agreed. {PAWN_pronoun} worked out what was happening some years ago and has been dining out on it since.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <NegotiationAbility>0.3</NegotiationAbility>
+          <TradePriceImprovement>0.3</TradePriceImprovement>
+          <SocialImpact>-0.25</SocialImpact>
+        </statOffsets>
+        <skillGains>
+          <Social>4</Social>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPR10ChickenFarmer</li>
+      <li>HYPSR07LifelongMember</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR12ObviouslyAndClearly</defName><!-- 显然易证 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Intellectual</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>obviously, trivially</label>
+        <description>{PAWN_nameDef} sees the shape of an argument before anyone else has finished stating it, and writes down the two words that follow: obviously, and it is easily shown. On paper this is a gift. In conversation it means {PAWN_pronoun} has skipped the part everyone else was still on, again, and cannot understand why they are annoyed.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <ResearchSpeed>0.5</ResearchSpeed>
+          <SocialImpact>-0.25</SocialImpact>
+        </statOffsets>
+        <skillGains>
+          <Intellectual>4</Intellectual>
+          <Social>-2</Social>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>SlowLearner</li>
+      <li>HYPSR09CarIntoBeads</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSR13SoManyIdea</defName><!-- 过于生草 -->
+    <commonality>0.21</commonality>
+    <forcedPassions>
+      <li>Plants</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>absurdist</label>
+        <description>{PAWN_nameDef}'s ideas run so far past the joke that people laugh before they have understood what {PAWN_pronoun} said. Most of them are nonsense. When the mood is right one of them turns out to be worth building, and nothing else in the world will inspire {PAWN_objective}.</description>
+        <marketValueFactorOffset>0.1</marketValueFactorOffset>
+        <statOffsets>
+          <PlantWorkSpeed>0.25</PlantWorkSpeed>
+        </statOffsets>
+        <skillGains>
+          <Plants>1</Plants>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Frenzy_Work</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+</Defs>

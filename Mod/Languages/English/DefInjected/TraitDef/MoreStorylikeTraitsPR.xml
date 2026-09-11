@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!--
+    English carries only the tier colour. The words themselves are in the def, which is the
+    fallback every other language uses; repeating them here would mean two copies to keep in
+    step. Keys are the normalised English label, not the index - see the note in
+    Defs/TraitDefs/MoreStorylikeTraits.xml.
+  -->
+
+  <HYPSSR01ThePersonInDream.degreeDatas.the_person_in_dreams.label>&lt;color=#cc33cc&gt;the person in dreams&lt;/color&gt;</HYPSSR01ThePersonInDream.degreeDatas.the_person_in_dreams.label>
+  <HYPSSR02RuthlessWorkMachine.degreeDatas.ruthless_work_machine.label>&lt;color=#cc33cc&gt;ruthless work machine&lt;/color&gt;</HYPSSR02RuthlessWorkMachine.degreeDatas.ruthless_work_machine.label>
+  <HYPSSR03PetrochemicalSkin.degreeDatas.petrified_skin.label>&lt;color=#cc33cc&gt;petrified skin&lt;/color&gt;</HYPSSR03PetrochemicalSkin.degreeDatas.petrified_skin.label>
+  <HYPSSR04StupidAsStupidDoes.degreeDatas.fools_have_all_the_luck.label>&lt;color=#cc33cc&gt;fools have all the luck&lt;/color&gt;</HYPSSR04StupidAsStupidDoes.degreeDatas.fools_have_all_the_luck.label>
+  <HYPSSR05TheUltimateBricklayer.degreeDatas.ultimate_brickhauler.label>&lt;color=#cc33cc&gt;ultimate brick-hauler&lt;/color&gt;</HYPSSR05TheUltimateBricklayer.degreeDatas.ultimate_brickhauler.label>
+  <HYPSSR06BloodthirstyViking.degreeDatas.bloodthirsty_viking.label>&lt;color=#cc33cc&gt;bloodthirsty viking&lt;/color&gt;</HYPSSR06BloodthirstyViking.degreeDatas.bloodthirsty_viking.label>
+  <HYPSSR07FieldSniper.degreeDatas.field_sniper.label>&lt;color=#cc33cc&gt;field sniper&lt;/color&gt;</HYPSSR07FieldSniper.degreeDatas.field_sniper.label>
+  <HYPSSR08InfrastructureSpree.degreeDatas.infrastructure_maniac.label>&lt;color=#cc33cc&gt;infrastructure maniac&lt;/color&gt;</HYPSSR08InfrastructureSpree.degreeDatas.infrastructure_maniac.label>
+  <HYPSSR09Excavator.degreeDatas.geologist.label>&lt;color=#cc33cc&gt;geologist&lt;/color&gt;</HYPSSR09Excavator.degreeDatas.geologist.label>
+  <HYPSSR10YuZuSoftFan.degreeDatas.visual_novel_devotee.label>&lt;color=#cc33cc&gt;visual novel devotee&lt;/color&gt;</HYPSSR10YuZuSoftFan.degreeDatas.visual_novel_devotee.label>
+  <HYPSSR11TheSecretSeedsOfEAAS.degreeDatas.academy_seeds.label>&lt;color=#cc33cc&gt;academy seeds&lt;/color&gt;</HYPSSR11TheSecretSeedsOfEAAS.degreeDatas.academy_seeds.label>
+  <HYPSSR12DolphinVoiceTalent.degreeDatas.dolphin_voice.label>&lt;color=#cc33cc&gt;dolphin voice&lt;/color&gt;</HYPSSR12DolphinVoiceTalent.degreeDatas.dolphin_voice.label>
+  <HYPSSR13FirearmsExpert.degreeDatas.firearms_expert.label>&lt;color=#cc33cc&gt;firearms expert&lt;/color&gt;</HYPSSR13FirearmsExpert.degreeDatas.firearms_expert.label>
+  <HYPSSR14ArtZoneDivision.degreeDatas.art_master.label>&lt;color=#cc33cc&gt;art master&lt;/color&gt;</HYPSSR14ArtZoneDivision.degreeDatas.art_master.label>
+  <HYPSSR15MasterOfNegotiations.degreeDatas.master_of_negotiations.label>&lt;color=#cc33cc&gt;master of negotiations&lt;/color&gt;</HYPSSR15MasterOfNegotiations.degreeDatas.master_of_negotiations.label>
+  <HYPUR01CrystallizedSkin.degreeDatas.crystallized_skin.label>&lt;color=#FF3030&gt;crystallized skin&lt;/color&gt;</HYPUR01CrystallizedSkin.degreeDatas.crystallized_skin.label>
+  <HYPUR02CombinedLeekHarvester.degreeDatas.leek_harvester.label>&lt;color=#FF3030&gt;leek harvester&lt;/color&gt;</HYPUR02CombinedLeekHarvester.degreeDatas.leek_harvester.label>
+  <HYPUR03TheDealWithLucifer.degreeDatas.the_deal_with_Lucifer.label>&lt;color=#FF3030&gt;the deal with Lucifer&lt;/color&gt;</HYPUR03TheDealWithLucifer.degreeDatas.the_deal_with_Lucifer.label>
+  <HYPUR04SuperArtificialIntelligence.degreeDatas.superintelligence.label>&lt;color=#FF3030&gt;superintelligence&lt;/color&gt;</HYPUR04SuperArtificialIntelligence.degreeDatas.superintelligence.label>
+  <HYPUR05FondOfFoldingStools.degreeDatas.fond_of_folding_stools.label>&lt;color=#FF3030&gt;fond of folding stools&lt;/color&gt;</HYPUR05FondOfFoldingStools.degreeDatas.fond_of_folding_stools.label>
+</LanguageData>

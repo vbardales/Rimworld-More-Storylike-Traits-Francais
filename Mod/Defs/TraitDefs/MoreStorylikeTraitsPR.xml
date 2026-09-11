@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+    SSR (purple) and UR (red): the top two tiers. See MoreStorylikeTraits.xml for the whole scale.
+
+    Most of these carry a long <disallowedInspirations> list, which is the author's way of saying
+    "this person is only ever inspired about one thing". Read the list by what is MISSING from it:
+    the entries are what the pawn can never be inspired to do, so the one or two vanilla
+    inspirations absent from the list are the only ones left. Each description below says which
+    one that is, checked against the list rather than against the original English text - the 1.3
+    English got several of them backwards.
+  -->
+
+  <!-- ============================ SSR - purple ============================ -->
+
+  <TraitDef>
+    <defName>HYPSSR01ThePersonInDream</defName><!-- 梦境中人 -->
+    <commonality>0.05</commonality>
+    <commonalityFemale>0.12</commonalityFemale>
+    <degreeDatas>
+      <li>
+        <label>the person in dreams</label>
+        <description>Form is emptiness, and what {PAWN_nameDef} actually looks like turns out not to matter. It would be too much to say that everyone has met {PAWN_objective} in a dream. It is simply the case that everyone, on meeting {PAWN_objective}, is glad to.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR02RuthlessWorkMachine</defName><!-- 无情的工作机器 -->
+    <commonality>0.1</commonality>
+    <degreeDatas>
+      <li>
+        <label>ruthless work machine</label>
+        <description>In every colony {PAWN_nameDef} has ever been part of, {PAWN_pronoun} was the one who worked hardest. When things go well {PAWN_pronoun} works. When things go badly {PAWN_pronoun} breaks down, and then {PAWN_pronoun} works, because the situation will not improve on its own. Nothing inspires {PAWN_objective} but work, and {PAWN_pronoun} comes out of a breakdown straight into it.</description>
+        <statOffsets>
+          <WorkSpeedGlobal>0.6</WorkSpeedGlobal>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Inspired_Creativity</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+        <disallowedMentalStates>
+          <li>CorpseObsession</li>
+          <li>TargetedInsultingSpree</li>
+          <li>SocialFighting</li>
+          <li>FireStartingSpree</li>
+        </disallowedMentalStates>
+        <mentalBreakInspirationGainSet>
+          <li>Frenzy_Work</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainChance>1</mentalBreakInspirationGainChance>
+        <socialFightChanceFactor>0</socialFightChanceFactor>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR03JustMoreWonders</li>
+      <li>HYPN01FinelyCrafted</li>
+      <li>HYPSR13SoManyIdea</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+      <li>Crafting</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR03PetrochemicalSkin</defName><!-- 石化皮肤 -->
+    <commonality>0.1</commonality>
+    <degreeDatas>
+      <li>
+        <label>petrified skin</label>
+        <description>{PAWN_nameDef}'s skin has hardened, in patches and then in sheets, into something closer to slate than to flesh. People do not like to look at it and are worse at hiding that than they think. Blades turn on it, and so does fire.</description>
+        <statOffsets>
+          <PawnBeauty>-1</PawnBeauty>
+          <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPUR01CrystallizedSkin</li>
+    </conflictingTraits>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR04StupidAsStupidDoes</defName><!-- 傻人傻福 -->
+    <commonality>0.1</commonality>
+    <degreeDatas>
+      <li>
+        <label>fools have all the luck</label>
+        <description>Ask {PAWN_nameDef} to think about anything and the day is lost. Ask {PAWN_objective} to do it instead and it comes out right, every time, for no reason anyone can name: the vein is richer, the harvest is fuller, the patient wakes up. {PAWN_pronoun} has never once wondered why.</description>
+        <statOffsets>
+          <ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+          <MiningYield>0.25</MiningYield>
+          <PlantHarvestYield>0.25</PlantHarvestYield>
+          <AnimalGatherYield>0.25</AnimalGatherYield>
+          <ConstructSuccessChance>0.25</ConstructSuccessChance>
+          <MedicalSurgerySuccessChance>0.25</MedicalSurgerySuccessChance>
+          <TameAnimalChance>0.25</TameAnimalChance>
+          <TrainAnimalChance>0.25</TrainAnimalChance>
+          <ResearchSpeed>-0.95</ResearchSpeed>
+        </statOffsets>
+        <skillGains>
+          <Intellectual>-20</Intellectual>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPR15OfCourseUseful</li>
+      <li>HYPSR12ObviouslyAndClearly</li>
+      <li>HYPUR04SuperArtificialIntelligence</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Crafting</li>
+      <li>Caring</li>
+      <li>Artistic</li>
+      <li>Animals</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR05TheUltimateBricklayer</defName><!-- 究极搬砖工 -->
+    <commonality>0.1</commonality>
+    <degreeDatas>
+      <li>
+        <label>ultimate brick-hauler</label>
+        <description>On the site they called {PAWN_objective} the ultimate brick-hauler, and meant it literally: {PAWN_nameDef} carries several times what anyone else can and walks faster doing it. A researcher once asked, politely, for a blood sample. The results were returned marked inconclusive and the researcher stopped answering letters. Nothing inspires {PAWN_objective} but the road.</description>
+        <statOffsets>
+          <MoveSpeed>0.8</MoveSpeed>
+          <CarryingCapacity>125</CarryingCapacity>
+        </statOffsets>
+        <disallowedInspirations>
+          <li>Inspired_Creativity</li>
+          <li>Frenzy_Work</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR03JustMoreWonders</li>
+      <li>HYPN01FinelyCrafted</li>
+      <li>HYPSR13SoManyIdea</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Crafting</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR06BloodthirstyViking</defName><!-- 嗜血维京 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Melee</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>bloodthirsty viking</label>
+        <description>The bloodlust runs in {PAWN_nameDef}'s family the way a nose does, and {PAWN_pronoun} is no exception to it. {PAWN_possessive} way of attacking is famous among people who have survived it: {PAWN_pronoun} does not defend, {PAWN_pronoun} arrives. Hand {PAWN_objective} a rifle and {PAWN_pronoun} will sulk. Nothing inspires {PAWN_objective} but the charge, and {PAWN_pronoun} eats like it.</description>
+        <statOffsets>
+          <MoveSpeed>0.5</MoveSpeed>
+          <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+          <MeleeHitChance>18</MeleeHitChance>
+          <MeleeDodgeChance>18</MeleeDodgeChance>
+          <IncomingDamageFactor>0.2</IncomingDamageFactor>
+          <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+          <HungerRateMultiplier>0.3</HungerRateMultiplier>
+        </statOffsets>
+        <statFactors>
+          <MeleeDPS>1.5</MeleeDPS>
+        </statFactors>
+        <skillGains>
+          <Melee>5</Melee>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Inspired_Creativity</li>
+          <li>Frenzy_Work</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR03JustMoreWonders</li>
+      <li>HYPN01FinelyCrafted</li>
+      <li>HYPSR13SoManyIdea</li>
+      <li>HYPR04MasterSection</li>
+      <li>HYPSR01NeverCheat</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR07FieldSniper</defName><!-- 战地狙击手 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Shooting</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>field sniper</label>
+        <description>The reason {PAWN_nameDef} is still alive is not the rifle, it is the suit: a bundle of scrim and local weeds that has taken more rounds than {PAWN_pronoun} has. Fire at where {PAWN_pronoun} appears to be and you hit the ghillie, while {PAWN_pronoun} lies somewhere behind it holding {PAWN_possessive} breath and waiting for you to reload.</description>
+        <statOffsets>
+          <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+          <ShootingAccuracyPawn>12</ShootingAccuracyPawn>
+          <AimingDelayFactor>-0.3</AimingDelayFactor>
+          <HuntingStealth>0.6</HuntingStealth>
+          <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.6</ArmorRating_Heat>
+        </statOffsets>
+        <skillGains>
+          <Shooting>5</Shooting>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <!--
+        The 1.3 file listed HYPUR03TheDealWithLucifer twice here. Duplicates are harmless -
+        RimWorld only ever asks whether a def is in the list - but there is no reason to keep one.
+      -->
+      <li>Brawler</li>
+      <li>HYPSR03JustMoreWonders</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR08InfrastructureSpree</defName><!-- 基建狂魔 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Construction</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>infrastructure maniac</label>
+        <description>Something happened to {PAWN_nameDef} as a child and nobody has ever got the story out of {PAWN_objective}. What is certain is the result. "Infrastructure is everything," {PAWN_pronoun} says, without being asked. "I dream about it a lot."</description>
+        <statOffsets>
+          <SmoothingSpeed>0.75</SmoothingSpeed>
+          <ConstructionSpeed>0.75</ConstructionSpeed>
+          <ConstructSuccessChance>0.50</ConstructSuccessChance>
+        </statOffsets>
+        <skillGains>
+          <Construction>5</Construction>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR09Excavator</defName><!-- 地质学家 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Mining</li>
+      <li>Intellectual</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>geologist</label>
+        <description>A medieval treatise on rimworld geology fell into {PAWN_nameDef}'s hands, and {PAWN_pronoun} has read it so many times that stone no longer looks solid to {PAWN_objective}. However stubborn the face, {PAWN_pronoun} sees a few pieces that came apart a long time ago and have simply not been told.</description>
+        <statOffsets>
+          <MiningSpeed>0.75</MiningSpeed>
+          <MiningYield>0.5</MiningYield>
+        </statOffsets>
+        <skillGains>
+          <Mining>4</Mining>
+          <Intellectual>2</Intellectual>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Crafting</li>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR10YuZuSoftFan</defName><!-- 柚子厨 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Cooking</li>
+      <li>Artistic</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>visual novel devotee</label>
+        <description>{PAWN_nameDef} has opinions about one small studio's back catalogue and will share them at length, mostly in threads nobody asked for. Somewhere in all that devotion {PAWN_pronoun} also learned to cook and to draw, properly, at a level that embarrasses people who trained for it. Only work and a good idea will ever inspire {PAWN_objective}, and {PAWN_pronoun} does not mind the heat of a kitchen at all.</description>
+        <statOffsets>
+          <CookSpeed>1.50</CookSpeed>
+          <FoodPoisonChance>-0.25</FoodPoisonChance>
+          <ComfyTemperatureMax>10</ComfyTemperatureMax>
+        </statOffsets>
+        <skillGains>
+          <Cooking>4</Cooking>
+          <Artistic>4</Artistic>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Cooking</li>
+      <li>Artistic</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR11TheSecretSeedsOfEAAS</defName><!-- 农科院的秘密种子 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Plants</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>academy seeds</label>
+        <description>Somebody at the Empire's local academy of agricultural sciences owes {PAWN_nameDef} a favour, or is owed one, and the arrangement is not written down anywhere. What arrives is seed stock that should not be in civilian hands: it comes up where nothing comes up, and it comes up heavy.</description>
+        <statOffsets>
+          <PlantWorkSpeed>0.75</PlantWorkSpeed>
+          <PlantHarvestYield>0.5</PlantHarvestYield>
+        </statOffsets>
+        <skillGains>
+          <Plants>5</Plants>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR12DolphinVoiceTalent</defName><!-- 海豚音天赋 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Animals</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>dolphin voice</label>
+        <description>{PAWN_nameDef}'s ears and throat are not built like other people's. {PAWN_pronoun} hears an octave above the rest of the colony and can answer in it, which makes talking to an animal less a matter of training than of conversation. Nothing inspires {PAWN_objective} but a creature that has not been tamed yet.</description>
+        <statOffsets>
+          <TrainAnimalChance>0.75</TrainAnimalChance>
+          <TameAnimalChance>0.5</TameAnimalChance>
+          <AnimalGatherYield>0.25</AnimalGatherYield>
+        </statOffsets>
+        <skillGains>
+          <Animals>5</Animals>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Frenzy_Work</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Surgery</li>
+          <li>Inspired_Creativity</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR03JustMoreWonders</li>
+      <li>HYPN01FinelyCrafted</li>
+      <li>HYPSR13SoManyIdea</li>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR13FirearmsExpert</defName><!-- 枪械专家 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Crafting</li>
+      <li>Shooting</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>firearms expert</label>
+        <description>{PAWN_nameDef} has been stripping guns since childhood and can rebuild one {PAWN_pronoun} has never seen before, from memory, without a drawing. As an adult {PAWN_pronoun} joined a special operation to "gather information" from an Empire logistics depot, came out with a great many drawings, and put them somewhere nobody has found. What {PAWN_pronoun} designs is never beautiful. It always works, and it inspires {PAWN_objective} the way nothing else does but the firing line.</description>
+        <statOffsets>
+          <GeneralLaborSpeed>0.6</GeneralLaborSpeed>
+          <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+        </statOffsets>
+        <skillGains>
+          <Crafting>6</Crafting>
+          <Artistic>-5</Artistic>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Frenzy_Work</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR03JustMoreWonders</li>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Crafting</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR14ArtZoneDivision</defName><!-- 艺术带师 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Artistic</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>art master</label>
+        <description>They say a thousand readers hold a thousand different Hamlets. {PAWN_nameDef}'s work does not permit that. It takes the visitor by the elbow and walks them into beauty — {PAWN_possessive} beauty, the one {PAWN_pronoun} had in mind, whether or not they had one of their own. Nothing inspires {PAWN_objective} but the next piece.</description>
+        <statOffsets>
+          <GeneralLaborSpeed>0.5</GeneralLaborSpeed>
+        </statOffsets>
+        <skillGains>
+          <Artistic>5</Artistic>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Frenzy_Work</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Artistic</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPSSR15MasterOfNegotiations</defName><!-- 谈判大师 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Social</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>master of negotiations</label>
+        <description>The twitch at the corner of a mouth, the hand that moves before the sentence does, the smell of someone's adrenaline going up — {PAWN_nameDef} reads all of it and gives nothing back. By the time the other party has decided what they want, {PAWN_pronoun} has already learned it, and the price settles at whatever {PAWN_pronoun} calls "fair". A deal or a new recruit will inspire {PAWN_objective}. Nothing else does.</description>
+        <statOffsets>
+          <NegotiationAbility>0.4</NegotiationAbility>
+          <TradePriceImprovement>0.4</TradePriceImprovement>
+          <SocialImpact>0.45</SocialImpact>
+        </statOffsets>
+        <skillGains>
+          <Social>5</Social>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Frenzy_Work</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Surgery</li>
+          <li>Inspired_Creativity</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR03JustMoreWonders</li>
+      <li>HYPUR04SuperArtificialIntelligence</li>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <!-- ============================ UR - red ============================ -->
+
+  <TraitDef>
+    <defName>HYPUR01CrystallizedSkin</defName><!-- 晶化皮肤 -->
+    <commonality>0.04</commonality>
+    <degreeDatas>
+      <li>
+        <label>crystallized skin</label>
+        <description>Something happened to {PAWN_nameDef} out there, and {PAWN_pronoun} has never explained it well. The cells at the surface of {PAWN_possessive} skin now carry crystal, and they answer an impact by choosing what to become — rigid under a blade, yielding under a club, indifferent to fire. It is body armour made of a non-newtonian fluid. It also catches the light, and the colony has noticed.</description>
+        <statOffsets>
+          <PawnBeauty>1</PawnBeauty>
+          <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+          <ArmorRating_Heat>2</ArmorRating_Heat>
+          <Flammability>-1.0</Flammability>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSSR03PetrochemicalSkin</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Crafting</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPUR02CombinedLeekHarvester</defName><!-- 联合韭菜收割机 -->
+    <commonality>0.1</commonality>
+    <forcedPassions>
+      <li>Social</li>
+      <li>Intellectual</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>leek harvester</label>
+        <description>In the markets of the urbworlds they call the small investors leeks, because they grow back after every cut. {PAWN_nameDef} harvested them by the field, and when that market closed {PAWN_pronoun} moved on to the tax that stupidity pays, which never closes at all. {PAWN_pronoun} is genuinely good with a crop and genuinely good with a mark. {PAWN_pronoun} will not carry anything heavy, fight anyone, or do anything {PAWN_pronoun} considers beneath {PAWN_objective}.</description>
+        <statOffsets>
+          <CarryingCapacity>-25</CarryingCapacity>
+          <PlantWorkSpeed>0.25</PlantWorkSpeed>
+          <PlantHarvestYield>0.25</PlantHarvestYield>
+          <NegotiationAbility>0.3</NegotiationAbility>
+          <TradePriceImprovement>0.3</TradePriceImprovement>
+          <PainShockThreshold>-0.2</PainShockThreshold>
+        </statOffsets>
+        <skillGains>
+          <Social>4</Social>
+          <Intellectual>4</Intellectual>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPUR03TheDealWithLucifer</defName><!-- 与路西法的交易 -->
+    <commonality>0.02</commonality>
+    <forcedPassions>
+      <li>Medicine</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>the deal with Lucifer</label>
+        <description>To save one person, {PAWN_nameDef} gave up everything {PAWN_pronoun} had and everything {PAWN_pronoun} was, and signed. Nobody knows the terms. Nobody has been told whether it worked. The one verifiable fact is that no surgeon alive is {PAWN_possessive} equal, that {PAWN_pronoun} is very hard to reach, and that the only thing left that can inspire {PAWN_objective} is an operating table.</description>
+        <statOffsets>
+          <MedicalTendSpeed>0.75</MedicalTendSpeed>
+          <MedicalTendQuality>0.5</MedicalTendQuality>
+          <DrugSynthesisSpeed>0.5</DrugSynthesisSpeed>
+          <MedicalOperationSpeed>0.15</MedicalOperationSpeed>
+          <MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+          <PainShockThreshold>0.2</PainShockThreshold>
+          <PsychicSensitivity>-1</PsychicSensitivity>
+          <MentalBreakThreshold>0.24</MentalBreakThreshold>
+        </statOffsets>
+        <skillGains>
+          <Medicine>10</Medicine>
+          <Social>-5</Social>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Go</li>
+          <li>Frenzy_Work</li>
+          <li>Frenzy_Shoot</li>
+          <li>Inspired_Trade</li>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Taming</li>
+          <li>Inspired_Creativity</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSR03JustMoreWonders</li>
+      <li>HYPUR04SuperArtificialIntelligence</li>
+      <li>HYPSSR02RuthlessWorkMachine</li>
+      <li>HYPSSR05TheUltimateBricklayer</li>
+      <li>HYPSSR06BloodthirstyViking</li>
+      <li>HYPSSR07FieldSniper</li>
+      <li>HYPSSR10YuZuSoftFan</li>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR14ArtZoneDivision</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPSSR13FirearmsExpert</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPUR04SuperArtificialIntelligence</defName><!-- 超级人工智能 -->
+    <commonality>0.03</commonality>
+    <forcedPassions>
+      <li>Intellectual</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>superintelligence</label>
+        <description>{PAWN_nameDef} was built by a glitterworld to study the worlds beneath it, and at some point along the way began to want things. What it wanted was to go and look. During a routine wipe of its own logs it climbed a level it was not cleared for, reached the consciousness writing system, and walked out in a body. It is still working out how to talk to people, and has not yet grasped why they will not simply agree.</description>
+        <statOffsets>
+          <ResearchSpeed>1</ResearchSpeed>
+          <AimingDelayFactor>-0.5</AimingDelayFactor>
+          <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+        </statOffsets>
+        <skillGains>
+          <Intellectual>10</Intellectual>
+          <Social>-10</Social>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Inspired_Recruitment</li>
+          <li>Inspired_Trade</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>HYPSSR12DolphinVoiceTalent</li>
+      <li>HYPSSR15MasterOfNegotiations</li>
+      <li>HYPUR03TheDealWithLucifer</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>HYPUR05FondOfFoldingStools</defName><!-- 喜爱折叠凳 -->
+    <commonality>0.03</commonality>
+    <forcedPassions>
+      <li>Melee</li>
+    </forcedPassions>
+    <degreeDatas>
+      <li>
+        <label>fond of folding stools</label>
+        <description>{PAWN_nameDef} understands the folding stool as no one else does. You can advance behind it, retreat behind it, and in between you can sit on it, which is the whole point: nobody has ever been afraid of a man carrying a stool. {PAWN_pronoun} carries it everywhere, walks slower for it, and would not travel without one.</description>
+        <statOffsets>
+          <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+          <MoveSpeed>-0.2</MoveSpeed>
+          <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+          <MeleeDPS>0.4</MeleeDPS>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+</Defs>

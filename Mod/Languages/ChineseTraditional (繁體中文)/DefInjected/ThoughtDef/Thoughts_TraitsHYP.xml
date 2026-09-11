@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HYPSR03JustMoreWondersDay.stages.one_more_turn_in_daylight.label>奇觀誤國</HYPSR03JustMoreWondersDay.stages.one_more_turn_in_daylight.label>
+  <HYPSR03JustMoreWondersDay.stages.one_more_turn_in_daylight.description>昨晚沒睡好……好困……但我還想再來一回合</HYPSR03JustMoreWondersDay.stages.one_more_turn_in_daylight.description>
+
+  <HYPSR03JustMoreWondersNight.stages.one_more_turn.label>奇觀誤國</HYPSR03JustMoreWondersNight.stages.one_more_turn.label>
+  <HYPSR03JustMoreWondersNight.stages.one_more_turn.description>再來最後一回合，我發誓這回合結束我就去睡覺……</HYPSR03JustMoreWondersNight.stages.one_more_turn.description>
+
+  <HYPSR05TheSecretOfNewOrientalUnhappy.stages.the_other_half_of_the_cookbook.label>來自車万的一股神秘力量</HYPSR05TheSecretOfNewOrientalUnhappy.stages.the_other_half_of_the_cookbook.label>
+  <HYPSR05TheSecretOfNewOrientalUnhappy.stages.the_other_half_of_the_cookbook.description>我就不信我說一句紫（*#)%！@=^￥……（</HYPSR05TheSecretOfNewOrientalUnhappy.stages.the_other_half_of_the_cookbook.description>
+
+  <HYPBuilderHappy.stages.a_good_day_to_build.label>建造師日常</HYPBuilderHappy.stages.a_good_day_to_build.label>
+  <HYPBuilderHappy.stages.a_good_day_to_build.description>今天也要好好建設殖民地。</HYPBuilderHappy.stages.a_good_day_to_build.description>
+
+  <HYPBuilderHappyNight.stages.a_days_work_behind_me.label>建造師日常</HYPBuilderHappyNight.stages.a_days_work_behind_me.label>
+  <HYPBuilderHappyNight.stages.a_days_work_behind_me.description>辛勞而又充實的一天結束了，真開心。</HYPBuilderHappyNight.stages.a_days_work_behind_me.description>
+
+  <HYPSR01NeverCheatNoProsthetic.stages.nothing_but_flesh.label>想要外部掛件</HYPSR01NeverCheatNoProsthetic.stages.nothing_but_flesh.label>
+  <HYPSR01NeverCheatNoProsthetic.stages.nothing_but_flesh.description>哎，總感覺打不中對面</HYPSR01NeverCheatNoProsthetic.stages.nothing_but_flesh.description>
+
+  <HYPSR01NeverCheatProsthophileHappy.stages.one_artificial_part.label>擁有一個外部掛件</HYPSR01NeverCheatProsthophileHappy.stages.one_artificial_part.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.one_artificial_part.description>什麽？外部掛件？不存在的，不許胡說啊。</HYPSR01NeverCheatProsthophileHappy.stages.one_artificial_part.description>
+
+  <HYPSR01NeverCheatProsthophileHappy.stages.two_artificial_parts.label>擁有兩個外部掛件</HYPSR01NeverCheatProsthophileHappy.stages.two_artificial_parts.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.two_artificial_parts.description>大吉大利，今晚吃雞！</HYPSR01NeverCheatProsthophileHappy.stages.two_artificial_parts.description>
+
+  <HYPSR01NeverCheatProsthophileHappy.stages.three_artificial_parts.label>擁有三個外部掛件</HYPSR01NeverCheatProsthophileHappy.stages.three_artificial_parts.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.three_artificial_parts.description>給阿姨倒一杯卡布奇諾</HYPSR01NeverCheatProsthophileHappy.stages.three_artificial_parts.description>
+
+  <HYPSR01NeverCheatProsthophileHappy.stages.four_artificial_parts.label>擁有四個外部掛件</HYPSR01NeverCheatProsthophileHappy.stages.four_artificial_parts.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.four_artificial_parts.description>難受啊，馬飛</HYPSR01NeverCheatProsthophileHappy.stages.four_artificial_parts.description>
+
+  <HYPSR01NeverCheatProsthophileHappy.stages.five_artificial_parts.label>拥有五个外部掛件</HYPSR01NeverCheatProsthophileHappy.stages.five_artificial_parts.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.five_artificial_parts.description>在座的各位老哥，都是我的親人</HYPSR01NeverCheatProsthophileHappy.stages.five_artificial_parts.description>
+
+  <HYPSR01NeverCheatProsthophileHappy.stages.rebuilt.label>擁有多個外部掛件</HYPSR01NeverCheatProsthophileHappy.stages.rebuilt.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.rebuilt.description>我說了，我沒有開掛！！</HYPSR01NeverCheatProsthophileHappy.stages.rebuilt.description>
+
+  <HYPSR11UnspeakableHorrorHappy.stages.blessed.label>來自克總的祝福</HYPSR11UnspeakableHorrorHappy.stages.blessed.label>
+  <HYPSR11UnspeakableHorrorHappy.stages.blessed.description>啊，我的天父</HYPSR11UnspeakableHorrorHappy.stages.blessed.description>
+
+  <HYPSSR02RuthlessWorkMachineUnhappy.stages.never_satisfied.label>永不滿意</HYPSSR02RuthlessWorkMachineUnhappy.stages.never_satisfied.label>
+  <HYPSSR02RuthlessWorkMachineUnhappy.stages.never_satisfied.description>這個殖民地可以更好、更好、更好……</HYPSSR02RuthlessWorkMachineUnhappy.stages.never_satisfied.description>
+
+</LanguageData>

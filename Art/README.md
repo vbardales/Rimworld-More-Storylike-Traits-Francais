@@ -1,0 +1,93 @@
+# Art sources
+
+Never published. The Workshop uploader sends `Mod/` and only `Mod/`, so full-resolution sources
+live here and the finished files live in `Mod/About/`.
+
+Targets, from `STYLE_RIMWORLD.md`:
+
+| | Format | Weight | Actually rendered at |
+| --- | --- | --- | --- |
+| `Preview.png` | 896 x 504 | < 900 KB (hard: < 1 MB) | ~268 px wide on the Workshop page |
+| `ModIcon.png` | 128 x 128 | 20-30 KB | 32 px in the mod list |
+
+## `Preview-source.png` — 1672 x 941, 1458 KB
+
+The background of `Mod/About/Preview.png`. A night workshop: five colonists, each carrying his own
+peculiarity — the fat one, the one leaning on a cane, the one bent under a stack of crates. It
+meets the guide's six tests without being asked to: high oblique camera, plank floor with a
+visible tile rhythm, desaturated earth base, one warm lamp pool against cold ambient, figures as
+small dark silhouettes seen from above and behind, and a worn utilitarian room. **No face.**
+
+Two vivid things, which is the limit: the lamp pool and the red coat.
+
+## `preview.html` — the engraving
+
+`Mod/About/Preview.png` is this page rasterised at 896 x 504 by headless Chrome, so the glyphs are
+composed at final size and never resampled:
+
+```bash
+chrome --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 \
+       --screenshot=Mod/About/Preview.png --window-size=896,504 Art/preview.html
+```
+
+The page scales `Preview-source.png` itself rather than taking an already-reduced PNG, so the
+picture is resampled once. The source is already 16:9, so no crop is involved. Result: 475 KB.
+
+The engraved count is allowed here under the guide's rule — a number is only carved when nothing
+outside this repository can move it. The source mod is dead and frozen at 53 traits, and the
+content is ours, the same exception that lets Race to the Rim carve "Fourteen dragons". The
+summary line is lifted from the `About.xml` description rather than written for the image.
+
+## `ModIcon-source.png` — 1672 x 941, 1876 KB
+
+The source of `Mod/About/ModIcon.png`. Delivered as a 16:9 banner, so it is cropped square before
+scaling — squashing a banner into 128 x 128 distorts everything in it.
+
+The crop is **tight and centred on the face**, at 540 x 540 around (840, 610) in the source. A
+full-height centre crop was tried first and rejected: it keeps the brain, the heart and a column
+of stickers, all of which collapse into mush at the 32 px the mod list actually draws. One shape
+and one accent colour is what survives that size, so the face fills the frame and the brain and
+heart stay as corner context.
+
+```bash
+ffmpeg -i Art/ModIcon-source.png -vf "crop=540:540:570:340,scale=128:128:flags=lanczos" /tmp/i.png
+ffmpeg -i /tmp/i.png -vf "palettegen=max_colors=256:stats_mode=single" /tmp/pal.png
+ffmpeg -i /tmp/i.png -i /tmp/pal.png -lavfi "paletteuse=dither=sierra2_4a" \
+       -compression_level 100 Mod/About/ModIcon.png
+```
+
+The 256-colour palette costs nothing visible at 128 px and roughly halves the file. Result: 13 KB.
+
+**Always check the result at 32 px, not at 128.** Scale to 32 and back up with nearest-neighbour
+to see what the mod list will show:
+
+```bash
+ffmpeg -i Mod/About/ModIcon.png -vf "scale=32:32:flags=lanczos,scale=192:192:flags=neighbor" /tmp/at32.png
+```
+
+### Why the crop is on the head
+
+The tight crop lands on the repository mascot, which is the house icon form: a round head seen
+three-quarter, winking one eye, a small ponytail at the top right, a thick near-black outline.
+The same mascot carries the other sixty icons, and it is what makes the family legible at 32 px
+in the mod list.
+
+That was not obvious at the time. The `ModIcon` block of `STYLE_RIMWORLD.md` used to describe an
+object pictogram and end "no character, no face", which is why the first pass here refused the
+icon outright. **The block was rewritten on 2026-09-11 from the sixty icons actually shipped**,
+because it described the opposite of them. The face rule that still stands is about the *preview*,
+where a readable face is a defect; the icon is the one place a face belongs.
+
+Rule 1 of that same note — never cut a portage's icon out of the upstream author's art — is not in
+play here. The source mod ships no textures at all; this image was generated for this repository.
+
+### What is still off
+
+The objects flanking the mascot are **Body and Mind's**, not this mod's: a brain and a heart
+divided by a vertical line is that mod's thesis stated literally, and it still has no icon of its
+own. The guide asks for "one or two objects that name the mod" beside the head, and a brain and a
+heart do not name fifty-three biographies.
+
+Enough for now, and the head reads correctly at 32 px. When it is redone, the mascot stays and the
+objects change — a folding stool from the *fond of folding stools* trait is the readiest single
+object this mod actually owns.

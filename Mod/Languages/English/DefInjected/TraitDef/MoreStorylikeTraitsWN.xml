@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!--
+    English carries only the tier colour. The words themselves are in the def, which is the
+    fallback every other language uses; repeating them here would mean two copies to keep in
+    step. Keys are the normalised English label, not the index - see the note in
+    Defs/TraitDefs/MoreStorylikeTraits.xml.
+  -->
+
+  <HYPW01Ignoramus.degreeDatas.unlettered.label>&lt;color=#969696&gt;unlettered&lt;/color&gt;</HYPW01Ignoramus.degreeDatas.unlettered.label>
+  <HYPW02ExtremelyObese.degreeDatas.extremely_obese.label>&lt;color=#969696&gt;extremely obese&lt;/color&gt;</HYPW02ExtremelyObese.degreeDatas.extremely_obese.label>
+</LanguageData>
