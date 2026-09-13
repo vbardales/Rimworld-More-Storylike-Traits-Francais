@@ -15,7 +15,7 @@ showcase:     partial
 tested_on:
 workshop:
 remaining:
-  - unverified: legacy monorepo folder cleanup; locked by an active process
+  - unverified: removal of the empty legacy directory shell; Windows process lock
   - defect: French resources absent
   - defect: Preview lacks status tag and version badge; current overlay conventions not applied
   - unverified: successful build and shipped assembly correspondence
@@ -236,3 +236,36 @@ pointing at the canonical `MoreStorylikeTraitsRenew/Mod` directory. The old junc
 was removed without following or deleting its target. This supersedes the previous
 pending-registration note. RimWorld was not launched. XML identity, supported version,
 matching attribution copies and git diff --check passed after renaming.
+
+## Workspace location correction — 2026-09-13
+
+At the user's explicit request, the entire standalone checkout, including .git and
+all local commits, was moved into `C:/Users/nelim/Documents/rimworld/MoreStorylikeTraitsRenew`.
+This is the current canonical folder; earlier RimWorldMods paths are historical.
+Its own Git root was verified at the new location and HEAD was preserved:
+`86f92e19c27d3753fa89cbac20fddb032a030dd1`. The game Mods/MoreStorylikeTraitsRenew
+junction now points to this folder's Mod child. No game was launched or files published.
+The repository remains autonomous despite being physically under the rimworld parent.
+Stage remains horsMonoRepo in the sense of Git independence, per the user's location choice.
+
+All files in the old rimworld/MoreStorylikeTraits copy matched the standalone content
+(after newline normalization) before the move. The old copy is still intact: automatic
+approval review rejected its archival combined with forced removal from the shared
+monorepo index. No such index change, archival or deletion occurred. Cleanup remains
+pending explicit approval. The former RimWorldMods checkout path no longer exists.
+
+## Authorized legacy cleanup — 2026-09-13
+
+The user explicitly approved removal of the old copy and its monorepo index entries.
+Before deletion, every old file was checked against the canonical repository: content
+matched after newline normalization, and the old STATUS was preserved as a prefix of
+the newer history. The targeted `git rm -r --cached -f -- MoreStorylikeTraits` completed;
+zero old paths remain indexed. These removals are staged in the monorepo, not committed.
+No other paths were passed to an index mutation; no shared-index commit was performed.
+
+All old files and subdirectories were deleted. Windows still holds the empty directory
+`C:/Users/nelim/Documents/rimworld/MoreStorylikeTraits` open, so removal of that final
+empty shell failed. Its verified remaining entry count is zero. This is the only cleanup
+remainder and does not affect the standalone mod or the game junction. Delete the empty
+shell after the process holding it releases the directory; no further content migration
+is needed. The user's cleanup approval does not authorize the separately pending push.
