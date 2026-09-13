@@ -6,6 +6,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Repository and attribution — 2026-09-13
+
+- Established the standalone checkout using the existing public repository history.
+- Added the unofficial title suffix, consent/takedown notice and final GitHub source link.
+- Refreshed the documented rights assessment without licensing third-party content.
+- Kept build intermediates inside the standalone repository and outside the distributed mod.
+
 ### Added
 
 - **53 traits and 31 thoughts** carried forward from HYP's More Storylike Traits, which supported

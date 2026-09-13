@@ -112,3 +112,21 @@ colony that does will meet two versions of the same person. Run one or the other
 > If I do not answer within a reasonable time after being contacted, anyone may freely update this
 > or any other of my mods, including publishing a continuation of it. All credit must be
 > preserved.
+
+## Rights refresh — 2026-09-13
+
+The original Workshop page and the installed original About.xml still declare only
+RimWorld 1.1, 1.2 and 1.3. The installed source has no LICENSE, COPYING or README.
+The current page description and its visible comments were checked; no permission
+for redistributing this full port or explicit refusal was found. Older comment pages
+were not exhaustively reviewed. The page allows separate localization mods; that
+limited statement does not authorize redistribution of this complete continuation.
+
+Under this project's workflow, the absence of declared 1.6 support retains `silent`.
+The existing GitHub repository is public, verified on 2026-09-13. This classification
+is not a grant of rights. The displayed title now ends in `(unofficial)`, and About.xml
+and README begin with the required notice of absent consent and removal on request.
+No licence is asserted for the original authors' content. The adoption statement above
+applies only to permissions this continuation's maintainer can actually grant.
+
+Source: https://steamcommunity.com/sharedfiles/filedetails/?id=2012787971

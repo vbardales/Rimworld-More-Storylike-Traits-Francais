@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <packageId>nelim.morestoryliketraits</packageId>
-  <name>More Storylike Traits 1.6</name>
+  <name>More Storylike Traits 1.6 (unofficial)</name>
   <author>七彩型七色, DarthCY - 1.6 port: nelim</author>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
-  <description>Fifty-three traits that are people rather than statistics, brought forward from HYP's More Storylike Traits, which stopped at RimWorld 1.3.
+  <description>UNOFFICIAL. This mod is published without the original author's explicit consent.
+If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+Fifty-three traits that are people rather than statistics, brought forward from HYP's More Storylike Traits, which stopped at RimWorld 1.3.
 
 The premise of the original was a complaint: a colonist of seventy has exactly two backstories, the same as a colonist of twenty, and almost none of them explain who anyone is. So these are biographies. A streamer run off the air for a clip nobody could explain, still insisting he never cheated. A surgeon who was first among the four great scalpels of his world and cannot be in a room with a patient's family. A man who has lost more empires to wonders than to war and would do it again. A poultry farmer whose cluck brings the whole flock at a run. Someone who signed a contract to save one person and will not say what the terms were.
 
@@ -20,7 +23,9 @@ Safe to add to a running colony. Removing it mid-game strips these traits from a
 
 Not to be run alongside More Storylike Traits - Body and Mind, which is a different treatment of the same source: nineteen of these traits, rewritten and rebalanced to vanilla ceilings, plus Biotech genes. That one holds every number to what vanilla already permits. This one keeps the original's numbers, its tiers and its whole cast. Pick whichever you would rather play.
 
-Credit for the original goes to 七彩型七色 (Hyperion-c) and DarthCY. Their mod declares no licence anywhere and has not been updated since September 2021; this continuation follows the usual Workshop practice for that case - original authorship preserved, and if either author would rather it were not up, say so and it comes down.</description>
+Credit for the original goes to 七彩型七色 (Hyperion-c) and DarthCY. Their mod declares no licence anywhere and has not been updated since September 2021; this continuation follows the usual Workshop practice for that case - original authorship preserved, and if either author would rather it were not up, say so and it comes down.
+
+[url=https://github.com/vbardales/Rimworld-More-Storylike-Traits-Renew]Source code on GitHub[/url]</description>
   <url>https://github.com/vbardales/Rimworld-More-Storylike-Traits-Renew</url>
   <loadAfter>
     <li>Ludeon.RimWorld</li>

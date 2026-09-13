@@ -1,4 +1,7 @@
-# More Storylike Traits 1.6
+# More Storylike Traits 1.6 (unofficial)
+
+UNOFFICIAL. This mod is published without the original author's explicit consent.
+If the original author contacts me to request its removal, I undertake to take it down promptly.
 
 Fifty-three traits that are people rather than statistics, and thirty-one thoughts that go with
 them. Brought forward from
@@ -32,7 +35,7 @@ MoreStorylikeTraits/
 ## Building
 
 ```bash
-dotnet build -c Release MoreStorylikeTraits/Source/MoreStorylikeTraits.csproj
+dotnet build -c Release Source/MoreStorylikeTraits.csproj
 ```
 
 References come from NuGet (`Krafs.Rimworld.Ref`), so no RimWorld install is needed to compile.
