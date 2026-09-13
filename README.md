@@ -1,4 +1,4 @@
-# More Storylike Traits 1.6 (unofficial)
+# More Storylike Traits Renew (unofficial)
 
 UNOFFICIAL. This mod is published without the original author's explicit consent.
 If the original author contacts me to request its removal, I undertake to take it down promptly.
@@ -16,7 +16,7 @@ full list of what moved and what did not, and for the licence position.
 ## Layout
 
 ```
-MoreStorylikeTraits/
+MoreStorylikeTraitsRenew/
   Mod/                                        <- published folder; the RimWorld junction points here
     About/About.xml
     Assemblies/MoreStorylikeTraits.dll        <- built from Source/, 5 KB

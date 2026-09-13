@@ -2,7 +2,7 @@
 localization: complete
 translation_en: complete
 translation_fr: partial
-mod:          More Storylike Traits 1.6 (unofficial)
+mod:          More Storylike Traits Renew (unofficial)
 packageId:    nelim.morestoryliketraits
 repo:         Rimworld-More-Storylike-Traits-Renew
 visibility:   public
@@ -26,7 +26,7 @@ updated:      2026-09-13, standalone checkout established
 settings_audit: not_applicable
 ---
 
-# More Storylike Traits 1.6 — status
+# More Storylike Traits Renew (unofficial) — status
 
 Read by a sweep across every mod, rather than by asking each thread in turn. It lives at the
 root, never inside `Mod/`, so Steam never receives it.
@@ -210,3 +210,29 @@ review requires explicit authorization before updating public main. The existing
 pushed commit still satisfies horsMonoRepo; current changes remain local pending that
 authorization. Metadata XML, attribution equality and whitespace checks passed. The
 standalone build-output path resolves inside the standalone repository, outside Mod/.
+
+## Requested rename — 2026-09-13
+
+Current display name: **More Storylike Traits Renew (unofficial)**. The user requested
+replacing the title's 1.6 with Renew and renaming the folder and repository accordingly.
+The standalone folder was renamed to
+`C:/Users/nelim/Documents/RimWorldMods/MoreStorylikeTraitsRenew`; distributed content is
+its `Mod/` child. Earlier paths in the audit/progress entries are historical.
+The verified GitHub name is already `Rimworld-More-Storylike-Traits-Renew`, so no remote
+rename is necessary; origin and both About links already use that repository.
+
+The packageId `nelim.morestoryliketraits`, namespaces, assembly name and defNames remain
+stable. Supported RimWorld version remains 1.6; only the display-name version was removed.
+About, README and both attribution copies now use Renew. The legacy workspace metadata
+is synchronized for the current task. The existing Preview still needs its planned
+composition update, including the new Renew suffix, unofficial tag and version badge.
+No image or game content was regenerated. Stage remains horsMonoRepo; independent
+settings and text-resource checks are unaffected by this metadata-only change.
+Public push remains pending explicit authorization as recorded above.
+
+The game registration is now the verified junction
+`C:/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/MoreStorylikeTraitsRenew`
+pointing at the canonical `MoreStorylikeTraitsRenew/Mod` directory. The old junction
+was removed without following or deleting its target. This supersedes the previous
+pending-registration note. RimWorld was not launched. XML identity, supported version,
+matching attribution copies and git diff --check passed after renaming.

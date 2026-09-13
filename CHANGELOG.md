@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+- Renamed the display title to More Storylike Traits Renew (unofficial) and the standalone
+  folder to MoreStorylikeTraitsRenew; stable package and save identifiers are unchanged.
+
 ### Repository and attribution — 2026-09-13
 
 - Established the standalone checkout using the existing public repository history.

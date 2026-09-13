@@ -1,4 +1,4 @@
-# More Storylike Traits 1.6 — attribution
+# More Storylike Traits Renew — attribution
 
 ## The original
 
