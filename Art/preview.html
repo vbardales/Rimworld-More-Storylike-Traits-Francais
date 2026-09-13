@@ -1,41 +1,19 @@
-<!doctype html><meta charset="utf-8">
-<!--
-  Engraving page for Mod/About/Preview.png, per STYLE_RIMWORLD.md.
-
-  Rasterised with headless Chrome at 896x504, so the glyphs are composed at final size and never
-  resampled. The background is Preview-source.png at full resolution, scaled here rather than
-  beforehand: starting from an already-reduced Preview.png would resample the picture twice.
-
-    chrome --headless --disable-gpu --screenshot=Mod/About/Preview.png \
-           --window-size=896,504 --hide-scrollbars Art/preview.html
-
-  The source is already 16:9 (1672x941), so it scales without a crop.
--->
+<!doctype html><html lang="en"><meta charset="utf-8"><title>More Storylike Traits Renew</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html,body { width:896px; height:504px; overflow:hidden; background:#000; }
-  .stage { position:relative; width:896px; height:504px;
-           font-family:"Segoe UI",system-ui,sans-serif; }
-
-  .shot { position:absolute; inset:0; width:896px; height:504px; object-fit:cover; }
-
-  /* Repository standard: radial darkening from the top-left, nil at 74%. The scene's own lamp
-     pool is on the right, so the title lands on floor that was already the darkest part. */
-  .veil { position:absolute; inset:0;
-    background: radial-gradient(circle at 0% 0%, rgba(6,5,4,.86) 0%, rgba(6,5,4,0) 74%); }
-
-  .text { position:absolute; left:56px; top:132px; width:430px; }
-  h1 { font-size:54px; line-height:1.04; font-weight:700; color:#f2ece1;
-       letter-spacing:-.5px; text-shadow:0 2px 10px rgba(0,0,0,.7); }
-  .rule { width:58px; height:3px; background:#D68F2C; margin:22px 0 20px; }
-  p { font-size:21px; line-height:1.42; color:#d8cfc0; text-shadow:0 1px 6px rgba(0,0,0,.75); }
+*{margin:0;padding:0;box-sizing:border-box}
+html,body,.stage{width:896px;height:504px;overflow:hidden}
+.stage{position:relative;font-family:"Segoe UI",system-ui,sans-serif}
+.shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.veil{position:absolute;inset:0;background:linear-gradient(90deg,{{veil}}F0 0%,{{veil}}D9 38%,{{veil}}00 78%)}
+.text{position:absolute;left:50px;top:54px;color:{{inkPrimary}};text-shadow:0 3px 10px rgba(0,0,0,.75)}
+h1{font-size:46px;font-weight:600;line-height:1.1;letter-spacing:0}
+h1 span{font-size:.65em;color:{{inkSecondary}}}
+.tag{margin-top:8px;font-size:24px;font-weight:400;line-height:1.1;letter-spacing:.2px;color:{{inkSecondary}}}
+.rule{width:58px;height:3px;background:{{accent}};margin:20px 0 16px}
+.summary{width:430px;font-size:21px;font-weight:400;line-height:1.45}
+.badge{position:absolute;right:0;top:0;width:80px;height:80px;background:{{accent}};clip-path:polygon(0 0,100% 0,100% 100%)}
+.version{position:absolute;left:869px;top:27px;transform:translate(-50%,-50%) rotate(45deg);font-size:26px;font-weight:700;line-height:1;color:{{badgeInk}}}
 </style>
-<div class="stage">
-  <img class="shot" src="Preview-source.png">
-  <div class="veil"></div>
-  <div class="text">
-    <h1>More Storylike<br>Traits</h1>
-    <div class="rule"></div>
-    <p>Fifty-three traits that are people rather than statistics.</p>
-  </div>
-</div>
+<div class="stage"><img class="shot" src="{{source}}" alt="Colony workshop"><div class="veil"></div>
+<div class="text"><h1>More Storylike<br>Traits <span>Renew</span></h1><p class="tag">(unofficial)</p><div class="rule"></div><p class="summary">Fifty-three traits that are people rather than statistics.</p></div>
+<div class="badge"></div><div class="version">{{version}}</div></div></html>

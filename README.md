@@ -13,6 +13,14 @@ did was recompile a 90-line assembly, fix two dormant bugs in it, rebuild the tr
 and rewrite the English, which was the actual work. See [ATTRIBUTION.md](ATTRIBUTION.md) for the
 full list of what moved and what did not, and for the licence position.
 
+## Languages and verification
+
+English, French, Simplified Chinese and Traditional Chinese are included. French covers
+all 166 trait/thought labels and descriptions and preserves tier colors. This is a
+fixed-content port with no settings page. See [Tests/README.md](Tests/README.md) for the
+build and automated checks and [TEST_SCENARIOS.md](TEST_SCENARIOS.md) for final manual
+validation. Automated checks do not establish that the mod has passed in-game testing.
+
 ## Layout
 
 ```
@@ -25,6 +33,7 @@ MoreStorylikeTraitsRenew/
       ThoughtDefs/                            <- 31 thoughts
     Languages/
       English/DefInjected/TraitDef/           <- tier colours only; the words live in the defs
+      French/DefInjected/                     <- all trait and thought text
       ChineseSimplified (简体中文)/
       ChineseTraditional (繁體中文)/            <- the original authors' own text, intact
   Source/                                     <- never published
@@ -87,10 +96,10 @@ mod folder as-is, with no way to exclude anything.
 
 - **Validate before shipping**: `scripts/Check-XmlFields.ps1` for element names against 1.6's real
   fields, `scripts/Check-DefRefs.ps1` for def references, `scripts/Check-DefInjected.ps1` for
-  translation keys. `Check-XmlFields.ps1` will report 36 lines against
+  translation keys. `Check-XmlFields.ps1` historically reported 36 lines against
   `sameFactionOnly` / `triggerTraits` / `validWithDisfigured` — those are fields on this mod's own
   `MSTModExtension`, which the script cannot resolve because it only loads `Assembly-CSharp.dll`.
-  Everything else must be clean.
+  Pass the distributed DLL through `-ExtraAssemblies` to resolve these custom fields with the current validator. The current check has zero unknown fields.
 
 ## What this does to the trait pool
 

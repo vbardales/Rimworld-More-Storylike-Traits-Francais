@@ -6,6 +6,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Validation and localization — 2026-09-13
+
+- Added complete French trait/thought text, preserving rarity colors.
+- Updated the Preview overlay for Renew, unofficial status and the 1.6 badge.
+- Added 20 production-worker logic scenarios, eight XML/content regression tests and
+  written final in-game scenarios. No in-game pass is claimed.
+- Verified a clean reference build produces the exact DLL already distributed.
+
 - Renamed the display title to More Storylike Traits Renew (unofficial) and the standalone
   folder to MoreStorylikeTraitsRenew; stable package and save identifiers are unchanged.
 

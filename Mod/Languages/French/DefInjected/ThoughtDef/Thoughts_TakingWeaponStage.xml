@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <HYPRaohappy.stages.armed_and_framing_the_shot.label>arme en main, cadrage en cours</HYPRaohappy.stages.armed_and_framing_the_shot.label>
+  <HYPRaohappy.stages.armed_and_framing_the_shot.description>Il est temps de donner une leçon aux gens qui photographient leur écran.</HYPRaohappy.stages.armed_and_framing_the_shot.description>
+  <HYPMasterhappy.stages.armed_at_range.label>une arme à distance</HYPMasterhappy.stages.armed_at_range.label>
+  <HYPMasterhappy.stages.armed_at_range.description>Pas besoin de voir l'écran. Je préfère quand même garder mes distances.</HYPMasterhappy.stages.armed_at_range.description>
+  <HYPPlayerhappy.stages.armed_at_range.label>une arme à distance</HYPPlayerhappy.stages.armed_at_range.label>
+  <HYPPlayerhappy.stages.armed_at_range.description>Celle-là me plaît. Avec celle-là, les gens verront ce dont je suis capable.</HYPPlayerhappy.stages.armed_at_range.description>
+  <HYPKnightUnhappy.stages.a_knight_with_a_gun.label>un chevalier avec un fusil</HYPKnightUnhappy.stages.a_knight_with_a_gun.label>
+  <HYPKnightUnhappy.stages.a_knight_with_a_gun.description>Qu'est-ce que c'est que ça ? On a changé d'époque ?</HYPKnightUnhappy.stages.a_knight_with_a_gun.description>
+  <HYPDescendantUnhappy.stages.nothing_to_borrow.label>aucune force à retourner</HYPDescendantUnhappy.stages.nothing_to_borrow.label>
+  <HYPDescendantUnhappy.stages.nothing_to_borrow.description>Un fusil tient le combat à distance, et tout ce que je sais faire se pratique de près. Donnez-moi un bâton, au moins. Je préférerais un bâton.</HYPDescendantUnhappy.stages.nothing_to_borrow.description>
+  <HYPRangeWeaponHappy.stages.armed_at_range.label>une arme à distance</HYPRangeWeaponHappy.stages.armed_at_range.label>
+  <HYPRangeWeaponHappy.stages.armed_at_range.description>Bien. En avant.</HYPRangeWeaponHappy.stages.armed_at_range.description>
+  <HYPRangeWeaponHappyChicken.stages.armed_at_range.label>une arme à distance</HYPRangeWeaponHappyChicken.stages.armed_at_range.label>
+  <HYPRangeWeaponHappyChicken.stages.armed_at_range.description>Aujourd'hui, je vais enfin abattre un poulet.</HYPRangeWeaponHappyChicken.stages.armed_at_range.description>
+  <HYPRangeWeaponVikingUnhappy.stages.a_viking_with_a_gun.label>un viking avec un fusil</HYPRangeWeaponVikingUnhappy.stages.a_viking_with_a_gun.label>
+  <HYPRangeWeaponVikingUnhappy.stages.a_viking_with_a_gun.description>Je voulais boire dans le crâne de l'ennemi. On m'a donné un fusil.</HYPRangeWeaponVikingUnhappy.stages.a_viking_with_a_gun.description>
+</LanguageData>

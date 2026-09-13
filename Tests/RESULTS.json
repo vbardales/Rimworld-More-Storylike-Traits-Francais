@@ -1,0 +1,368 @@
+{
+  "date": "2026-09-13",
+  "baseRevision": "17b368a27ad45da653aecde5f36732ac4a09cd02",
+  "scope": "Base revision plus local French, Preview, tests and documentation changes; payload hashes identify tested content.",
+  "build": {
+    "shippedDllMatches": true,
+    "exitCode": 0,
+    "warnings": 0,
+    "command": "dotnet build Source/MoreStorylikeTraits.csproj -c Release -p:OutputPath=<repo>/.build/audit-bin/",
+    "sha256": "C6E80F34CDC4FCCDD14C5D5382E3B0D894BDB7229E7DDC7918EAB28F31C40384",
+    "errors": 0
+  },
+  "workerTests": {
+    "failed": 0,
+    "passed": 20,
+    "command": "dotnet run --project Tests/WorkerTests.csproj -c Release",
+    "boundary": "Real production source linked against boundary doubles; no game initialized"
+  },
+  "xmlTests": {
+    "failed": 0,
+    "passed": 8,
+    "command": "python Tests/test_xml.py"
+  },
+  "engineChecks": {
+    "fields": {
+      "files": 8,
+      "extraAssemblies": "Mod/Assemblies/MoreStorylikeTraits.dll",
+      "errors": 0,
+      "script": "Check-XmlFields.ps1"
+    },
+    "injection": {
+      "unverified": 0,
+      "keys": 548,
+      "errors": 0,
+      "script": "Check-DefInjected.ps1"
+    },
+    "references": {
+      "wrongType": 0,
+      "missingParents": 0,
+      "script": "Check-DefRefs.ps1",
+      "missing": 0,
+      "modDefs": 84,
+      "scope": "Core only"
+    }
+  },
+  "preview": {
+    "version": "1.6",
+    "font": {
+      "ready": "loaded",
+      "family": "\"Segoe UI\", system-ui, sans-serif",
+      "available": true,
+      "actual": [
+        {
+          "familyName": "Segoe UI Semibold",
+          "postScriptName": "SegoeUI-Semibold",
+          "isCustomFont": false,
+          "glyphCount": 26
+        }
+      ]
+    },
+    "boxes": {
+      "h1": {
+        "x": 50,
+        "y": 54,
+        "width": 430,
+        "height": 101.1875
+      },
+      "h1 span": {
+        "x": 173.796875,
+        "y": 116.59375,
+        "width": 89.65625,
+        "height": 40
+      },
+      ".tag": {
+        "x": 50,
+        "y": 163.1875,
+        "width": 430,
+        "height": 26.390625
+      },
+      ".summary": {
+        "x": 50,
+        "y": 228.578125,
+        "width": 430,
+        "height": 60.875
+      }
+    },
+    "contrastMinimumOverWholeBoundingBoxes": {
+      "h1": 9.529176068653301,
+      "h1 span": 7.563841580709242,
+      ".tag": 6.613879116375952,
+      ".summary": 9.782037268603267,
+      "badge": 4.923067638290419
+    },
+    "bytes": 407113
+  },
+  "inGame": {
+    "scenarios": "TEST_SCENARIOS.md",
+    "status": "pending operator execution",
+    "executed": false
+  },
+  "files": [
+    {
+      "path": "Mod/ATTRIBUTION.md",
+      "sha256": "447343BEBD06ABB0E25398482F7980771B6A98361945F65793D3F36D09353B94",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/About/About.xml",
+      "sha256": "6C228F036BA2455B3089AC2C617264125C091F27F76E8E3CF39D09B0A34347B6",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/About/ModIcon.png",
+      "sha256": "861E767E3ADFE06740B6DDEE0DC1A383BDD4084D680B6AF393E790581391B012",
+      "mode": "raw"
+    },
+    {
+      "path": "Mod/About/Preview.png",
+      "sha256": "79BEDD830CAA2119245942DD7A4E052AF7E4861413CA7C6F198063D431ACF62F",
+      "mode": "raw"
+    },
+    {
+      "path": "Mod/Assemblies/MoreStorylikeTraits.dll",
+      "sha256": "C6E80F34CDC4FCCDD14C5D5382E3B0D894BDB7229E7DDC7918EAB28F31C40384",
+      "mode": "raw"
+    },
+    {
+      "path": "Mod/Defs/ThoughtDefs/Thoughts_Memory_HYPMisc.xml",
+      "sha256": "93C67620AD3CCAA18BD2E54C57E8C3087A3CD39E51204A7615A47279B893E551",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Defs/ThoughtDefs/Thoughts_Situation_Social.xml",
+      "sha256": "9815C273F9308D5A78CCBF7C96D0816CB6773BA6BAFFF7AAEC829FEC1A69A674",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Defs/ThoughtDefs/Thoughts_TakingWeaponStage.xml",
+      "sha256": "6277FAF9DFB65DA7ADBBA578A3AC729679AE6896BC01F2219E94BE29B3672451",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Defs/ThoughtDefs/Thoughts_TraitsHYP.xml",
+      "sha256": "4557C6FF66FAC0DA3FEAD3D5E81A9347F69920789978DCF50E4D96E2C4A19DE1",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Defs/TraitDefs/MoreStorylikeTraits.xml",
+      "sha256": "11CC1F7FF32158E8692414AAD9C106DF6CCAAE8174131339D9A4228386990247",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Defs/TraitDefs/MoreStorylikeTraitsPR.xml",
+      "sha256": "E93B934D1860A44BED4FB39FE97F9294184CA8335E5A83E28269B0CC7FA884AB",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Defs/TraitDefs/MoreStorylikeTraitsWN.xml",
+      "sha256": "2FB1BA7CB3F6A8FDAC1B85426ADE1197ED0553C458224942175F181D7A9C7DEA",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_Memory_HYPMisc.xml",
+      "sha256": "ABFF101BD5E7552C5CB499CBE199245DC62CEAD0764480290A75414C939BBD15",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_Situation_Social.xml",
+      "sha256": "078BE0EEB68A13851947D5BEFA7975C0ACAF5F5657A271D6E4F3751617979CAE",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_TakingWeaponStage.xml",
+      "sha256": "9FCC518CB764E64A2413358AF7941AFAFF6E99F9D2484CC9512D5B3F88410F6A",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_TraitsHYP.xml",
+      "sha256": "8A49C98D1D58A43FFF555919635179054B7864A287301B4340A6252E11EFF91C",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseSimplified (简体中文)/DefInjected/TraitDef/MoreStorylikeTraits.xml",
+      "sha256": "059B2840B6EDD1C36B02CD2242E360BCD836730E9BE654EA09CEE828558144DD",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseSimplified (简体中文)/DefInjected/TraitDef/MoreStorylikeTraitsPR.xml",
+      "sha256": "2EFC0A7C2ACB6757D8B3EE6F58D1CD280579B4B589907C732F19976349A9DD71",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseSimplified (简体中文)/DefInjected/TraitDef/MoreStorylikeTraitsWN.xml",
+      "sha256": "9E5E0E1BD686CB7F87A1D24902950491420EB46A4390F268FC7109109D2362CE",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseTraditional (繁體中文)/DefInjected/ThoughtDef/Thoughts_Memory_HYPMisc.xml",
+      "sha256": "6B4209CC44D23A016CA7DEA7769BC1AD2D7C3C73AC82AE49AAD7E7C61EC15DAD",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseTraditional (繁體中文)/DefInjected/ThoughtDef/Thoughts_Situation_Social.xml",
+      "sha256": "661317D49295F8FD698C679ADC15FDB0490B8FD5BB2491CEE0EDE261BB3F9363",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseTraditional (繁體中文)/DefInjected/ThoughtDef/Thoughts_TakingWeaponStage.xml",
+      "sha256": "7FC620E7E4FBAC8432BC1845A089D5F965F7F518EA24C59BBED8B94CE6502335",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseTraditional (繁體中文)/DefInjected/ThoughtDef/Thoughts_TraitsHYP.xml",
+      "sha256": "985AD49B21A4C4A0B133894A6E95571D226DE398547872CEAC74A4DCD7D4DC5E",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseTraditional (繁體中文)/DefInjected/TraitDef/MoreStorylikeTraits.xml",
+      "sha256": "62545CBA09918D18CE640726AA89A00D6254040094C85A280ACFC591F29D38B5",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseTraditional (繁體中文)/DefInjected/TraitDef/MoreStorylikeTraitsPR.xml",
+      "sha256": "EC70C45A49C018B49B8CC6B830F7DE9592D12876A266283722D1DAA5682A6B31",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/ChineseTraditional (繁體中文)/DefInjected/TraitDef/MoreStorylikeTraitsWN.xml",
+      "sha256": "68A519EA1DC4CD2138ADDD9A00D7A7A0177D8CFC16D343EAAD5CCC844252931E",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/English/DefInjected/TraitDef/MoreStorylikeTraits.xml",
+      "sha256": "8B23705530D95151A284397A5334E79052C296D78B72DF752F54242465AE33A9",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/English/DefInjected/TraitDef/MoreStorylikeTraitsPR.xml",
+      "sha256": "17CF9FE9EE6A7C65F46B43B5A9F006B12BFDCDC036F25EDEC1BBFA18E53B618A",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/English/DefInjected/TraitDef/MoreStorylikeTraitsWN.xml",
+      "sha256": "A59194B9152C2667425D2AC69598A5B3028B7F679285B70C872E2F9289F02A80",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/French/DefInjected/ThoughtDef/Thoughts_Memory_HYPMisc.xml",
+      "sha256": "9484876B6BADDB9F444636B1EB8B68954FE0FEE74BFA1165A5DF5335ABD5E41C",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/French/DefInjected/ThoughtDef/Thoughts_Situation_Social.xml",
+      "sha256": "FD38FB07296885229126C1C65FC67B700269B2CD3FE9040A5335FABE8EA4BB5D",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/French/DefInjected/ThoughtDef/Thoughts_TakingWeaponStage.xml",
+      "sha256": "2146CC7AD0FF94F6E3F9EEF342BFA3D828B1CD08F98F128DD7C4F752600DD70E",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/French/DefInjected/ThoughtDef/Thoughts_TraitsHYP.xml",
+      "sha256": "EB8431DA808BB2F2D00F809D783102687A37D4C8907481BDFADE93A7B9B17787",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/French/DefInjected/TraitDef/MoreStorylikeTraits.xml",
+      "sha256": "92DC0EB9B2499DE7FBE105644C0CB703E59F5059021950C11B09BC511C4194BC",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/French/DefInjected/TraitDef/MoreStorylikeTraitsPR.xml",
+      "sha256": "1F22B3FE5A7CA9AC4C3CE1EAB82B65AF4AC578CE17F52C29C095271ABEC0D8BD",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Mod/Languages/French/DefInjected/TraitDef/MoreStorylikeTraitsWN.xml",
+      "sha256": "E04854465D6DFCDCEEE47589401E3F24EA9B1A00358F00BBD30CC789B6BA6809",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Source/Directory.Build.props",
+      "sha256": "08CDFFD15505268021F8693911D1A33262F4F4CB9E7922F396D0ACD5DF13A445",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Source/MoreStorylikeTraits.csproj",
+      "sha256": "CEF303E2D9A966D608C1444E871329047DC20DD32BFF216A54288E351EDC6439",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Source/MSTModExtension.cs",
+      "sha256": "7B86C6B90819905B98CC88FB8FA4DCA20FFAB4F76BA818DE9C1FD18F3726ECC3",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Source/ThoughtWorker_MSTSpecial.cs",
+      "sha256": "7996DFCE248DAF99D5E3A18048802371B97E506FFD2C120FB2C90FEE078DD76A",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Tests/Directory.Build.props",
+      "sha256": "E984D79690D15281CB0046F0BF45B02E7CE056E94147C681B1C0D50B607538FF",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Tests/GameDoubles.cs",
+      "sha256": "1F345A3BE0D6CDC8B5616B573B4538BC3169A33AD36ADC69167BE25BE91F0E42",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Tests/inventory.py",
+      "sha256": "0CCAE26839ACD248B1ACD7BB6F3E6A65E41E3117092AAF82602127539E282896",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Tests/Program.cs",
+      "sha256": "9AA31495282691314FDD1F01F2BCBDB516A03EF4C119D8F38DAD3C327C5CA080",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Tests/README.md",
+      "sha256": "407DDC63D5F246FCD30BC530B25793397F38F1E3B58AF68E8DF8BFF617A4049E",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Tests/test_xml.py",
+      "sha256": "A591212C7E100C54764CC4F42E9AB6BF21CD6A547E981E2E490742847C032E87",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Tests/WorkerTests.csproj",
+      "sha256": "63F014DA78BB4E0473D5222FAA93E9DB3964A8ECBB14E9C442D1853698A05428",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Art/Build-Preview.cjs",
+      "sha256": "83D5B99A8000AB38E87AD902E8416BE868FD61F43D64D3174ADC3F2827748C5D",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Art/ModIcon-source.png",
+      "sha256": "EAB152D85B1449228DAA51370D79F06ECF482C0ED6B2E597DD530794E40C3EBA",
+      "mode": "raw"
+    },
+    {
+      "path": "Art/preview-palette.json",
+      "sha256": "E03EF12DEE5EEF6EE83BB9BEDF9907E0B778C9B3C4272FEA7C9E609C6D7EBC0B",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Art/Preview-source.png",
+      "sha256": "66DC215859D328E9DDF5E81F4213AA7B79FCDDC7102DCFCD406F7EDA8B193B66",
+      "mode": "raw"
+    },
+    {
+      "path": "Art/preview.html",
+      "sha256": "8B948C1C51E1F252792457B8DDD7BD1852D4A2E9F083444EF76EB6F3EBFB7128",
+      "mode": "utf8-no-bom-lf"
+    },
+    {
+      "path": "Art/README.md",
+      "sha256": "9C8538442E83364C52418EBEC1A8DA3E60D6DAD4CBCF3A432BB27655C2E8FB89",
+      "mode": "utf8-no-bom-lf"
+    }
+  ]
+}

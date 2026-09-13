@@ -1,28 +1,24 @@
 ---
 localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 mod:          More Storylike Traits Renew (unofficial)
 packageId:    nelim.morestoryliketraits
 repo:         Rimworld-More-Storylike-Traits-Renew
 visibility:   public
 detached:     yes
-stage:        horsMonoRepo
+stage:        done
 licence:      silent
 licence_at:   refreshed on 2026-09-13; see ATTRIBUTION.md
 dependencies: none
-showcase:     partial
+showcase:     complete
 tested_on:
 workshop:
 remaining:
   - unverified: removal of the empty legacy directory shell; Windows process lock
-  - defect: French resources absent
-  - defect: Preview lacks status tag and version badge; current overlay conventions not applied
-  - unverified: successful build and shipped assembly correspondence
-  - defect: functional scenario document and automated behavior tests absent
   - unverified: final in-game scenarios, logs, English/French UI and save regressions
 session:      maj:        2026-09-12, releve automatique
-updated:      2026-09-13, standalone checkout established
+updated:      2026-09-13, ready for final in-game validation
 settings_audit: not_applicable
 ---
 
@@ -113,7 +109,7 @@ it does not claim any interactive test.
 
 ### Translation audit
 
-`localization: complete`, `translation_en: complete`, `translation_fr: partial`.
+`localization: complete`, `translation_en: complete`, `translation_fr: complete`.
 All mod-owned display text is in native TraitDef degree labels/descriptions and
 ThoughtDef stage labels/descriptions. The two C# classes emit no UI strings.
 There are 166 nonempty source label/description fields across the seven Def XML files.
@@ -269,3 +265,96 @@ empty shell failed. Its verified remaining entry count is zero. This is the only
 remainder and does not affect the standalone mod or the game junction. Delete the empty
 shell after the process holding it releases the directory; no further content migration
 is needed. The user's cleanup approval does not authorize the separately pending push.
+
+## Gate passed — ModIcon generated, 2026-09-13
+
+At revision 17b368a, `dotnet build Source/MoreStorylikeTraits.csproj -c Release
+-p:OutputPath=<repository>/.build/audit-bin/` passed with zero warnings and errors.
+The output and distributed DLL have identical SHA256
+C6E80F34CDC4FCCDD14C5D5382E3B0D894BDB7229E7DDC7918EAB28F31C40384.
+The fixed-content implementation is complete; outstanding work is presentation,
+localization and validation. The existing 128 x 128 PNG ModIcon passed direct inspection.
+
+
+## Gate passed — Preview generated, 2026-09-13
+
+The existing directly inspected Preview is a valid 896 x 504 PNG, 486,530 bytes.
+Source art is preserved in Art/Preview-source.png. Overlay corrections follow separately.
+
+## Gate passed — preOptions, 2026-09-13
+
+Recomposed the existing HTML overlay without altering the original illustration.
+Art/preview-palette.json is the sole color source, used by Art/Build-Preview.cjs and
+Art/preview.html. Warm wood informs the veil and secondary ink; the worker's red coat
+informs the distinct red accent. Segoe UI availability and document.fonts.ready checked.
+Title is 46px/600; Renew is 65% in secondary ink. The unofficial tag and 1.6 badge match
+About metadata. All text uses the prescribed hierarchy; no linking word needs reduction.
+Full-size and 268px previews were directly inspected: title, suffix and badge identifiable,
+no clipping or concrete camera defect. The PNG is 407,113 bytes at 896 x 504.
+Minimum contrast over entire text bounding boxes: title 9.53, Renew 7.56, tag 6.61,
+summary 9.78; badge 4.92. Reproducible results: .build/preview-qa/results.json.
+The English description ends with the required verified GitHub source link and starts
+with the unofficial notice. This completes the preOptions presentation gate.
+
+
+## Gate passed — options, 2026-09-13
+
+Reconfirmed the existing no-settings inventory against unchanged source and definitions.
+No Verse.Mod/ModSettings UI, player configuration or MainButtonDef is present. Fixed trait
+balance is part of this faithful port, not a missing configurable feature. Therefore
+settings_audit remains not_applicable under the user's source-based gate; no UI or
+RIMMSQOL interaction is claimed. Localization can now proceed.
+
+## Gate passed — l10n, 2026-09-13
+
+Installed and reviewed 166 French label/description fields in seven DefInjected files,
+covering all 53 traits and 31 thoughts. All 50 colored English trait labels retain their
+color markup in French. No game-code display strings exist. English remains supplied by
+native Def text plus its tier-color overrides. French uses the same PAWN NamedArgument
+via nameDef and impersonal sentences instead of copying English possessive syntax.
+Tests/test_xml.py verifies argument identity, allowed accessors, braces, all keys,
+nonempty text and color-tag parity. All eight content tests passed. The independent
+engine-based Check-DefInjected.ps1 checked 548 keys with zero errors; no unresolved
+targets were reported. localization, translation_en and translation_fr are complete
+for preTest readiness only. Male/female descriptions and both UI languages still need
+in-game review; no runtime language result is claimed.
+
+## Gate passed — preTest, 2026-09-13
+
+Reran Check-DefRefs.ps1 with GameData restricted to Data/Core, excluding all DLC data:
+84 mod definitions, no unresolved references, wrong reference types or missing parents.
+Check-XmlFields.ps1 with the distributed custom assembly passed (eight files, no unknown
+1.6 fields). Source uses only RimWorld/Verse and its own extension/worker; About correctly
+declares 1.6 and Core load order, with no required third-party mods. No LoadFolders or
+conditional patches exist. Optional Biotech suppression behavior uses the core API and
+does not introduce a DLC requirement. Settings and localization gates have passed.
+
+## Gate passed — done, 2026-09-13
+
+The complete ordered workflow now reaches **done**, meaning ready for final in-game
+validation, not already tested in game. Base revision: 17b368a with this local change set.
+Tests/RESULTS.json records executed checks and SHA256 identities of the actual distributed
+payload, production sources, tests and Art inputs. Text hashes normalize BOM/CRLF for
+portable comparison; binary hashes use exact bytes. It also records actual Chrome font
+resolution (Segoe UI Semibold for the title) and measured Preview contrast.
+
+- Reference build: passed, zero warnings/errors, exact match to the shipped DLL.
+- Production worker logic: 20/20 scenarios passed against explicit game-boundary doubles.
+  Missing extensions/lists, acquaintance, race, faction, disfigurement, correct capacity
+  subject, active/suppressed traits and later matches are exercised. No actual game
+  integration is implied by the doubles.
+- XML/content regression suite: 8/8 passed; every one of 166 French fields covered,
+  parameters valid, all 50 colored labels preserved, no unknown/empty French entry.
+- Shared engine reflection/data checks: fields clean, Core-only references clean,
+  548 translation paths clean. The mod's own DLL was passed where applicable.
+- TEST_SCENARIOS.md now supplies prerequisites, actions and expected outcomes for loading,
+  every trait, social thoughts, weapon/schedule/body-part/memory effects, new/existing
+  saves, EN/FR and UI scales, with an optional Biotech suppression regression.
+
+No settings/persistence or RIMMSQOL tests are applicable because the justified settings-free
+implementation remains unchanged. Non-settings game behavior and save persistence remain
+mandatory manual tests. No new gameplay feature or balancing change was introduced.
+No RimWorld process was started, no runtime scenario was executed, and no log/UI pass is
+claimed. Next transition: execute TEST_SCENARIOS.md in game and record results before tested.
+Public push remains separately pending explicit authorization. The old empty locked
+folder and staged monorepo removals do not affect this payload or its independent Git root.
