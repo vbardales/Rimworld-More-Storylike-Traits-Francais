@@ -18,7 +18,7 @@ tested_on:
 workshop:
 remaining:
   - unverified: in-game rendering, male and female pawns, colour tags, English fallback
-  - unverified: Pickle suite written 2026-09-29, not played (English and French passes, Tests/Pickle/README.md)
+  - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
 settings_audit: not_applicable
 updated:      2026-09-29, re-audit from step 1; repository pushed
@@ -55,3 +55,5 @@ Retained state was `dansMonoRepo` until the repo was renamed to `Rimworld-More-S
 Not verified (needs the game): French rendering, gender pronouns, colour tags, English fallback.
 
 `preTest -> done` (2026-09-29): offline check rerun (`Check-DefInjected`, 166 keys, 0 errors); Pickle suite written with its scope justified in `Tests/Pickle/README.md` (loading and clean French load; wording left to a person). No unit tests: text-only mod. State moved from `preTest` to `done`.
+
+Pickle played 2026-09-29 on 3bc5f65 (the tree has since changed only in Art/ and Mod/About/Preview.png): English 3/3, French 4/4, `exitReason: passed`, nothing from this mod in the logs. Detail in `docs/runs/history.md`. `done -> tested` still needs the wording read in game (TESTING.md, "In game"), by the owner.
