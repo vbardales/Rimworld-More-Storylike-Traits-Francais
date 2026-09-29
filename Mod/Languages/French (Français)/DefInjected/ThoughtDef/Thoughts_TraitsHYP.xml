@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HYPSR03JustMoreWondersDay.stages.Wonders_Just_more_Wonders.label>encore un tour, en plein jour</HYPSR03JustMoreWondersDay.stages.Wonders_Just_more_Wonders.label>
+  <HYPSR03JustMoreWondersDay.stages.Wonders_Just_more_Wonders.description>Je n'ai pas dormi. Je n'en peux plus. Je ferais bien encore un tour.</HYPSR03JustMoreWondersDay.stages.Wonders_Just_more_Wonders.description>
+
+  <HYPSR03JustMoreWondersNight.stages.Wonders_Just_more_Wonders.label>encore un tour</HYPSR03JustMoreWondersNight.stages.Wonders_Just_more_Wonders.label>
+  <HYPSR03JustMoreWondersNight.stages.Wonders_Just_more_Wonders.description>Encore un tour. Je jure que c'est le dernier, et après je dors.</HYPSR03JustMoreWondersNight.stages.Wonders_Just_more_Wonders.description>
+
+  <HYPSR05TheSecretOfNewOrientalUnhappy.stages.Touhou_delicacie_catalogue.label>l'autre moitié du livre de cuisine</HYPSR05TheSecretOfNewOrientalUnhappy.stages.Touhou_delicacie_catalogue.label>
+  <HYPSR05TheSecretOfNewOrientalUnhappy.stages.Touhou_delicacie_catalogue.description>Les recettes étaient la partie inoffensive. Je n'aurais pas dû lire le reste.</HYPSR05TheSecretOfNewOrientalUnhappy.stages.Touhou_delicacie_catalogue.description>
+
+  <HYPBuilderHappy.stages.Constructor_in_the_daytime.label>une belle journée pour bâtir</HYPBuilderHappy.stages.Constructor_in_the_daytime.label>
+  <HYPBuilderHappy.stages.Constructor_in_the_daytime.description>Du beau temps, une bonne lumière. Une belle journée pour construire quelque chose.</HYPBuilderHappy.stages.Constructor_in_the_daytime.description>
+
+  <HYPBuilderHappyNight.stages.Constructor_in_the_night.label>une journée de travail derrière moi</HYPBuilderHappyNight.stages.Constructor_in_the_night.label>
+  <HYPBuilderHappyNight.stages.Constructor_in_the_night.description>Une longue journée. Bien remplie. Ça fait du bien quand ça s'arrête.</HYPBuilderHappyNight.stages.Constructor_in_the_night.description>
+
+  <HYPSR01NeverCheatNoProsthetic.stages.Never_cheat_want_prosthetic.label>rien que de la chair</HYPSR01NeverCheatNoProsthetic.stages.Never_cheat_want_prosthetic.label>
+  <HYPSR01NeverCheatNoProsthetic.stages.Never_cheat_want_prosthetic.description>La chair a tellement de limites. Je rate tout, et tout le monde me regarde rater.</HYPSR01NeverCheatNoProsthetic.stages.Never_cheat_want_prosthetic.description>
+
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_one_prosthesis.label>une pièce artificielle</HYPSR01NeverCheatProsthophileHappy.stages.Have_one_prosthesis.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_one_prosthesis.description>Du beau matériel. J'en veux encore.</HYPSR01NeverCheatProsthophileHappy.stages.Have_one_prosthesis.description>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_two_prosthesis.label>deux pièces artificielles</HYPSR01NeverCheatProsthophileHappy.stages.Have_two_prosthesis.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_two_prosthesis.description>Deux. À moi la victoire.</HYPSR01NeverCheatProsthophileHappy.stages.Have_two_prosthesis.description>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_three_prosthesis.label>trois pièces artificielles</HYPSR01NeverCheatProsthophileHappy.stages.Have_three_prosthesis.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_three_prosthesis.description>Trois. Que quelqu'un me serve quelque chose de cher.</HYPSR01NeverCheatProsthophileHappy.stages.Have_three_prosthesis.description>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_four_prosthesis.label>quatre pièces artificielles</HYPSR01NeverCheatProsthophileHappy.stages.Have_four_prosthesis.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_four_prosthesis.description>Quatre. Ça commence à devenir inconfortable, et ça m'est égal.</HYPSR01NeverCheatProsthophileHappy.stages.Have_four_prosthesis.description>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_five_prosthesis.label>cinq pièces artificielles</HYPSR01NeverCheatProsthophileHappy.stages.Have_five_prosthesis.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_five_prosthesis.description>Cinq. Tous ceux qui regardent en ce moment font partie de ma famille.</HYPSR01NeverCheatProsthophileHappy.stages.Have_five_prosthesis.description>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_multiple_prosthesis.label>reconstruction complète</HYPSR01NeverCheatProsthophileHappy.stages.Have_multiple_prosthesis.label>
+  <HYPSR01NeverCheatProsthophileHappy.stages.Have_multiple_prosthesis.description>Je vous l'avais dit. Je n'ai jamais triché.</HYPSR01NeverCheatProsthophileHappy.stages.Have_multiple_prosthesis.description>
+
+  <HYPSR11UnspeakableHorrorHappy.stages.Bless_from_Cthulhu.label>bénédiction</HYPSR11UnspeakableHorrorHappy.stages.Bless_from_Cthulhu.label>
+  <HYPSR11UnspeakableHorrorHappy.stages.Bless_from_Cthulhu.description>Ô mon Père céleste.</HYPSR11UnspeakableHorrorHappy.stages.Bless_from_Cthulhu.description>
+
+  <HYPSSR02RuthlessWorkMachineUnhappy.stages.Never_be_satisfied.label>jamais assez bien</HYPSSR02RuthlessWorkMachineUnhappy.stages.Never_be_satisfied.label>
+  <HYPSSR02RuthlessWorkMachineUnhappy.stages.Never_be_satisfied.description>Cette colonie pourrait être meilleure. Elle pourrait être meilleure. Elle pourrait être meilleure.</HYPSSR02RuthlessWorkMachineUnhappy.stages.Never_be_satisfied.description>
+
+</LanguageData>

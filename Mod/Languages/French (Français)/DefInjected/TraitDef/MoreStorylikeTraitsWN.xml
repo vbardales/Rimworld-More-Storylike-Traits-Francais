@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HYPW01Ignoramus.degreeDatas.Ignoramus.label>&lt;color=#969696&gt;sans lettres&lt;/color&gt;</HYPW01Ignoramus.degreeDatas.Ignoramus.label>
+  <HYPW01Ignoramus.degreeDatas.Ignoramus.description>{PAWN_nameDef} n'a jamais compris l'intérêt d'un travail qui se passe dans la tête et a organisé sa vie pour l'éviter. Ce qu'on peut dire de {PAWN_nameDef}, et c'est la seule chose, c'est une force bien supérieure à celle des autres.</HYPW01Ignoramus.degreeDatas.Ignoramus.description>
+
+  <HYPW02ExtremelyObese.degreeDatas.Extremely_obese.label>&lt;color=#969696&gt;obésité extrême&lt;/color&gt;</HYPW02ExtremelyObese.degreeDatas.Extremely_obese.label>
+  <HYPW02ExtremelyObese.degreeDatas.Extremely_obese.description>Des années d'horaires irréguliers et d'indifférence totale au contenu de l'assiette ont donné à {PAWN_nameDef} une corpulence considérable. Les déplacements sont lents, l'appétit énorme, et les gens lui coupent la parole. En revanche, {PAWN_nameDef} encaisse mieux que toute la colonie et met beaucoup de poids dans ses propres coups.</HYPW02ExtremelyObese.degreeDatas.Extremely_obese.description>
+
+  <HYPN01FinelyCrafted.degreeDatas.Finely_crafted.label>le bon travail prend du temps</HYPN01FinelyCrafted.degreeDatas.Finely_crafted.label>
+  <HYPN01FinelyCrafted.degreeDatas.Finely_crafted.description>Pour {PAWN_nameDef}, le bon travail n'est jamais en retard : il est simplement bon. Tout suit cette logique. La marche est lente. Le travail est lent. Lorsque l'humeur s'y prête, seule l'idée qui occupe {PAWN_nameDef} depuis une semaine peut encore susciter l'inspiration.</HYPN01FinelyCrafted.degreeDatas.Finely_crafted.description>
+
+  <HYPN02TheArrowInTheKnee.degreeDatas.The_arrow_in_the_knee.label>une flèche dans le genou</HYPN02TheArrowInTheKnee.degreeDatas.The_arrow_in_the_knee.label>
+  <HYPN02TheArrowInTheKnee.degreeDatas.The_arrow_in_the_knee.description>La vie de {PAWN_nameDef} était autrefois faite d'aventures, jusqu'à cette flèche dans le genou. Ce qui a permis d'en réchapper, c'est le tir à l'arc, pratiqué chaque soir pendant des années : le groupe ne pouvait pas abandonner la seule personne encore capable de tirer. {PAWN_nameDef} a regagné la guilde en boitant, rendu sa licence et n'a plus jamais couru.</HYPN02TheArrowInTheKnee.degreeDatas.The_arrow_in_the_knee.description>
+
+  <HYPN03OnTheSameHandAndFoot.degreeDatas.On_the_same_hand_and_foot.label>même main, même pied</HYPN03OnTheSameHandAndFoot.degreeDatas.On_the_same_hand_and_foot.label>
+  <HYPN03OnTheSameHandAndFoot.degreeDatas.On_the_same_hand_and_foot.description>{PAWN_nameDef} marche de travers. Le bras droit avance avec la jambe droite, à chaque pas, depuis l'apprentissage de la marche. Étrangement, cela va plus vite. Tout aussi étrangement, cela ne sert absolument à rien dans un combat.</HYPN03OnTheSameHandAndFoot.degreeDatas.On_the_same_hand_and_foot.description>
+
+</LanguageData>

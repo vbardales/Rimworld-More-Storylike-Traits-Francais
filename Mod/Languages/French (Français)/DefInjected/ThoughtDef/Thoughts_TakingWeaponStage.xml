@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HYPRaohappy.stages.Dict_holder_has_ranged_weapon.label>arme en main, cadrage en cours</HYPRaohappy.stages.Dict_holder_has_ranged_weapon.label>
+  <HYPRaohappy.stages.Dict_holder_has_ranged_weapon.description>Il est temps de donner une leçon aux gens qui photographient leur écran.</HYPRaohappy.stages.Dict_holder_has_ranged_weapon.description>
+
+  <HYPMasterhappy.stages.Starcraft_II_Korean_master_has_ranged_weapon.label>une arme à distance</HYPMasterhappy.stages.Starcraft_II_Korean_master_has_ranged_weapon.label>
+  <HYPMasterhappy.stages.Starcraft_II_Korean_master_has_ranged_weapon.description>Pas besoin de voir l'écran. Je préfère quand même garder mes distances.</HYPMasterhappy.stages.Starcraft_II_Korean_master_has_ranged_weapon.description>
+
+  <HYPPlayerhappy.stages.Player_has_ranged_weapon.label>une arme à distance</HYPPlayerhappy.stages.Player_has_ranged_weapon.label>
+  <HYPPlayerhappy.stages.Player_has_ranged_weapon.description>Celle-là me plaît. Avec celle-là, les gens verront ce dont je suis capable.</HYPPlayerhappy.stages.Player_has_ranged_weapon.description>
+
+  <HYPKnightUnhappy.stages.Knight_has_ranged_weapon.label>un chevalier avec un fusil</HYPKnightUnhappy.stages.Knight_has_ranged_weapon.label>
+  <HYPKnightUnhappy.stages.Knight_has_ranged_weapon.description>Qu'est-ce que c'est que ça ? On a changé d'époque ?</HYPKnightUnhappy.stages.Knight_has_ranged_weapon.description>
+
+  <HYPDescendantUnhappy.stages.Descendant_has_ranged_weapon.label>aucune force à retourner</HYPDescendantUnhappy.stages.Descendant_has_ranged_weapon.label>
+  <HYPDescendantUnhappy.stages.Descendant_has_ranged_weapon.description>Un fusil tient le combat à distance, et tout ce que je sais faire se pratique de près. Donnez-moi un bâton, au moins. Je préférerais un bâton.</HYPDescendantUnhappy.stages.Descendant_has_ranged_weapon.description>
+
+  <HYPRangeWeaponHappy.stages.Has_ranged_weapon.label>une arme à distance</HYPRangeWeaponHappy.stages.Has_ranged_weapon.label>
+  <HYPRangeWeaponHappy.stages.Has_ranged_weapon.description>Bien. En avant.</HYPRangeWeaponHappy.stages.Has_ranged_weapon.description>
+
+  <HYPRangeWeaponHappyChicken.stages.Has_ranged_weapon.label>une arme à distance</HYPRangeWeaponHappyChicken.stages.Has_ranged_weapon.label>
+  <HYPRangeWeaponHappyChicken.stages.Has_ranged_weapon.description>Aujourd'hui, je vais enfin abattre un poulet.</HYPRangeWeaponHappyChicken.stages.Has_ranged_weapon.description>
+
+  <HYPRangeWeaponVikingUnhappy.stages.Has_ranged_weapon.label>un viking avec un fusil</HYPRangeWeaponVikingUnhappy.stages.Has_ranged_weapon.label>
+  <HYPRangeWeaponVikingUnhappy.stages.Has_ranged_weapon.description>Je voulais boire dans le crâne de l'ennemi. On m'a donné un fusil.</HYPRangeWeaponVikingUnhappy.stages.Has_ranged_weapon.description>
+
+</LanguageData>
