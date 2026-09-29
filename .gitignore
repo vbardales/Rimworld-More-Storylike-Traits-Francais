@@ -29,3 +29,14 @@ Source/bin/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Textures compiled to DDS and Explorer folder icons: local derivatives, never versioned
+# and never inside Mod/, which Steam uploads as-is.
+*.dds
+*.ico
+
+# Pickle reports: kept on disk, minified, never in git (they reach gigabytes and hold personal paths).
+# Both spellings: the launcher writes Evidence with a capital E.
+Tests/Pickle/Evidence/
+Tests/Pickle/evidence/
+evidence/

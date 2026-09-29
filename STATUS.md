@@ -7,18 +7,23 @@ packageId:    nelim.morestoryliketraits
 repo:         Rimworld-More-Storylike-Traits-Renew
 visibility:   public
 detached:     yes
-stage:        done
+stage:        preTest
+workflow_stage: preTest
 licence:      silent
 licence_at:   refreshed on 2026-09-13; see ATTRIBUTION.md
+upstream_mod_remotes: N/A
 dependencies: none
 showcase:     complete
 tested_on:
 workshop:
 remaining:
+  - defect: no Pickle suite written and no written justification of scope (preTest -> done)
+  - defect: About declares no incompatibleWith for More Storylike Traits - Body and Mind (prose warning only)
+  - unverified: tests/test_xml.py not rerun on 2026-09-29 (no Python on this machine)
+  - unverified: all of TEST_SCENARIOS.md in game, EN/FR UI, logs, saves
   - unverified: removal of the empty legacy directory shell; Windows process lock
-  - unverified: final in-game scenarios, logs, English/French UI and save regressions
 session:      maj:        2026-09-12, releve automatique
-updated:      2026-09-13, ready for final in-game validation
+updated:      2026-09-29, audit: done -> preTest
 settings_audit: not_applicable
 ---
 
@@ -358,3 +363,19 @@ No RimWorld process was started, no runtime scenario was executed, and no log/UI
 claimed. Next transition: execute TEST_SCENARIOS.md in game and record results before tested.
 Public push remains separately pending explicit authorization. The old empty locked
 folder and staged monorepo removals do not affect this payload or its independent Git root.
+
+## Audit — 2026-09-29 (replaces the 2026-09-13 `done` decision)
+
+Revision 316476a, clean tree apart from ignored local `.ico` files; `origin/main` in sync. RimWorld not launched.
+
+**Retained: `preTest`** (was `done`). Only `preTest -> done` fails: the criterion asks for Pickle suites written or their absence justified in writing, and neither exists. `TEST_SCENARIOS.md` is a manual document, not a Gherkin suite. Earlier gates stay valid.
+
+Rerun today: WorkerTests 20/20; Check-XmlFields clean; Check-DefRefs (Core only) 84 defs clean; Check-DefInjected 548 keys, 0 errors. `test_xml.py` could not run: no Python installed, only the Store stub. No settings, no counted text, so no plural keys apply.
+
+- Upstream repository: none found (Workshop page 2012787971 links no git; search finds none). `upstream_mod_remotes: N/A`, so no upstream PR is possible.
+- A living derivative exists: `More Storylike Traits (Continued)` (2941176778, author Lin, declares 1.1 to 1.6, no repo, no licence, its page shows a removal banner that may be the hidden template string). Decision needed on overlap.
+- No `PublishedFileId.txt`: not prepublished, so no `0.1.0` CHANGELOG entry was created.
+- No `.dds` or Pickle evidence ever tracked; `*.dds`, `*.ico`, `Tests/Pickle/Evidence/` and `evidence/` are now ignored.
+- New `tested` conditions and evidence retention are in `TESTING.md`; protocol versions read are in `docs/PROTOCOLS-READ.md`.
+
+Next transition: write the Pickle suite (game-only checks: real pawn traits, thought worker, FR rendering) or justify its scope in writing, then reaudit.

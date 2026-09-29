@@ -1,0 +1,6 @@
+# Run history
+
+One line per run. Evidence itself stays on disk under `Tests/Pickle/Evidence/`, ignored by git.
+
+- 2026-09-13 17b368a+local: WorkerTests 20/20, XML tests 8/8, XmlFields/DefRefs(Core)/DefInjected(548 keys) clean. Out of game.
+- 2026-09-29 316476a: WorkerTests 20/20, XmlFields clean, DefRefs(Core) 84 defs clean, DefInjected 548 keys 0 errors. test_xml.py NOT rerun (no Python on this machine, only the Store stub). No in-game run, no Pickle run.
