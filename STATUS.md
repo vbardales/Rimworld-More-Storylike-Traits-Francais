@@ -20,6 +20,7 @@ remaining:
   - defect: no Pickle suite written and no written justification of scope (preTest -> done)
   - defect: About declares no incompatibleWith for More Storylike Traits - Body and Mind (prose warning only)
   - unverified: tests/test_xml.py not rerun on 2026-09-29 (no Python on this machine)
+  - feature: Preview overlay (title, tag, badge) to move to the bottom left, per Virginie 2026-09-29; Art/preview.html + Art/Build-Preview.cjs, regenerate Mod/About/Preview.png
   - unverified: all of TEST_SCENARIOS.md in game, EN/FR UI, logs, saves
   - unverified: removal of the empty legacy directory shell; Windows process lock
 session:      maj:        2026-09-12, releve automatique
