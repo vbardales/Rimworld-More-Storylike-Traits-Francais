@@ -1,0 +1,3 @@
+# Workshop id of the hard dependency, which the staging script's built-in table does not know.
+# Read in every pass; it resolves without activating anything.
+SevenColorType.Hyperionc   2941176778

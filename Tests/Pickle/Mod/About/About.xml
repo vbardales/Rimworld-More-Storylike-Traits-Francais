@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>More Storylike Traits - Français - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.morestoryliketraits.fr.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for More Storylike Traits - Français, run by Pickle. Development only: never published.
+
+Two features: loading and load order, and a French game that loads the translation and a save without error. See TESTING.md at the repository root.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.morestoryliketraits.fr</packageId>
+      <displayName>More Storylike Traits - Français</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.morestoryliketraits.fr</li>
+    <li>rimworks.pickle</li>
+  </loadAfter>
+</ModMetaData>
