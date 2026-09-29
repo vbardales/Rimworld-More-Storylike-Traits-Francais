@@ -7,8 +7,8 @@ packageId:    nelim.morestoryliketraits.fr
 repo:         Rimworld-More-Storylike-Traits-Francais
 visibility:   public
 detached:     yes
-stage:        preTest
-workflow_stage: preTest
+stage:        done
+workflow_stage: done
 licence:      silent
 licence_at:   2026-09-29; see ATTRIBUTION.md
 upstream_mod_remotes: N/A
@@ -17,9 +17,9 @@ showcase:     complete
 tested_on:
 workshop:
 remaining:
-  - defect: no Pickle suite written and no written justification of scope (preTest -> done)
   - unverified: in-game rendering, male and female pawns, colour tags, English fallback
-  - unverified: Lin's reaction to the comment proposing this French text
+  - unverified: Pickle suite written 2026-09-29, not played (English and French passes, Tests/Pickle/README.md)
+  - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
 settings_audit: not_applicable
 updated:      2026-09-29, re-audit from step 1; repository pushed
 ---
@@ -35,7 +35,7 @@ translation. The port is on the `for-lin` branch; its history and old status are
 - **Dependencies:** `SevenColorType.Hyperionc` in `modDependencies` and `loadAfter`; a translation does nothing without it.
 - **Images:** 128 x 128 icon kept; Preview 896 x 504, 453 KB, overlay bottom left, retitled *Français* (contrast min 4.92).
 - **Not published:** no `PublishedFileId.txt`. `main` and `for-lin` pushed 2026-09-29.
-- **Next transition:** write the Pickle suite (game-only checks: real pawn traits, French rendering, gender) or justify its scope in writing, then reaudit.
+- **Next transition:** done -> tested: play both Pickle passes through the worker, then the wording read in TESTING.md "In game".
 
 ## Audit 2026-09-29 (from step 1 upward)
 
@@ -53,3 +53,5 @@ Retained state was `dansMonoRepo` until the repo was renamed to `Rimworld-More-S
 | preTest -> done | Fails: no Pickle suite and no written scope justification. |
 
 Not verified (needs the game): French rendering, gender pronouns, colour tags, English fallback.
+
+`preTest -> done` (2026-09-29): offline check rerun (`Check-DefInjected`, 166 keys, 0 errors); Pickle suite written with its scope justified in `Tests/Pickle/README.md` (loading and clean French load; wording left to a person). No unit tests: text-only mod. State moved from `preTest` to `done`.
