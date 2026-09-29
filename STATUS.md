@@ -43,14 +43,14 @@ Retained state was `dansMonoRepo` until the repo was renamed to `Rimworld-More-S
 
 | Transition | Result |
 | --- | --- |
-| dansMonoRepo -> horsMonoRepo | Standalone git, GitHub remote, pushed, STATUS, README, ATTRIBUTION, CHANGELOG present; licence `silent` matches the ` (unofficial)` suffix. **Fails:** repo name does not match the mod (defect in `remaining`). `upstream_mod_remotes: N/A`: Lin's mod ships no repository link. |
+| dansMonoRepo -> horsMonoRepo | Standalone git, GitHub remote, pushed, STATUS, README, ATTRIBUTION, CHANGELOG present; licence `silent` matches the ` (unofficial)` suffix. Repo name was wrong at audit time (`...-Renew`), renamed the same day to `...-Francais`: holds. `upstream_mod_remotes: N/A`: Lin's mod ships no repository link. |
 | -> ModIcon | 128 x 128 PNG, 12.7 KB, mascot readable at 32 px (looked at). Owner-made, untouched. |
 | -> Preview | 896 x 504, 443 KB (< 1 MB), inspected: title, badge, overlay bottom left. |
 | -> preOptions | English description, `(unofficial)` suffix, contrast min 4.92. |
 | -> options | No assembly, no settings, no MainButtons def: `not_applicable`. |
 | -> l10n | `Check-DefInjected` rerun: 166 keys, 0 errors. No Keyed strings, so no plural keys. English is the target's own Defs. |
 | -> preTest | `modDependencies` and `loadAfter` = `SevenColorType.Hyperionc`, matches Lin's About.xml. No LoadFolders needed. |
-| preTest -> done | Fails: no Pickle suite and no written scope justification. |
+| preTest -> done | Failed at audit time (no Pickle suite, no justification); fixed the same day, see below. |
 
 Not verified (needs the game): French rendering, gender pronouns, colour tags, English fallback.
 
