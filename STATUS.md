@@ -33,7 +33,7 @@ translation. The port is on the `for-lin` branch; its history and old status are
 - **Content:** 166 DefInjected keys, 53 traits and 31 thoughts, keyed on Lin's labels. `Check-DefInjected` against Lin's `1.6` folder and DLL: 0 errors.
 - **Settings:** none, text only. **English:** not applicable, it comes from the target's Defs.
 - **Dependencies:** `SevenColorType.Hyperionc` in `modDependencies` and `loadAfter`; a translation does nothing without it.
-- **Images:** 128 x 128 icon kept; Preview 896 x 504, 453 KB, overlay bottom left, retitled *Français* (contrast min 4.92).
+- **Images:** 128 x 128 icon kept; Preview 896 x 504, 471 KB, rendered by the shared `scripts/Render-Preview.cjs` (text top left, icon badge bottom left), retitled *Français* (contrast min 4.92).
 - **Not published:** no `PublishedFileId.txt`. `main` and `for-lin` pushed 2026-09-29.
 - **Next transition:** done -> tested: play both Pickle passes through the worker, then the wording read in TESTING.md "In game".
 
