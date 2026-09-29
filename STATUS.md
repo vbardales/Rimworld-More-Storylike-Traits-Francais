@@ -23,7 +23,7 @@ remaining:
   - unverified: all of TEST_SCENARIOS.md in game, EN/FR UI, logs, saves
   - unverified: removal of the empty legacy directory shell; Windows process lock
 session:      maj:        2026-09-12, releve automatique
-updated:      2026-09-29, audit: done -> preTest
+updated:      2026-09-29, abandoned: a living 1.6 derivative exists
 settings_audit: not_applicable
 ---
 
@@ -379,3 +379,7 @@ Rerun today: WorkerTests 20/20; Check-XmlFields clean; Check-DefRefs (Core only)
 - New `tested` conditions and evidence retention are in `TESTING.md`; protocol versions read are in `docs/PROTOCOLS-READ.md`.
 
 Next transition: write the Pickle suite (game-only checks: real pawn traits, thought worker, FR rendering) or justify its scope in writing, then reaudit.
+
+## Decision — 2026-09-29: abandoned
+
+Virginie: "More Storylike Traits (Continued)" (2941176778) already exists and declares 1.6, so this port stops. Nothing is published, nothing is pushed. `stage` stays `preTest`: the chain has no abandoned state. All `remaining` items are void; no further work, no Pickle suite, no Workshop item. Repository and files are kept as they are; deleting them or the Mods junction was not asked.
