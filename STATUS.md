@@ -4,11 +4,11 @@ translation_en: not_applicable
 translation_fr: complete
 mod:          More Storylike Traits - Français (unofficial)
 packageId:    nelim.morestoryliketraits.fr
-repo:         Rimworld-More-Storylike-Traits-Renew
+repo:         Rimworld-More-Storylike-Traits-Francais
 visibility:   public
 detached:     yes
-stage:        port
-workflow_stage: dansMonoRepo
+stage:        preTest
+workflow_stage: preTest
 licence:      silent
 licence_at:   2026-09-29; see ATTRIBUTION.md
 upstream_mod_remotes: N/A
@@ -18,7 +18,6 @@ tested_on:
 workshop:
 remaining:
   - defect: no Pickle suite written and no written justification of scope (preTest -> done)
-  - defect: GitHub repository is still named Rimworld-More-Storylike-Traits-Renew; the convention (Rimworld-Flavor-Text-Extended-Francais) gives Rimworld-More-Storylike-Traits-Francais (dansMonoRepo -> horsMonoRepo, name coherence)
   - unverified: in-game rendering, male and female pawns, colour tags, English fallback
   - unverified: Lin's reaction to the comment proposing this French text
 settings_audit: not_applicable
@@ -40,7 +39,7 @@ translation. The port is on the `for-lin` branch; its history and old status are
 
 ## Audit 2026-09-29 (from step 1 upward)
 
-Retained state: `dansMonoRepo` (code `port`). Only the repository name fails; every later transition was checked and holds up to `preTest`.
+Retained state was `dansMonoRepo` until the repo was renamed to `Rimworld-More-Storylike-Traits-Francais` (2026-09-29); now `preTest`. Before that only the repository name failed; every later transition was checked and holds up to `preTest`.
 
 | Transition | Result |
 | --- | --- |
