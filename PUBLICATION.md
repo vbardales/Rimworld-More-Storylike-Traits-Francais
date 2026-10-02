@@ -1,7 +1,8 @@
 # Publication
 
 What the Workshop page needs that nothing else in this repository carries. See `PUBLISHING.md` at the monorepo
-root for the workflow, "Publier par la CI" included. Drafted 2026-09-29, before any upload: nothing here is posted.
+root for the workflow, "Publier par la CI" included. Drafted 2026-09-29. The 0.1.0 prepublication was uploaded on
+2026-10-01 (private item 3811294875, `PublishedFileId.txt` committed): nothing else here is posted, the item is not public.
 
 ## Screenshots for the Workshop page
 
