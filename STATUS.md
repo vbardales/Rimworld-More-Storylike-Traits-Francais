@@ -1,13 +1,13 @@
 ---
-localization: partial
+localization: complete
 translation_en: not_applicable
-translation_fr: partial
+translation_fr: complete
 mod:          More Storylike Traits - Français (unofficial)
 packageId:    nelim.morestoryliketraits.fr
 repo:         Rimworld-More-Storylike-Traits-Francais
 visibility:   public
 detached:     yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence:      silent
 licence_at:   2026-09-29; see ATTRIBUTION.md
 upstream_mod_remotes: N/A
@@ -17,14 +17,13 @@ tested_on:
 workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public version)
 remaining:
   - unverified: in-game rendering of the 7 feminine labels (labelFemale injected into an empty field, as in StorylikeBodyAndMind; not played)
-  - unverified: French review by Virginie (FRENCH_REVIEW.md of 2026-10-12, 180 keys; review received 2026-10-12, corrections applied: 7 feminine labels, 2 switches, 2 thought labels, 2 sentences; English corrections for Lin only, nothing local)
   - unverified: in-game rendering, male and female pawns, colour tags, English fallback (the wording read in TESTING.md "In game" is a manual test; for `tested` it must be automated or declared not applicable)
   - unverified: Pickle passes replayed on the final French text (the 2026-09-29 runs predate commit 195b1a3)
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
 settings_audit: not_applicable
-updated:      2026-10-13, TEST_SCENARIOS.md written (7.a); state writeTests[1.0.0], 7.g open
-protocols_read_sha: 5cc8e00c60a9d22d822c755f5f8a77413bdec8b3
+updated:      2026-10-13, 7.g done (Virginie accepted the French and the al-system neutral forms); state playTests[1.0.0]
+protocols_read_sha: abe91647aaaabbb913f42a9a699ab0b3db63942c
 ---
 
 # More Storylike Traits - Français (unofficial) - status
@@ -94,4 +93,4 @@ Rule read: TRANSLATIONS.md section 3, French gender agreement and systematic Fre
 - The French uses no `{PAWN_gender ...}` switch and no `{PAWN_pronoun}`: only `{PAWN_nameDef}`, repeated. That keeps most texts free of agreement.
 - Five masculine-only agreements found by reading and reworded to remove them: Era_has_changed (Élevé), Unspeakable_horror (un fidèle), A_virtuous_and_artistic_artist (aimé), The_ultimate_bricklayer (l'ultime porteur), thought label "déjà croisé quelque part" (now "ce visage me dit quelque chose").
 - Not fixed: ten labels that are masculine-only nouns. A label has no pawn switch here; flagged `?` for the review.
-- Review by Virginie: not done. A session never marks its own French as reviewed.
+- Review by Virginie: done 2026-10-13 on commit `d196d3f` (texts of 2026-10-12, 180 keys; the seven neutral al-system forms validated; her go to leave `writeTests`). Corrections applied before: see the 2026-10-12 audit row.
