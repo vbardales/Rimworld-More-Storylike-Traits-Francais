@@ -40,3 +40,6 @@ desktop.ini
 Tests/Pickle/Evidence/
 Tests/Pickle/evidence/
 evidence/
+
+# Reproducible render checks (Render-Preview.cjs)
+Art/.render/
