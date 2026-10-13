@@ -93,7 +93,7 @@ foreach($ff in (Get-ChildItem $frRoot -Recurse -Filter *.xml | Sort-Object FullN
     if($fr -match '\{PAWN_gender' -and $fr -notmatch '\{PAWN_gender \?[^:}]*:[^:}]*:[^}]*\}'){ $why = 'PAWN_gender switch that is not the three-segment form' }
     elseif($doubts.ContainsKey($k)){ $why = $doubts[$k] }
     elseif($k -like '*.labelFemale' -or $k -like '*.labelMale'){ $why = 'gendered form of the label: the game picks it for a male or female pawn (injection into an empty field not yet played)' }
-    elseif($neutralLabels -contains $k){ $why = 'neutral form (al system) used for a pawn with no gender: -eur gives -aire as proposed by the review, -ier gives -iær and -é gives -æ by analogy; to validate' }
+    elseif($neutralLabels -contains $k){ $why = 'neutral form (al system) used for a pawn with no gender: -eur gives -aire as proposed by the review, -ier gives -iær and -é gives -æ by the -ier -> -iær model (officier -> officiær); validated 2026-10-13 in the al system (Alpheratz thesis, Wiktionnaire), constructed forms, not normative French' }
     $flag = if($why){ "? $why" } else { '' }
     if($null -eq $e -and $k -match '.label(Male|Female)$'){ $e = $en[($k -replace '.label(Male|Female)$','.label')] }
     [void]$out.AppendLine("| $k | $(& $cell $e) | $(& $cell $e) | $(& $cell $fr) | $flag |")
