@@ -1,21 +1,18 @@
 # Art sources
 
-## Current composition — 2026-09-29
+## Current composition
 
-`Mod/About/Preview.png` is rendered by the shared monorepo scripts, run from the repository root:
+`Mod/About/Preview.png` is rendered by the shared monorepo script from the repository root:
 
 ```bash
-powershell -File ../scripts/Make-PreviewBadge.ps1 -SaveTrimmedIconTo Art/ModIcon-badge.png   # only when ModIcon.png changes
 node ../scripts/Render-Preview.cjs
 ```
 
-Inputs: `Art/Preview.png` (the text-free background, a copy of `Preview-source.png`), `Art/preview-copy.json`
-(title, suffix, tag, summary, icon badge corner), `Art/preview-palette.json`, `Mod/About/About.xml` (the
-version badge). Outputs: `Mod/About/Preview.png`, `Art/Preview-layout.html`, `Art/Preview-qa.json`,
-`Art/Preview-background-qa.png`. The layout is the shared one: text top left, icon badge bottom left, version
-badge top right. Measured on 2026-09-29: 471 KB, contrast minimum 4.92 (version badge), 7.21 or more for the text.
-The icon has a painted background, so the badge is a tilted square rather than a cut-out head.
-The earlier hand-made `Build-Preview.cjs` and `preview.html` (text bottom left, no icon) were retired.
+Inputs are `Preview-source.png`, the final-size `echo.png`, the active `ModIcon-source.png`,
+`Preview.config.json` and `Mod/About/About.xml`. Outputs are `Mod/About/Preview.png`,
+`Art/Gallery/0-preview.png`, `Art/Preview.ico` and `Art/ModIcon.ico`; temporary reproducible
+checks live under `.render/`. The title uses the RimWorld font. `Français (unofficial)` stays
+on one line in Segoe UI. The painted icon background is intentionally preserved with a 48 px radius.
 
 Never published. The Workshop uploader sends `Mod/` and only `Mod/`, so full-resolution sources
 live here and the finished files live in `Mod/About/`.
@@ -27,22 +24,22 @@ Targets, from `STYLE_RIMWORLD.md`:
 | `Preview.png` | 896 x 504 | < 900 KB (hard: < 1 MB) | ~268 px wide on the Workshop page |
 | `ModIcon.png` | 128 x 128 | 20-30 KB | 32 px in the mod list |
 
-## `Preview-source.png` — 1672 x 941, 1458 KB
+## `Preview-source.png` - 1672 x 941, 1458 KB
 
 The background of `Mod/About/Preview.png`. A night workshop: five colonists, each carrying his own
-peculiarity — the fat one, the one leaning on a cane, the one bent under a stack of crates. It
+peculiarity - the fat one, the one leaning on a cane, the one bent under a stack of crates. It
 meets the guide's six tests without being asked to: high oblique camera, plank floor with a
 visible tile rhythm, desaturated earth base, one warm lamp pool against cold ambient, figures as
 small dark silhouettes seen from above and behind, and a worn utilitarian room. **No face.**
 
 Two vivid things, which is the limit: the lamp pool and the red coat.
 
-## `ModIcon-source.png` — 1672 x 941, 1876 KB
+## Original of `ModIcon-source.png` (1672 x 941; backup file deleted 2026-10-13, see git history of 480f089)
 
-The source of `Mod/About/ModIcon.png`. Delivered as a 16:9 banner, so it is cropped square before
-scaling — squashing a banner into 128 x 128 distorts everything in it.
+The original source of `Mod/About/ModIcon.png`. Delivered as a 16:9 banner, so it is cropped square before
+scaling - squashing a banner into 128 x 128 distorts everything in it.
 
-The crop is **tight and centred on the face**, at 540 x 540 around (840, 610) in the source. A
+The active cropped badge is retained as `ModIcon-source.png`. Its crop is **tight and centred on the face**, at 540 x 540 around (840, 610) in that original. A
 full-height centre crop was tried first and rejected: it keeps the brain, the heart and a column
 of stickers, all of which collapse into mush at the 32 px the mod list actually draws. One shape
 and one accent colour is what survives that size, so the face fills the frame and the brain and
@@ -77,7 +74,7 @@ icon outright. **The block was rewritten on 2026-09-11 from the sixty icons actu
 because it described the opposite of them. The face rule that still stands is about the *preview*,
 where a readable face is a defect; the icon is the one place a face belongs.
 
-Rule 1 of that same note — never cut a portage's icon out of the upstream author's art — is not in
+Rule 1 of that same note - never cut a portage's icon out of the upstream author's art - is not in
 play here. The source mod ships no textures at all; this image was generated for this repository.
 
 ### What is still off
@@ -88,5 +85,5 @@ own. The guide asks for "one or two objects that name the mod" beside the head, 
 heart do not name fifty-three biographies.
 
 Enough for now, and the head reads correctly at 32 px. When it is redone, the mascot stays and the
-objects change — a folding stool from the *fond of folding stools* trait is the readiest single
+objects change - a folding stool from the *fond of folding stools* trait is the readiest single
 object this mod actually owns.

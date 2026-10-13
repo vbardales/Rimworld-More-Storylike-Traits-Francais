@@ -1,0 +1,54 @@
+{
+  "title": "More Storylike Traits Français (unofficial)",
+  "titleSize": 40,
+  "titleParts": [
+    { "text": "More Storylike" },
+    { "text": "Traits", "breakBefore": true }
+  ],
+  "suffix": "Français",
+  "tag": "(unofficial)",
+  "tagInline": true,
+  "copyLines": [
+    "French text for the 53 traits",
+    "of HYP's More Storylike Traits."
+  ],
+  "layout": "panel",
+  "panelAnchor": "top-left",
+  "backgroundFile": "Preview-source.png",
+  "backgroundPosition": "center",
+  "backgroundSize": "cover",
+  "echo": {
+    "file": "echo.png",
+    "preSized": true,
+    "mode": "alpha",
+    "color": "var(--accent)",
+    "width": 185,
+    "height": 170,
+    "opacity": 1,
+    "veil": false,
+    "panelTop": 40,
+    "panelRight": 1,
+    "panelWidth": 32,
+    "flipX": true
+  },
+  "iconBadge": {
+    "file": "ModIcon-source.png",
+    "corner": "bottom-left",
+    "width": 180,
+    "translate": "12%, -12%",
+    "rotate": 15,
+    "radius": 48,
+    "outline": false,
+    "veil": "radial",
+    "veilSize": 250,
+    "veilLeft": -45,
+    "veilBottom": -45
+  },
+  "palette": {
+    "veil": "#332B24",
+    "inkPrimary": "#F2ECE1",
+    "inkSecondary": "#E5B77C",
+    "accent": "#E94B46",
+    "badgeInk": "#17120E"
+  }
+}

@@ -48,7 +48,7 @@ Created by the first upload, private until the owner makes it public.
 "First release. French names and descriptions for the 53 traits and 31 thoughts of HYP's More Storylike Traits
 (Continued). Requires that mod, loaded before this one."
 
-## After the upload
+## After the upload (historical: done for 0.1.0 on 2026-10-01, kept as the rule for any upload that creates an item)
 
 Commit `Mod/About/PublishedFileId.txt` at once (lost, the next upload creates a second item). Steam creates the
 item private; RimWorld never sets its visibility.

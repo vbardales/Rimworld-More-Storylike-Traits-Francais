@@ -1,31 +1,33 @@
 {
   "version": "1.6",
-  "paletteSource": "Art/preview-palette.json",
-  "copySource": "Art/preview-copy.json",
+  "configSource": "Art/Preview.config.json",
+  "legacyConfig": false,
+  "paletteSource": null,
+  "copySource": null,
   "iconBadgeCorner": "bottom-left",
   "elements": {
     ".title-main": {
       "bounds": {
-        "x": 50,
-        "y": 48,
-        "width": 429.078125,
-        "height": 62
+        "x": 48,
+        "y": 30,
+        "width": 399.34375,
+        "height": 88
       },
       "fonts": [
         {
-          "familyName": "Segoe UI Semibold",
-          "postScriptName": "SegoeUI-Semibold",
-          "isCustomFont": false,
-          "glyphCount": 21
+          "familyName": "RimWordFont",
+          "postScriptName": "RimWordFont",
+          "isCustomFont": true,
+          "glyphCount": 20
         }
       ]
     },
     ".suffix": {
       "bounds": {
-        "x": 50,
-        "y": 116.59375,
-        "width": 109.515625,
-        "height": 40
+        "x": 48,
+        "y": 128,
+        "width": 95.234375,
+        "height": 35
       },
       "fonts": [
         {
@@ -38,15 +40,15 @@
     },
     ".tag": {
       "bounds": {
-        "x": 50,
-        "y": 163.1875,
-        "width": 430,
-        "height": 26.390625
+        "x": 153.109375,
+        "y": 128,
+        "width": 129.203125,
+        "height": 35
       },
       "fonts": [
         {
-          "familyName": "Segoe UI",
-          "postScriptName": "SegoeUI",
+          "familyName": "Segoe UI Semibold",
+          "postScriptName": "SegoeUI-Semibold",
           "isCustomFont": false,
           "glyphCount": 12
         }
@@ -54,9 +56,9 @@
     },
     "p": {
       "bounds": {
-        "x": 50,
-        "y": 228.578125,
-        "width": 430,
+        "x": 48,
+        "y": 198.59375,
+        "width": 362.25,
         "height": 60.875
       },
       "fonts": [
@@ -83,6 +85,34 @@
           "glyphCount": 3
         }
       ]
+    }
+  },
+  "layout": {
+    "panel": {
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 519.671875,
+        "height": 280.46875
+      }
+    },
+    "copy": {
+      "bounds": {
+        "x": 48,
+        "y": 30,
+        "width": 430,
+        "height": 229.46875
+      }
+    }
+  },
+  "iconBadgeAlpha": {
+    "width": 128,
+    "height": 128,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128
     }
   }
 }

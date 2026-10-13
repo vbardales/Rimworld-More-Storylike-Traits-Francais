@@ -4,7 +4,7 @@ Text-only mod: no assembly, no Defs, no patches, no settings.
 
 ## Out of game (rerun each audit)
 `scripts/Check-DefInjected.ps1 -TransMod Mod -Targets <Lin 1.6 folder> -ExtraAssemblies <its DLL>`:
-every key resolves to a real field of the target's Defs. 166 keys, 0 errors on 2026-10-02 (Lin's folder:
+every key resolves to a real field of the target's Defs. 180 keys, 0 errors on 2026-10-12 (Lin's folder:
 `C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2941176778\1.6`).
 
 ## In game (not run). Suite written: Tests/Pickle. Wording and rendering below are still a manual read
