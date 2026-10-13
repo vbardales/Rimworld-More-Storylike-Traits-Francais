@@ -23,7 +23,7 @@ remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
 settings_audit: not_applicable
-updated:      2026-10-12, audit against AUDIT.md (chain setupRepo..dormant); state writeTests[1.0.0]
+updated:      2026-10-13, TEST_SCENARIOS.md written (7.a); state writeTests[1.0.0], 7.g open
 protocols_read_sha: 5cc8e00c60a9d22d822c755f5f8a77413bdec8b3
 ---
 
@@ -53,7 +53,7 @@ Revision audited: `1d9c0f7` plus uncommitted work (`Art/` changes not made by th
 | 5 `auditSettings` | `not_applicable`: no settings, no page, no MainButtons def. |
 | 6 `localize` -> `writeTests` | Holds after the corrections of 2026-10-12 (review received): `TraitDegreeData` has `labelMale` and `labelFemale` (checked with `Check-DefInjected`, no NO FIELD), so seven gendered labels now carry three forms: `labelMale` (masculine), `labelFemale` (feminine) and `label` (neutral, al system, for a pawn with no gender; `GetLabelFor` decompiled 2026-10-12: Male -> labelMale, Female -> labelFemale, none -> label; labels are not run through `Formatted`, so no switch can work there); the neutral nouns (portaire, héritiær, bâtissaire, empilaire, premiær, tiraire, with -æ for -é) follow the review for -eur and are analogy for -ier, to validate; two descriptions got the three-segment switch (`NaturesPorter`: le porteur : la porteuse : lu portaire; `FieldSniper`: son : sa : su propriétaire, su from the al system table of the Wiktionnaire); two thought labels, which have no gender field, were made epicene (knight, viking); `disciple`, `viking sanguinaire` and the other epicene labels were left, flag withdrawn; two sentences reworked (`HYPSKS17Happy` abattu, `HYPMasterhappy` viseur). 180 keys, 0 errors. `FRENCH_REVIEW.md` regenerated: repository type and committed revision versus working tree now in its header. `Check-Status` still gives the `protocols_read_sha` ERROR (see below). |
 
-Work to pass the next transition (`writeTests[1.0.0]` -> `playTests`): 7.a write `TEST_SCENARIOS.md` (one scenario per behaviour promised in `PUBLICATION.md`, or say in writing why none), 7.b-7.e replay the checks and state what is not applicable, 7.g Virginie's review of the French marked `complete` once she has read the 2026-10-12 texts. `protocols_read_sha` not written: only AUDIT.md, STYLE_RIMWORLD.md (parts), TRANSLATIONS.md (parts) and the dispatcher docs were read this session.
+Work to pass the next transition (`writeTests[1.0.0]` -> `playTests`): 7.a done 2026-10-13 (`TEST_SCENARIOS.md`, S1-S7), 7.b-7.e replay the checks and state what is not applicable, 7.g Virginie's review of the French marked `complete` once she has read the 2026-10-12 texts. `protocols_read_sha` not written: only AUDIT.md, STYLE_RIMWORLD.md (parts), TRANSLATIONS.md (parts) and the dispatcher docs were read this session.
 
 ## Audit 2026-10-02 (AUDIT.md of 2026-10-02, from step 1 upward)
 
