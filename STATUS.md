@@ -18,7 +18,6 @@ workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public v
 remaining:
   - unverified: in-game rendering of the 7 feminine labels (labelFemale injected into an empty field, as in StorylikeBodyAndMind; not played)
   - unverified: in-game rendering, male and female pawns, colour tags, English fallback (the wording read in TESTING.md "In game" is a manual test; for `tested` it must be automated or declared not applicable)
-  - unverified: Pickle passes replayed on the final French text (the 2026-09-29 runs predate commit 195b1a3)
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
 settings_audit: not_applicable
@@ -73,7 +72,7 @@ Revision audited: `195b1a3` plus the `PublishedFileId.txt` commit; working tree 
 
 New conditions for `tested` (AUDIT.md 2026-10-02), status today: no scenario `@wip` (none exists); conditional scenarios (`@requires`) none exist, no optional mod and no incompatibility declared; manual tests: the "In game" list of TESTING.md is still manual, so **not met**; `@review` captures: none written yet.
 
-Test evidence minified 2026-10-02: `Tests/Pickle/Evidence/{english,french}` went from 1.7 MB each to 3 KB (kept: `summary.md`, `summary.json`, `junit.xml`, `evidence-complete.txt`, `log-check.txt`). No `.dds` and no evidence was ever committed (checked on all branches and in history); `*.dds`, `*.ico` and `Tests/Pickle/Evidence/` are in `.gitignore`. `Mod/desktop.ini` exists on disk (the Explorer folder-icon convention of AUDIT.md), is ignored by git and is absent from CI checkouts.
+Test evidence minified 2026-10-02: `Tests/Pickle/Evidence/{english,french}` (since replaced by `english-24b1b47` and `french-24b1b47`, 2026-10-14) went from 1.7 MB each to 3 KB (kept: `summary.md`, `summary.json`, `junit.xml`, `evidence-complete.txt`, `log-check.txt`). No `.dds` and no evidence was ever committed (checked on all branches and in history); `*.dds`, `*.ico` and `Tests/Pickle/Evidence/` are in `.gitignore`. `Mod/desktop.ini` exists on disk (the Explorer folder-icon convention of AUDIT.md), is ignored by git and is absent from CI checkouts.
 
 ## Replaced decisions
 
