@@ -1,0 +1,4 @@
+# The pass of features 03 and 04 (French labels, bio tab capture): the generic steps of PickleTools that the
+# scenarios use. ColonistRace sets the gender, InspectTabs opens the character tab. Run with -Language French.
+nelim.pickletools.colonistrace    path:PickleTools/ColonistRace/Mod
+nelim.pickletools.inspecttabs     path:PickleTools/InspectTabs/Mod
