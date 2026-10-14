@@ -22,7 +22,7 @@ remaining:
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
 settings_audit: not_applicable
 updated:      2026-10-13, 7.g done (Virginie accepted the French and the al-system neutral forms); state playTests[1.0.0]
-protocols_read_sha: abe91647aaaabbb913f42a9a699ab0b3db63942c
+protocols_read_sha: f1a89fa5ae0c6eae9a77f7a46d5a9abd5e986a47
 ---
 
 # More Storylike Traits - Français (unofficial) - status
