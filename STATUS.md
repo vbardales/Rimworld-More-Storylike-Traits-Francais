@@ -16,8 +16,6 @@ showcase:     complete
 tested_on:
 workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public version)
 remaining:
-  - unverified: in-game rendering of the 7 feminine labels (labelFemale injected into an empty field, as in StorylikeBodyAndMind; not played)
-  - unverified: in-game rendering, male and female pawns, colour tags, English fallback (the wording read in TESTING.md "In game" is a manual test; for `tested` it must be automated or declared not applicable)
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
 settings_audit: not_applicable
