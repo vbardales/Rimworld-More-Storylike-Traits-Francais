@@ -19,6 +19,7 @@ workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public v
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
+  - unverified: Virginie's read of two more texts reworded 2026-10-27 after the ChatGPT review (`/review-translation`, page 1: ThoughtDef Descendant_has_ranged_weapon without "Donnez-moi", TraitDef Never_cheat "Les derniers mots à l'antenne furent : ..."); the review's third point (gender selection "not observed in game") was not applied: Pickle feature 03 observed it 2026-10-15 on 4938c93
   - unverified: Virginie's read of the 3 descriptions reworded 2026-10-27 to drop `vous` (`TraitDef/MoreStorylikeTraitsPR.xml`: Stupid_as_stupid_does, Bloodthirsty_Viking, Field_sniper), accepted in chat, applied; `Mod/` changed after `code_review_sha` (diff of 3 sentences read by the session, review not re-stamped); Pickle feature 03 not replayed on the new text
   - tooling: the shared `scripts/Make-FrenchReview.ps1` writes an empty review here (it reads `Languages/French`, this folder is `French (Français)`); `FRENCH_REVIEW.md` of 2026-10-27 was built with the former local `Generate-FrenchReview.ps1` (deleted from the repo 2026-10-27, taken from git at 4d22d1e)
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
