@@ -19,7 +19,8 @@ workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public v
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
-  - defect (owner decision needed): `vous` addressed to the player in 3 descriptions of `TraitDef/MoreStorylikeTraitsPR.xml` (Stupid_as_stupid_does "Demandez", Bloodthirsty_Viking "Donnez", Field_sniper "Tirez ... vous croyez ... votre"); French accepted 2026-10-13, rule no tu/vous dated 2026-10-17; a rewording reopens her review and `FRENCH_REVIEW.md`
+  - unverified: Virginie's read of the 3 descriptions reworded 2026-10-27 to drop `vous` (`TraitDef/MoreStorylikeTraitsPR.xml`: Stupid_as_stupid_does, Bloodthirsty_Viking, Field_sniper), accepted in chat, applied; `Mod/` changed after `code_review_sha` (diff of 3 sentences read by the session, review not re-stamped); Pickle feature 03 not replayed on the new text
+  - tooling: the shared `scripts/Make-FrenchReview.ps1` writes an empty review here (it reads `Languages/French`, this folder is `French (Français)`); `FRENCH_REVIEW.md` of 2026-10-27 was built with the former local `Generate-FrenchReview.ps1` (deleted from the repo 2026-10-27, taken from git at 4d22d1e)
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
   - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
   - open: `tested_1_7` not recorded; 1.7 install has English only, so a 1.7 pass cannot cover the French text
