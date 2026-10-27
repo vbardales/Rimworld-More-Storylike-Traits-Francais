@@ -19,17 +19,13 @@ workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public v
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
-  - done on her choice (fourth ChatGPT review): `Player_has_ranged_weapon` "Avec elle"; not applied: `The_deal_with_lucifer` (the "il" of "qu'il est très difficile d'atteindre" is impersonal, no masculine agreement)
-  - unverified: Virginie's read of `Have_multiple_prosthesis` ("Je l'avais dit.", third ChatGPT review); the review's second point (`Study_One`, "meilleur que vous") was not applied: "vous" there is the journalist the colonist talks to, inside the fiction
-  - unverified: Virginie's read of `Petrochemical_skin` ("Les lames" corrected to "Les balles", from the second ChatGPT review: the English says shooting resistance); README lines on keys and in-game testing updated the same day
-  - unverified: Virginie's read of two more texts reworded 2026-10-27 after the ChatGPT review (`/review-translation`, page 1: ThoughtDef Descendant_has_ranged_weapon without "Donnez-moi", TraitDef Never_cheat "Les derniers mots à l'antenne furent : ..."); the review's third point (gender selection "not observed in game") was not applied: Pickle feature 03 observed it 2026-10-15 on 4938c93
-  - unverified: Virginie's read of the 3 descriptions reworded 2026-10-27 to drop `vous` (`TraitDef/MoreStorylikeTraitsPR.xml`: Stupid_as_stupid_does, Bloodthirsty_Viking, Field_sniper), accepted in chat, applied; `Mod/` changed after `code_review_sha` (diff of 3 sentences read by the session, review not re-stamped); Pickle feature 03 not replayed on the new text
+  - open: Pickle feature 03 not replayed on the texts reworded 2026-10-27 (the Field_sniper gender switch changed); `Mod/` changed after `code_review_sha` (diffs of single sentences read by the session, review not re-stamped)
   - tooling: the shared `scripts/Make-FrenchReview.ps1` writes an empty review here (it reads `Languages/French`, this folder is `French (Français)`); `FRENCH_REVIEW.md` of 2026-10-27 was built with the former local `Generate-FrenchReview.ps1` (deleted from the repo 2026-10-27, taken from git at 4d22d1e)
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
   - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
   - open: `tested_1_7` not recorded; 1.7 install has English only, so a 1.7 pass cannot cover the French text
 settings_audit: not_applicable
-updated:      2026-10-27, 8.m code review done on f98fcb1 (Opus sub-agent: no blocking defect; Check-DefInjected 180 keys, 0 errors against Lin 1.6 and its DLL); state playTests[1.0.0]
+updated:      2026-10-27, 8.m code review done on f98fcb1; Virginie validated the French reworded 2026-10-27 (revision 3280434); state playTests[1.0.0]
 protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
 ---
 
@@ -101,3 +97,4 @@ Rule read: TRANSLATIONS.md section 3, French gender agreement and systematic Fre
 - Five masculine-only agreements found by reading and reworded to remove them: Era_has_changed (Élevé), Unspeakable_horror (un fidèle), A_virtuous_and_artistic_artist (aimé), The_ultimate_bricklayer (l'ultime porteur), thought label "déjà croisé quelque part" (now "ce visage me dit quelque chose").
 - Not fixed: ten labels that are masculine-only nouns. A label has no pawn switch here; flagged `?` for the review.
 - Review by Virginie: done 2026-10-13 on commit `d196d3f` (texts of 2026-10-12, 180 keys; the seven neutral al-system forms validated; her go to leave `writeTests`). Corrections applied before: see the 2026-10-12 audit row.
+- Second review by Virginie: done 2026-10-27 on commit `3280434` (180 keys). Nine texts reworded that day: three `vous` descriptions of `MoreStorylikeTraitsPR.xml` (Stupid_as_stupid_does, Bloodthirsty_Viking, Field_sniper), Descendant_has_ranged_weapon, Never_cheat, Petrochemical_skin ("balles"), Have_multiple_prosthesis, Player_has_ranged_weapon ("Avec elle"); four ChatGPT review proposals refused (The_deal_with_lucifer, Study_One, two changelog/README points handled in the text).
