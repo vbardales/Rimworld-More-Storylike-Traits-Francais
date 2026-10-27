@@ -19,7 +19,7 @@ workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public v
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
-  - open: Pickle feature 03 not replayed on the texts reworded 2026-10-27 (the Field_sniper gender switch changed); `Mod/` changed after `code_review_sha` (diffs of single sentences read by the session, review not re-stamped)
+  - ticket `20261027-013803-554-4622` queued 2026-10-27 (Pickle feature 03 replay, French, map wsl-deps.french-review.map, on e935afa, evidence Tests/Pickle/Inbox/f03-e935afa): keep `Mod/` and `Tests/` frozen until `RUN_DONE`; on result read `summary.json` (`exitReason`, passed), record in `Docs/runs/history.md`, sort the Inbox folder, set `tested_on`. `Mod/` changed after `code_review_sha` (diffs of single sentences read by the session, review not re-stamped)
   - tooling: the shared `scripts/Make-FrenchReview.ps1` writes an empty review here (it reads `Languages/French`, this folder is `French (Français)`); `FRENCH_REVIEW.md` of 2026-10-27 was built with the former local `Generate-FrenchReview.ps1` (deleted from the repo 2026-10-27, taken from git at 4d22d1e)
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
   - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
