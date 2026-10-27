@@ -13,13 +13,18 @@ licence_at:   2026-09-29; see ATTRIBUTION.md
 upstream_mod_remotes: N/A
 dependencies: declared
 showcase:     complete
-tested_on:
+tested_on:    4938c93 (Pickle French features 03 and 04, 11/11; features 01 and 02 4/4 each on 24b1b47, Mod/ text unchanged since)
+code_review_sha: f98fcb177bbbcd39b1a820fb9fabccd2329c6fac
 workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public version)
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
+  - defect (owner decision needed): `vous` addressed to the player in 3 descriptions of `TraitDef/MoreStorylikeTraitsPR.xml` (Stupid_as_stupid_does "Demandez", Bloodthirsty_Viking "Donnez", Field_sniper "Tirez ... vous croyez ... votre"); French accepted 2026-10-13, rule no tu/vous dated 2026-10-17; a rewording reopens her review and `FRENCH_REVIEW.md`
+  - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
+  - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
+  - open: `tested_1_7` not recorded; 1.7 install has English only, so a 1.7 pass cannot cover the French text
 settings_audit: not_applicable
-updated:      2026-10-13, 7.g done (Virginie accepted the French and the al-system neutral forms); state playTests[1.0.0]
+updated:      2026-10-27, 8.m code review done on f98fcb1 (Opus sub-agent: no blocking defect; Check-DefInjected 180 keys, 0 errors against Lin 1.6 and its DLL); state playTests[1.0.0]
 protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
 ---
 
