@@ -19,6 +19,7 @@ workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public v
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
+  - unverified: Virginie's read of `Have_multiple_prosthesis` ("Je l'avais dit.", third ChatGPT review); the review's second point (`Study_One`, "meilleur que vous") was not applied: "vous" there is the journalist the colonist talks to, inside the fiction
   - unverified: Virginie's read of `Petrochemical_skin` ("Les lames" corrected to "Les balles", from the second ChatGPT review: the English says shooting resistance); README lines on keys and in-game testing updated the same day
   - unverified: Virginie's read of two more texts reworded 2026-10-27 after the ChatGPT review (`/review-translation`, page 1: ThoughtDef Descendant_has_ranged_weapon without "Donnez-moi", TraitDef Never_cheat "Les derniers mots à l'antenne furent : ..."); the review's third point (gender selection "not observed in game") was not applied: Pickle feature 03 observed it 2026-10-15 on 4938c93
   - unverified: Virginie's read of the 3 descriptions reworded 2026-10-27 to drop `vous` (`TraitDef/MoreStorylikeTraitsPR.xml`: Stupid_as_stupid_does, Bloodthirsty_Viking, Field_sniper), accepted in chat, applied; `Mod/` changed after `code_review_sha` (diff of 3 sentences read by the session, review not re-stamped); Pickle feature 03 not replayed on the new text
