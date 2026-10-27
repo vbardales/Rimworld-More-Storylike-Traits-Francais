@@ -29,6 +29,6 @@ docs/                                        <- protocols read, run history
 - English is left to the target's own Defs; only French is injected. Rarity colour tags stay inside
   the French labels, as the target does per language.
 - Validate with `scripts/Check-DefInjected.ps1 -TransMod Mod -Targets <Lin's 1.6 folder>
-  -ExtraAssemblies <its DLL>`: 166 keys, 0 errors (2026-09-29).
+  -ExtraAssemblies <its DLL>`: 180 keys, 0 errors (2026-10-27).
 - The French rewrites the meaning of the rewritten English of the port, not the original English.
-- Not checked in game.
+- Tested in game with Pickle, English and French (loading, the gendered labels, the bio tab).
