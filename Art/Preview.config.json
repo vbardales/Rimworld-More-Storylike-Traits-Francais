@@ -22,7 +22,9 @@
     "height": 170
   },
   "icon": {
-    "file": "ModIcon-source.png"
+    "file": "ModIcon-source.png",
+    "corner": "bottom-left",
+    "radius": 48
   },
   "palette": {
     "veil": "#332B24",
