@@ -20,12 +20,13 @@ remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
   - ticket `20261027-013803-554-4622` done 2026-11-02: feature 03 French replay on e935afa, 9/9, `exitReason: passed`, evidence `Tests/Pickle/Evidence/french-review-e935afa` (see `Docs/runs/history.md`); `Tests/Pickle/Evidence/french-review-4938c93` kept (only proof of the bio-tab captures); code review re-stamped 2026-11-02 at the owner's word: diff f98fcb1..HEAD read, 8 French sentences reworded in 4 files (Virginie's second review), tokens and switches intact, no `Source/` change, 0 DefInjected errors, feature 03 9/9 on e935afa
+  - ticket `20261102-185539-641-e462` queued 2026-11-02 (Pickle feature 04 bio tab, French, map wsl-deps.french-review.map, on 03ff432, evidence Tests/Pickle/Inbox/f04-03ff432): keep `Mod/` and `Tests/` frozen until `RUN_DONE`; on result read `summary.json`, open the `@review` captures (8.d), record in `docs/runs/history.md`, sort the Inbox folder, set `tested_on`
   - tooling: the shared `scripts/Make-FrenchReview.ps1` writes an empty review here (it reads `Languages/French`, this folder is `French (Français)`); `FRENCH_REVIEW.md` of 2026-10-27 was built with the former local `Generate-FrenchReview.ps1` (deleted from the repo 2026-10-27, taken from git at 4d22d1e)
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
   - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
   - open: `tested_1_7` not recorded; 1.7 install has English only, so a 1.7 pass cannot cover the French text
 settings_audit: not_applicable
-updated:      2026-11-02, Pickle feature 03 replay green on e935afa; state playTests[1.0.0]
+updated:      2026-11-02, code review re-stamped on 03ff432; ticket 20261102-185539-641-e462 queued (feature 04 French); state playTests[1.0.0]
 protocols_read_sha: 367e9834a3a6017bdacfb343dbe1dbb8870bf0d5
 ---
 
