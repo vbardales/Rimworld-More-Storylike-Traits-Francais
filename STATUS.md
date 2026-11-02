@@ -13,20 +13,20 @@ licence_at:   2026-09-29; see ATTRIBUTION.md
 upstream_mod_remotes: N/A
 dependencies: declared
 showcase:     complete
-tested_on:    4938c93 (Pickle French features 03 and 04, 11/11; features 01 and 02 4/4 each on 24b1b47, Mod/ text unchanged since)
+tested_on:    e935afa (Pickle French feature 03, 9/9, 2026-11-02; feature 04 11/11 scope on 4938c93; features 01 and 02 4/4 each on 24b1b47; Mod/ text of those untouched since)
 code_review_sha: f98fcb177bbbcd39b1a820fb9fabccd2329c6fac
 workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public version)
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
-  - ticket `20261027-013803-554-4622` queued 2026-10-27 (Pickle feature 03 replay, French, map wsl-deps.french-review.map, on e935afa, evidence Tests/Pickle/Inbox/f03-e935afa): keep `Mod/` and `Tests/` frozen until `RUN_DONE`; on result read `summary.json` (`exitReason`, passed), record in `Docs/runs/history.md`, sort the Inbox folder, set `tested_on`. `Mod/` changed after `code_review_sha` (diffs of single sentences read by the session, review not re-stamped)
+  - ticket `20261027-013803-554-4622` done 2026-11-02: feature 03 French replay on e935afa, 9/9, `exitReason: passed`, evidence `Tests/Pickle/Evidence/french-review-e935afa` (see `Docs/runs/history.md`); `Tests/Pickle/Evidence/french-review-4938c93` kept (only proof of the bio-tab captures); `Mod/` changed after `code_review_sha` (diffs of single sentences read by the session, review not re-stamped)
   - tooling: the shared `scripts/Make-FrenchReview.ps1` writes an empty review here (it reads `Languages/French`, this folder is `French (Français)`); `FRENCH_REVIEW.md` of 2026-10-27 was built with the former local `Generate-FrenchReview.ps1` (deleted from the repo 2026-10-27, taken from git at 4d22d1e)
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
   - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
   - open: `tested_1_7` not recorded; 1.7 install has English only, so a 1.7 pass cannot cover the French text
 settings_audit: not_applicable
-updated:      2026-10-27, 8.m code review done on f98fcb1; Virginie validated the French reworded 2026-10-27 (revision 3280434); state playTests[1.0.0]
-protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
+updated:      2026-11-02, Pickle feature 03 replay green on e935afa; state playTests[1.0.0]
+protocols_read_sha: 367e9834a3a6017bdacfb343dbe1dbb8870bf0d5
 ---
 
 # More Storylike Traits - Français (unofficial) - status
