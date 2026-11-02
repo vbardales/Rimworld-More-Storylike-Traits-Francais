@@ -14,12 +14,12 @@ upstream_mod_remotes: N/A
 dependencies: declared
 showcase:     complete
 tested_on:    e935afa (Pickle French feature 03, 9/9, 2026-11-02; feature 04 11/11 scope on 4938c93; features 01 and 02 4/4 each on 24b1b47; Mod/ text of those untouched since)
-code_review_sha: f98fcb177bbbcd39b1a820fb9fabccd2329c6fac
+code_review_sha: ccebec50efa4528b942ba0ea759e1dc64e8abdce
 workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public version)
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
   - unverified: Lin's reply to the comment (posted by the owner 2026-09-29)
-  - ticket `20261027-013803-554-4622` done 2026-11-02: feature 03 French replay on e935afa, 9/9, `exitReason: passed`, evidence `Tests/Pickle/Evidence/french-review-e935afa` (see `Docs/runs/history.md`); `Tests/Pickle/Evidence/french-review-4938c93` kept (only proof of the bio-tab captures); `Mod/` changed after `code_review_sha` (diffs of single sentences read by the session, review not re-stamped)
+  - ticket `20261027-013803-554-4622` done 2026-11-02: feature 03 French replay on e935afa, 9/9, `exitReason: passed`, evidence `Tests/Pickle/Evidence/french-review-e935afa` (see `Docs/runs/history.md`); `Tests/Pickle/Evidence/french-review-4938c93` kept (only proof of the bio-tab captures); code review re-stamped 2026-11-02 at the owner's word: diff f98fcb1..HEAD read, 8 French sentences reworded in 4 files (Virginie's second review), tokens and switches intact, no `Source/` change, 0 DefInjected errors, feature 03 9/9 on e935afa
   - tooling: the shared `scripts/Make-FrenchReview.ps1` writes an empty review here (it reads `Languages/French`, this folder is `French (Français)`); `FRENCH_REVIEW.md` of 2026-10-27 was built with the former local `Generate-FrenchReview.ps1` (deleted from the repo 2026-10-27, taken from git at 4d22d1e)
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
   - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
