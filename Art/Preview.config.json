@@ -1,27 +1,17 @@
 {
   "panel": {
-    "title": "More Storylike Traits Français (unofficial)",
-    "titleSize": 40,
+    "title": "More Storylike Traits Français",
     "titleParts": [
-      { "text": "More Storylike" },
-      { "text": "Traits", "breakBefore": true }
+      { "text": "More Storylike Traits" },
+      { "text": "Français", "suffix": true }
     ],
-    "suffix": "Français",
-    "tag": "(unofficial)",
-    "tagInline": true,
-    "copyLines": [
-      "French text for the 53 traits",
-      "of HYP's More Storylike Traits."
-    ]
+    "description": "French text for the 53 traits of HYP's More Storylike Traits."
   },
-  "backgroundFile": "Preview-source.png",
-  "echo": {
-    "file": "echo-preview.png"
-  },
+  "background": { "file": "Preview-source.png" },
+  "echo": { "file": "echo-preview.png" },
   "icon": {
     "file": "ModIcon-source.png",
-    "corner": "bottom-left",
-    "radius": 48
+    "corner": "bottom-left"
   },
   "palette": {
     "veil": "#332B24",
