@@ -25,7 +25,7 @@ remaining:
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
   - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
   - open: `tested_1_7` not recorded; 1.7 install has English only, so a 1.7 pass cannot cover the French text
-  - replay 2026-11-10 (8.c): features 01 and 02 last ran on 24b1b47 (2026-10-13), older than the Mod/ text change 3280434 (2026-10-27): replay them in French as a small ticket
+  - replay 2026-11-10 (8.c): features 01 and 02 last ran on 24b1b47 (2026-10-13), older than the Mod/ text change 3280434 (2026-10-27). Ticket `20261110-151435-539-9c61` queued 2026-11-10 (French, `-Filter '01,02'`, no map, tree 3090667, evidence Tests/Pickle/Inbox/f0102-3090667): keep `Mod/` and `Tests/` frozen until `RUN_DONE`; on result read `summary.json`, record in `docs/runs/history.md`, sort the Inbox folder, set `tested_on`
   - replay 2026-11-10 (8.g, 8.i, 8.k): S5 (31 thoughts in French) and S6 (English left to Lin's text) not played; `TESTING.md` is stale (items 1-3 still manual, "captures none written yet", old name FRENCH_REVIEW.md): automate or declare not applicable with reason, then fix the file
   - replay 2026-11-10 (4.g): `workshop_required_items` missing; owner adds "Required items" (Lin 2941176778) on the Steam page, then record `done, <date>`; Check-Status warns from writeDocs
   - code review 2026-11-10: diff ccebec5..HEAD on Mod/ and Source/ read, only Mod/About/Preview.png (image exception), `code_review_sha` re-stamped on db7eaa6
