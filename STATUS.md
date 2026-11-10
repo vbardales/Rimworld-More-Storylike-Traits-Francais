@@ -14,7 +14,7 @@ upstream_mod_remotes: N/A
 dependencies: declared
 showcase:     complete
 tested_on:    e935afa (Pickle French feature 03, 9/9, 2026-11-02; feature 04 bio tab 2/2 on 03ff432, Mod/ French text unchanged since; features 01 and 02 4/4 each on 24b1b47; Mod/ text of those untouched since)
-code_review_sha: ccebec50efa4528b942ba0ea759e1dc64e8abdce
+code_review_sha: db7eaa6e4f552c947df68ff6a6f4b4748ef7d5b9
 workshop:     3811294875 (private; 0.1.0 prepublication, 2026-10-01; no public version)
 remaining:
   - unverified: the active language of the French pass (Player.log does not show it; launcher asked -Language French)
@@ -25,8 +25,12 @@ remaining:
   - defect: `Mod/About/About.xml` description says "Not yet tested in game."; to update with `PUBLICATION.md` at writeDocs (same text, single source)
   - minor (test code, not fixed): `Tests/Pickle/Source/MoreStorylikeTraitsSteps.cs` gives every trait degree 0 (`new Trait(def, 0, true)`); `Tests/Pickle/Mod/About/About.xml` says "Two features" (four exist)
   - open: `tested_1_7` not recorded; 1.7 install has English only, so a 1.7 pass cannot cover the French text
+  - replay 2026-11-10 (8.c): features 01 and 02 last ran on 24b1b47 (2026-10-13), older than the Mod/ text change 3280434 (2026-10-27): replay them in French as a small ticket
+  - replay 2026-11-10 (8.g, 8.i, 8.k): S5 (31 thoughts in French) and S6 (English left to Lin's text) not played; `TESTING.md` is stale (items 1-3 still manual, "captures none written yet", old name FRENCH_REVIEW.md): automate or declare not applicable with reason, then fix the file
+  - replay 2026-11-10 (4.g): `workshop_required_items` missing; owner adds "Required items" (Lin 2941176778) on the Steam page, then record `done, <date>`; Check-Status warns from writeDocs
+  - code review 2026-11-10: diff ccebec5..HEAD on Mod/ and Source/ read, only Mod/About/Preview.png (image exception), `code_review_sha` re-stamped on db7eaa6
 settings_audit: not_applicable
-updated:      2026-11-10, feature 04 French replay green (ticket 20261102-185539-641-e462), captures read, Inbox sorted; state playTests[1.0.0]
+updated:      2026-11-10, audit replay: stage playTests[1.0.0] unchanged, first open 8.c; code_review_sha re-stamped (images only)
 protocols_read_sha: 9cc9c861a7266366baaef51f18a3cdcb51b81d90
 ---
 
